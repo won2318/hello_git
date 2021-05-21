@@ -1,0 +1,66 @@
+﻿@charset "utf-8";
+/*------------------------------------------------import--------------------*/
+/* Withustech Solution Development Team(http://www.withustech.com) CMY 170220 */
+
+@import url(layout.css);     /*-- 레이아웃 --*/
+
+/* Reset */
+body, h1, h2, h3, h4, h5, h6,
+div, p, blockquote, pre, address,
+ul, ol, li, dl, dt, dd,
+table, caption, th, td,
+form, fieldset, legend,
+hr {margin:0; padding:0;}
+h1, h2, h3, h4, h5, h6 {font-size:100%;}
+ul, ol {list-style:none;}
+table {margin:0; padding:0; border-spacing:0; border:0; border-collapse:collapse; _border-collapse:collapse;}
+*+html table {border-collapse:collapse;}
+img, fieldset, abbr, acronym {border:0;}
+address, caption, cite, code, dfn, em, var {font-style:normal; font-weight:normal;}
+q:before, q:after {content: '';}
+input, select, button, textarea {font-family: 'NanumGothic','나눔고딕','NanumBarunGothic','나눔바른고딕','맑은고딕','Malgun Gothic',  Dotum, 돋움, Gulim, sans-serif; font-size:13px;  color:#333;}
+
+html {-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased; font-size: 62.5%;}
+* {margin:0; padding:0;}
+body, nav, ul, li, a  {margin: 0; padding: 0;word-break:break-normal; }
+html, body{letter-spacing: -0.1px;line-height: 1.5; font-size: 13px; font-family: 'NanumGothic','나눔고딕','NanumBarunGothic','나눔바른고딕','맑은고딕','Malgun Gothic',  Dotum, 돋움, Gulim, sans-serif;}
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figure, figcaption, hgroup, menu, footer, header, nav, section, summary, time, mark, audio, video, button, input, textarea { font-family:inherit;}
+a {text-decoration: none;}
+strong { font-weight: 600;}
+ul,ol {	list-style:none;	margin:0;	padding:0; }
+img { display: block;margin: 0; padding: 0;	border: 0px;image-rendering: -moz-crisp-edges; -ms-interpolation-mode: bicubic; 
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+   /* -ms-interpolation-mode: nearest-neighbor;*/}
+iframe, fieldset{ border:none;}
+button { vertical-align: top;border: 0px;	margin: 0;padding: 0;background:transparent; cursor:pointer;}
+a {	color: #000000;	}
+a:hover { color: #e71a21;}
+a:active  {	color: #5c7199;}
+.container a {word-break: normal;}
+
+legend, caption {width: 0; height: 0; line-height: 0; padding:0; margin:0; overflow:hidden; visibility: hidden; position: absolute;}
+article, aside, figcaption, figure, footer, header, hgroup, nav, section { display: block;}
+audio, canvas, progress, video {vertical-align: baseline; display: inline-block;}
+button, html input[type='button'], input[type='reset'], input[type='submit'] { cursor: pointer;-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+input[type='checkbox'], input[type='radio'] {padding:0; box-sizing: border-box; background-color: initial;}
+input[type='search'] { box-sizing: content-box;-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+table { width:100%;	nowhitespace:afterproperty; border-collapse:collapse; border-spacing:0;}
+address, caption, cite, code, dfn, em, var {font-style:normal;}
+
+
+input, textarea, select { border:0;-webkit-border-radius:inherit;border-radius:inherit; }
+
+select {vertical-align: middle; padding:2px; min-width: 6em;border:1px solid #e5e5e5; font-family: 'NanumGothic','나눔고딕','NanumBarunGothic','나눔바른고딕','맑은고딕','Malgun Gothic',  Dotum, 돋움, Gulim, sans-serif;}
+textarea, input[type=text], input[type=password] {border:1px solid #c8c8c8; }
+input[type=text], input[type=password] { padding:2px; }
+*, *:before, *:after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+
+}
+[hidden] {display: none;}
+.clearfix {clear: both;}
+
+.wapper { min-width: 1070px;width: 100%; text-align: center;}

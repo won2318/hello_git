@@ -1,0 +1,535 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0. user-scalable=no," />
+	<meta name="MobileOptimized" content="320" />
+	<title>수원인터넷방송</title>
+	<link rel="stylesheet" type="text/css" href="../include/css/default.css">
+	<script type="text/javascript" src="../include/js/jquery.min.js"></script>
+	<script type="text/javascript" src="../include/js/popup_2015.js" ></script>
+	<script type="text/javascript" src="../include/js/popup.js"></script>
+	
+	<script type="text/javascript" src="../include/js/jquery.carouFredSel-6.2.0-packed.js"></script>
+	<script type="text/javascript" src="../include/js/main.js"></script>
+	
+	<script type="text/javascript" src="../include/js/tab.js"></script>
+	
+	<script type="text/javascript" src="../include/js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="../include/js/jquery.colorbox.js"></script>
+	<script type="text/javascript" src="../include/js/jquery.masonry.min.js"></script>
+	<script type="text/javascript" src="../include/js/common.js"></script>  
+<!--[if lte IE 7]> 
+	<script type="text/javascript" src="../include/js/script2.js"></script>
+ <![endif]-->   
+<!--[if (gte IE 8)|!(IE)]><!-->  
+	<script type="text/javascript" src="../include/js/script.js"></script>
+<!--<![endif]-->	
+</head>
+
+<body id="main">
+<!-- accessibility::skip -->
+<div id="accessibility">
+	<ul>
+	<li><a href="#lnb" accesskey="1">메인메뉴바로가기</a></li>
+	<li><a href="#body" accesskey="2">컨텐츠바로가기</a></li>
+	</ul>
+</div> 
+<!-- //accessibility::skip -->
+<div id="body-wrap">
+	<div id="head">
+		<header>
+			<div id="top-nav"> 
+				<h1>
+					<a href="/">
+						<img src="../include/images/main/logo.png" alt="수원iTV"/>
+					</a>
+				</h1>
+				<div class="gnb_area">
+					<ul>
+					<li><a href="">홈</a></li>
+					<li><a href="">즐겨찾기</a></li>
+					<li><a href="">전체프로그램</a></li>
+					<li class="search">
+						<div class="gnb_search">
+							<form name="head_search" method="post" action="/2013/info/search.jsp">
+							<fieldset>
+								<legend>검색</legend>
+								<span class="gnb_search_in">
+									<input type="hidden" name="search_ccode" value="" />
+									<input type="hidden" name="searchField" value="title" />
+									<input type="text" title="검색어" name="searchString" id="head_searchstring" value="보고싶은 영상이 있다면?" class="input_text" onclick="javascript:document.getElementById('head_searchstring').value=''; "/> 
+								</span><input type="image" src="../include/images/main/btn_top_search.gif" alt="검색" class="img"/>
+								</fieldset>
+							</form>
+						</div>
+					</li>
+					<li class="sns">
+						<a href="" target="_blank" title="새창으로 연결"><img src="../include/images/main/twitter.png" alt="트위터"/></a>
+						<a href="" target="_blank" title="새창으로 연결"><img src="../include/images/main/youtube.png" alt="유투브"/></a>
+						<a href="" target="_blank" title="새창으로 연결"><img src="../include/images/main/blog.png" alt="네이버 블로그"/></a>
+					</li>
+					</ul>
+				</div>
+			</div>
+			<nav id="lnb">
+				<div class="lnb_wrap">
+				<!-- menu::로컬메뉴 -->
+				<div class="gnb" id="">			
+					<ul>
+						<li class="s1 ">
+							<a href="/2013/video/video_list.jsp?ccode=001000000000" class="">Hot 이슈</a>
+							<ul>
+								<li><a href="/2013/video/video_list.jsp?ccode=001001000000">NEWS</a></li>
+								<li><a href="/2013/video/video_list.jsp?ccode=001002000000">인포수원</a></li>
+								<li><a href="/2013/video/video_list.jsp?ccode=001003000000">공감 Best5</a></li>
+								<li><a href="/2013/video/video_list.jsp?ccode=001006000000">글로벌뉴스</a></li>
+								<li><a href="/2013/video/video_list.jsp?ccode=001005000000">언론속수원</a></li>
+							</ul>
+						</li>
+						<li class="s2 ">
+							<a href="/2013/video/video_list.jsp?ccode=002000000000" class="">버라이어티</a>
+							<ul>
+								<li><a href="/2013/video/video_list.jsp?ccode=002001000000">달리는 카메라</a></li>
+								<li><a href="/2013/video/video_list.jsp?ccode=002006000000">기획프로그램</a></li>
+								<li><a href="/2013/video/video_list.jsp?ccode=002002000000">반가운 사람</a></li>
+								<li><a href="/2013/video/video_list.jsp?ccode=002003000000">타임머신</a></li>
+								<li><a href="/2013/video/video_list.jsp?ccode=002005000000">스포츠</a></li>
+							</ul>
+						</li>
+						<li class="s3 ">
+							<a href="/2013/video/video_list.jsp?ccode=003000000000" class="">라이프</a>
+							<ul>
+								<li><a href="/2013/video/video_list.jsp?ccode=003001000000">역사&#183;지식</a></li>
+								<li><a href="/2013/video/video_list.jsp?ccode=003002000000">생활&#183;경제</a></li>
+								<li><a href="/2013/video/video_list.jsp?ccode=003003000000">웰빙&#183;건강</a></li>
+								<li><a href="/2013/video/video_list.jsp?ccode=003004000000">여행&#183;문화</a></li>
+								<li><a href="/2013/video/video_list.jsp?ccode=003005000000">쏙쏙강의</a></li>					
+							</ul>
+						</li>
+						<li class="s4 ">
+							<a href="/2013/video/video_list.jsp?ccode=004000000000" class="">참여광장</a>
+							<ul>
+								<li><a href="/2013/video/video_list.jsp?ccode=004000000000">나도PD</a></li>				
+								<li><a href="/2013/board/board_list.jsp?board_id=16">제작현장</a></li>						
+								<li><a href="/2013/board/board_list.jsp?board_id=12">제보게시판</a></li>
+								<li><a href="/2013/board/board_list.jsp?board_id=10">공지사항</a></li>
+								<li><a href="/2013/live/live_list.jsp">생방송 목록</a></li>
+								<li><a href="/2013/board/board_list.jsp?board_id=17">휴먼스토리</a></li>
+								<li><a href="/2013/board/board_list.jsp?board_id=18">날아라~책나비 UCC 공모</a></li>
+							</ul>
+						</li>
+						<li class="s5 ">
+							<a href="/2013/video/video_list.jsp?ccode=005000000000" class="">홍보영상</a>
+							<ul>
+								<li><a href="/2013/video/video_list.jsp?ccode=005001000000">홍보영상</a></li>
+								<li><a href="/2013/video/video_list.jsp?ccode=001004000000">수원시의회</a></li>
+
+							</ul>
+						</li>
+						<li class="s6">
+							<a href="/2013/video/video_list.jsp?ccode=006001000000" class="">생방송 다시보기</a>
+							<ul>
+								<li><a href="/2013/video/video_list.jsp?ccode=006001000000">다시보기</a></li>
+								<li><a href="/2013/info/search.jsp">전체프로그램</a></li>
+							</ul>
+						</li>				
+					</ul>
+				</div>
+				<!-- //menu::로컬메뉴 -->	
+				<!-- menuFull -->
+				<div class="menuFull">
+				<a href="#menuFull" onclick="showHide('menuFull');return false;" class="menu_view">메뉴전체보기</a>
+				<div id="menuFull" style="display:none;">
+				<div class="menuFull_in" >
+					<ul class="menuView">			
+						<li class="s1 ">
+							<a href="/2013/video/video_list.jsp?ccode=001000000000" class="">Hot 이슈</a>
+							<ul>
+								<li><a href="/2013/video/video_list.jsp?ccode=001001000000">NEWS</a></li>
+								<li><a href="/2013/video/video_list.jsp?ccode=001002000000">인포수원</a></li>
+								<li><a href="/2013/video/video_list.jsp?ccode=001003000000">공감Best5</a></li>
+								<li><a href="/2013/video/video_list.jsp?ccode=001006000000">글로벌뉴스</a></li>
+								<li><a href="/2013/video/video_list.jsp?ccode=001005000000">언론속수원</a></li>
+								
+							</ul>
+						</li>
+						<li class="s2 ">
+							<a href="/2013/video/video_list.jsp?ccode=002000000000" class="">버라이어티</a>
+							<ul>
+								<li><a href="/2013/video/video_list.jsp?ccode=002001000000">달리는 카메라</a></li>
+								<li><a href="/2013/video/video_list.jsp?ccode=002006000000">기획프로그램</a></li>
+								<li><a href="/2013/video/video_list.jsp?ccode=002002000000">반가운 사람</a></li>
+								<li><a href="/2013/video/video_list.jsp?ccode=002003000000">타임머신</a></li>
+								<li><a href="/2013/video/video_list.jsp?ccode=002005000000">스포츠</a></li>
+							</ul>
+						</li>
+						<li class="s3 ">
+							<a href="/2013/video/video_list.jsp?ccode=003000000000" class="">라이프</a>
+							<ul>
+								<li><a href="/2013/video/video_list.jsp?ccode=003001000000">역사&#183;지식</a></li>
+								<li><a href="/2013/video/video_list.jsp?ccode=003002000000">생활&#183;경제</a></li>
+								<li><a href="/2013/video/video_list.jsp?ccode=003003000000">웰빙&#183;건강</a></li>
+								<li><a href="/2013/video/video_list.jsp?ccode=003004000000">여행&#183;문화</a></li>
+								<li><a href="/2013/video/video_list.jsp?ccode=003005000000">쏙쏙강의</a></li>					
+							</ul>
+						</li>
+						<li class="s4 ">
+							<a href="/2013/video/video_list.jsp?ccode=004001000000" class="">참여광장</a>
+							<ul>
+								<li><a href="/2013/video/video_list.jsp?ccode=004001000000">나도PD</a></li>		
+								<li><a href="/2013/board/board_list.jsp?board_id=16">제작현장</a></li>							
+								<li><a href="/2013/board/board_list.jsp?board_id=12">제보게시판</a></li>
+								<li><a href="/2013/board/board_list.jsp?board_id=10">공지사항</a></li>
+								<li><a href="/2013/live/live_list.jsp">생방송 목록</a></li>
+								<li><a href="/2013/board/board_list.jsp?board_id=17">휴먼스토리</a></li>
+								<li><a href="/2013/board/board_list.jsp?board_id=18">날아라~책나비 UCC 공모</a></li>
+								
+							</ul>
+						</li>
+						<li class="s5 ">
+							<a href="/2013/video/video_list.jsp?ccode=005000000000" class="">홍보영상</a>
+							<ul>
+								<li><a href="/2013/video/video_list.jsp?ccode=005001000000">홍보영상</a></li>
+								<li><a href="/2013/video/video_list.jsp?ccode=001004000000">수원시의회</a></li>
+							</ul>
+						</li>
+						<li class="s6 ">
+							<a href="/2013/video/video_list.jsp?ccode=006001000000" class="">생방송 다시보기</a>
+							<ul>
+								<li><a href="/2013/video/video_list.jsp?ccode=006001000000">다시보기</a></li>
+								<li><a href="/2013/info/search.jsp">전체프로그램</a></li>
+							</ul>
+						</li>				
+					</ul>
+				</div>		
+				<a href="#menuFull" onclick="showHide('menuFull');return false;" class="menu_close2">메뉴전체닫기</a>
+				</div>
+				</div>
+				<!-- //menuFull -->
+				</div>
+			</nav>
+		</header>
+	</div>
+	<div id="body">
+		<div class="container_top">
+			<section>
+				<div class="main_vod">
+					<div id="popupzone_a">
+						<div id="popup_zone_a">
+							<!--<div id="popup_num_a">
+								<a href="#popup_a" onclick="select_num_a('1');"><img src="../include/images/main/1_on.png" id="popup_img_a1" alt="1"/></a>						
+								<a href="#popup_a" onclick="select_num_a('2');"><img src="../include/images/main/1_on.png" id="popup_img_a2" alt="2"/></a>						
+								<a href="#popup_a" onclick="select_num_a('3');"><img src="../include/images/main/1_on.png" id="popup_img_a3" alt="3"/></a>	
+							</div>-->
+							<div id="popup_btn_a1">
+								<a href="#popup_a_1" onclick="change_popup_a(current_popup_a-1);" title="이전"><img src="../include/images/main/btn_left.gif"  alt="이전" /></a> 
+							</div>
+							<div id="photo_zone_a" class="basic_photo_banner">
+								<p id="popup_a1">
+									<span class="thumb">
+										<a href="">
+											<img src="http://27.101.101.113/ClientBin/Media/2015/1/20150105090154473/thumbnail/00_00_45.png" alt="이미지제목"/>
+											<span class="play_icon"></span>
+										</a>
+									</span>
+									<span class="data">
+										<a href="#" class="entry-title">작은 것부터 나씩하나씩하나씩1 나씩하나씩하나씩1 나씩하나씩하나씩1 나씩하나씩하나씩1 나씩하나씩하나씩1</a>
+										<span class="subject">adsfdsafdsfdsfadsfdsafdsfdsfadsfdsafdsfdsfadsfdsafdsfdsfadsfdsafdsfdsfadsfdsafdsfdsfadsfdsafdsfdsfadsfdsafdsfdsfadsfdsafdsfdsfadsfdsafdsfdsfadsfdsafdsfdsfadsfdsafdsfdsfadsfdsafdsfdsfadsfdsafdsfdsfadsfdsafdsfdsfadsfdsafdsfdsfadsfdsafdsfdsfadsfdsafdsfdsfadsfdsafdsfdsfadsfdsafdsfdsfadsfdsafdsfdsfadsfdsafdsfdsfadsfdsafdsfdsf</span>
+										<span class="blank"><a href=""><img src="../include/images/main/btn_blank.gif"  alt="새창" /></a></span>
+									</span>
+								</p>
+								<p id="popup_a2">
+									<span class="thumb">
+										<a href="">
+											<img src="http://27.101.101.113/ClientBin/Media/2015/9/20150907174504237/thumbnail/00_00_01.png" alt="이미지제목"/>
+											<span class="play_icon"></span>
+										</a>
+									</span>
+									<span class="data">
+										<a href="#" class="entry-title">작은 것부터 나씩하나씩하나씩2</a>
+										<span class="subject">adsfdsafdsfdsf</span>
+										<span class="blank"><a href=""><img src="../include/images/main/btn_blank.gif"  alt="이전" /></a></span>
+									</span>
+								</p>
+								<p id="popup_a3">
+									<span class="thumb">
+										<a href="">
+											<img src="http://27.101.101.113/ClientBin/Media/2015/1/20150105090154473/thumbnail/00_00_45.png" alt="이미지제목"/>
+											<span class="play_icon"></span>
+										</a>
+									</span>
+									<span class="data">
+										<a href="#" class="entry-title">작은 것부터 나씩하나씩하나씩3</a>
+										<span class="subject">adsfdsafdsfdsf</span>
+										<span class="blank"><a href=""><img src="../include/images/main/btn_blank.gif"  alt="이전" /></a></span>
+									</span>
+								</p>
+							</div>
+							<div id="popup_btn_a2">
+								<a href="#popup_a_1" onclick="change_popup_a(current_popup_a+1);" title="다음"><img src="../include/images/main/btn_right.gif" alt="다음" /></a>
+							</div>
+						</div>
+						<script type="text/javascript">play_pop_a();</script>
+									
+					</div>
+				
+				</div>
+				
+			</section>
+		</div>
+		<div class="container_cen">
+			<section>
+				<div id="popupzone_b">
+					<h3><img src="../include/images/main/notice.gif" alt="NOTICE" /></h3>
+					<div id="popup_zone_b">
+						<div id="popup_num_b">
+							<a href="#popup_b" onclick="play_popup_b(1);" title="재생"><img src="../include/images/main/btn_play.gif" alt="재생" /></a> 
+							<a href="#popup_b" onclick="play_popup_b(0);" title="정지"><img src="../include/images/main/btn_stop.gif" alt="정지" /></a> 
+							<a href="#popup_b" onclick="select_num_b('1');"><img src="../include/images/main/1_on.png" id="popup_img_b1" alt="1"/></a>						
+							<a href="#popup_b" onclick="select_num_b('2');"><img src="../include/images/main/1_on.png" id="popup_img_b2" alt="2"/></a>						
+							<a href="#popup_b" onclick="select_num_b('3');"><img src="../include/images/main/1_on.png" id="popup_img_b3" alt="3"/></a>	
+						</div>
+						<div id="photo_zone_b" class="basic_photo_banner">
+							<p id="popup_b1">
+								<a href="">뉴스제목1뉴스제목1뉴스제목1뉴스제목1뉴스제목1뉴스제목1뉴스제목1뉴스제목1뉴스제목1뉴스제목1뉴스제목1뉴스제목1뉴스제목1뉴스제목1뉴스제목1뉴스제목1뉴스제목1뉴스제목1</a>
+							</p>
+							<p id="popup_b2">
+								<a href="">뉴스제목2</a>
+							</p>
+							<p id="popup_b3">
+								<a href="">뉴스제목3</a>
+							</p>
+						</div>
+					</div>
+					<script type="text/javascript">play_pop_b();</script>
+				</div>
+			</section>
+		</div>
+		<div class="container_bott">
+			
+			<section>
+				<div id="popupzone_c">
+					<h3><img src="../include/images/main/new.gif" alt="NEW" /></h3>
+					<div id="popup_zone_c">
+						<div id="photo_zone_c" class="basic_photo_banner">
+							<p id="popup_c1">
+								<a href="">
+									<span class="thumb">
+										<img src="http://27.101.101.113/ClientBin/Media/2015/9/20150907174504237/thumbnail/00_00_01.png" alt="이미지제목"/>
+									</span>
+									<span class="data">
+										작은 것부터 나씩하나씩하나씩1나씩하나씩하나씩1나씩하나씩하나씩1하나씩하나씩1하나씩하나씩1하나씩하나씩1
+									</span>
+								</a>
+							</p>
+							<p id="popup_c2">
+								<a href="">
+									<span class="thumb">
+										<img src="http://27.101.101.113/ClientBin/Media/2015/9/20150907174504237/thumbnail/00_00_01.png" alt="이미지제목"/>
+									</span>
+									<span class="data">
+										작은 것부터 나씩하나씩하나씩1나씩하나씩하나씩1나씩하나씩하나씩1하나씩하나씩1하나씩하나씩1하나씩하나씩1
+									</span>
+								</a>
+							</p>
+							<p id="popup_c3">
+								<a href="">
+									<span class="thumb">
+										<img src="http://27.101.101.113/ClientBin/Media/2015/9/20150907174504237/thumbnail/00_00_01.png" alt="이미지제목"/>
+									</span>
+									<span class="data">
+										작은 것부터 나씩하나씩하나씩1나씩하나씩하나씩1나씩하나씩하나씩1하나씩하나씩1하나씩하나씩1하나씩하나씩1
+									</span>
+								</a>
+							</p>
+						</div>
+						<div id="popup_num_c">
+							<a href="#popup_c" onclick="play_popup_c(1);" title="재생"><img src="../include/images/main/btn_play.gif" alt="재생" /></a> 
+							<a href="#popup_c" onclick="play_popup_c(0);" title="정지"><img src="../include/images/main/btn_stop.gif" alt="정지" /></a> 
+							<a href="#popup_c" onclick="select_num_c('1');"><img src="../include/images/main/1_on.png" id="popup_img_c1" alt="1"/></a>						
+							<a href="#popup_c" onclick="select_num_c('2');"><img src="../include/images/main/1_on.png" id="popup_img_c2" alt="2"/></a>						
+							<a href="#popup_c" onclick="select_num_c('3');"><img src="../include/images/main/1_on.png" id="popup_img_c3" alt="3"/></a>	
+						</div>
+					</div>
+					<script type="text/javascript">play_pop_c();</script>
+				</div>
+				<div id="popupzone_d">
+					<h3><img src="../include/images/main/hot.gif" alt="HOT" /></h3>
+					<div id="popup_zone_d">
+						<div id="photo_zone_d" class="basic_photo_banner">
+							<p id="popup_d1">
+								<a href="">
+									<span class="thumb">
+										<img src="http://27.101.101.113/ClientBin/Media/2015/9/20150907174504237/thumbnail/00_00_01.png" alt="이미지제목"/>
+									</span>
+									<span class="data">
+										작은 것부터 나씩하나씩하나씩1나씩하나씩하나씩1나씩하나씩하나씩1하나씩하나씩1하나씩하나씩1하나씩하나씩1
+									</span>
+								</a>
+							</p>
+							<p id="popup_d2">
+								<a href="">
+									<span class="thumb">
+										<img src="http://27.101.101.113/ClientBin/Media/2015/9/20150907174504237/thumbnail/00_00_01.png" alt="이미지제목"/>
+									</span>
+									<span class="data">
+										작은 것부터 나씩하나씩하나씩1나씩하나씩하나씩1나씩하나씩하나씩1하나씩하나씩1하나씩하나씩1하나씩하나씩1
+									</span>
+								</a>
+							</p>
+							<p id="popup_d3">
+								<a href="">
+									<span class="thumb">
+										<img src="http://27.101.101.113/ClientBin/Media/2015/9/20150907174504237/thumbnail/00_00_01.png" alt="이미지제목"/>
+									</span>
+									<span class="data">
+										작은 것부터 나씩하나씩하나씩1나씩하나씩하나씩1나씩하나씩하나씩1하나씩하나씩1하나씩하나씩1하나씩하나씩1
+									</span>
+								</a>
+							</p>
+						</div>
+						<div id="popup_num_d">
+							<a href="#popup_d" onclick="play_popup_d(1);" title="재생"><img src="../include/images/main/btn_play.gif" alt="재생" /></a> 
+							<a href="#popup_d" onclick="play_popup_d(0);" title="정지"><img src="../include/images/main/btn_stop.gif" alt="정지" /></a> 
+							<a href="#popup_d" onclick="select_num_d('1');"><img src="../include/images/main/1_on.png" id="popup_img_d1" alt="1"/></a>						
+							<a href="#popup_d" onclick="select_num_d('2');"><img src="../include/images/main/1_on.png" id="popup_img_d2" alt="2"/></a>						
+							<a href="#popup_d" onclick="select_num_d('3');"><img src="../include/images/main/1_on.png" id="popup_img_d3" alt="3"/></a>	
+						</div>
+					</div>
+					<script type="text/javascript">play_pop_d();</script>
+				</div>
+				<div id="popupzone_e">
+					<h3><img src="../include/images/main/best.gif" alt="BEST" /></h3>
+					<div id="popup_zone_e">
+						<div id="photo_zone_e" class="basic_photo_banner">
+							<p id="popup_e1">
+								<a href="">
+									<span class="thumb">
+										<img src="http://27.101.101.113/ClientBin/Media/2015/9/20150907174504237/thumbnail/00_00_01.png" alt="이미지제목"/>
+									</span>
+									<span class="data">
+										작은 것부터 나씩하나씩하나씩1나씩하나씩하나씩1나씩하나씩하나씩1하나씩하나씩1하나씩하나씩1하나씩하나씩1
+									</span>
+								</a>
+							</p>
+							<p id="popup_e2">
+								<a href="">
+									<span class="thumb">
+										<img src="http://27.101.101.113/ClientBin/Media/2015/9/20150907174504237/thumbnail/00_00_01.png" alt="이미지제목"/>
+									</span>
+									<span class="data">
+										작은 것부터 나씩하나씩하나씩1나씩하나씩하나씩1나씩하나씩하나씩1하나씩하나씩1하나씩하나씩1하나씩하나씩1
+									</span>
+								</a>
+							</p>
+							<p id="popup_e3">
+								<a href="">
+									<span class="thumb">
+										<img src="http://27.101.101.113/ClientBin/Media/2015/9/20150907174504237/thumbnail/00_00_01.png" alt="이미지제목"/>
+									</span>
+									<span class="data">
+										작은 것부터 나씩하나씩하나씩1나씩하나씩하나씩1나씩하나씩하나씩1하나씩하나씩1하나씩하나씩1하나씩하나씩1
+									</span>
+								</a>
+							</p>
+						</div>
+						<div id="popup_num_e">
+							<a href="#popup_e" onclick="play_popup_e(1);" title="재생"><img src="../include/images/main/btn_play.gif" alt="재생" /></a> 
+							<a href="#popup_e" onclick="play_popup_e(0);" title="정지"><img src="../include/images/main/btn_stop.gif" alt="정지" /></a> 
+							<a href="#popup_e" onclick="select_num_e('1');"><img src="../include/images/main/2_1_on.png" id="popup_img_e1" alt="주"/></a>						
+							<a href="#popup_e" onclick="select_num_e('2');"><img src="../include/images/main/2_2_on.png" id="popup_img_e2" alt="월"/></a>						
+							<a href="#popup_e" onclick="select_num_e('3');"><img src="../include/images/main/2_3_on.png" id="popup_img_e3" alt="연"/></a>	
+						</div>
+					</div>
+					<script type="text/javascript">play_pop_e();</script>
+				</div>
+				<aside>
+					<div id="popupzone_f">
+						<div id="popup_zone_f">
+							<div id="photo_zone_f" class="basic_photo_banner">
+								<p id="popup_f1">
+									<a href="">
+									<span class="thumb">
+										<img src="http://27.101.101.113/ClientBin/Media/2015/9/20150907174504237/thumbnail/00_00_01.png" alt="이미지제목"/>
+									</span>
+									<span class="data">
+										작은 것부터 나씩하나씩하나씩1나씩하나씩하나씩1나씩하나씩하나씩1하나씩하나씩1하나씩하나씩1하나씩하나씩1
+									</span>
+								</a>
+								</p>
+								<p id="popup_f2">
+									<a href="">
+									<span class="thumb">
+										<img src="http://27.101.101.113/ClientBin/Media/2015/9/20150907174504237/thumbnail/00_00_01.png" alt="이미지제목"/>
+									</span>
+									<span class="data">
+										작은 것부터 나씩하나씩하나씩1나씩하나씩하나씩1나씩하나씩하나씩1하나씩하나씩1하나씩하나씩1하나씩하나씩1
+									</span>
+									</a>
+								</p>
+								<p id="popup_f3">
+									<a href="">
+									<span class="thumb">
+										<img src="http://27.101.101.113/ClientBin/Media/2015/9/20150907174504237/thumbnail/00_00_01.png" alt="이미지제목"/>
+									</span>
+									<span class="data">
+										작은 것부터 나씩하나씩하나씩1나씩하나씩하나씩1나씩하나씩하나씩1하나씩하나씩1하나씩하나씩1하나씩하나씩1
+									</span>
+									</a>
+								</p>
+							</div>
+							<div id="popup_num_f">
+								<a href="#popup_f" onclick="play_popup_f(1);" title="재생"><img src="../include/images/main/btn_play.gif" alt="재생" /></a> 
+								<a href="#popup_f" onclick="play_popup_f(0);" title="정지"><img src="../include/images/main/btn_stop.gif" alt="정지" /></a> 
+								<a href="#popup_f" onclick="select_num_f('1');"><img src="../include/images/main/1_on.png" id="popup_img_f1" alt="1"/></a>						
+								<a href="#popup_f" onclick="select_num_f('2');"><img src="../include/images/main/1_on.png" id="popup_img_f2" alt="2"/></a>						
+								<a href="#popup_f" onclick="select_num_f('3');"><img src="../include/images/main/1_on.png" id="popup_img_f3" alt="3"/></a>	
+							</div>
+						</div>
+						<script type="text/javascript">play_pop_f();</script>
+					</div>
+				</aside>
+			</section>
+			
+		</div>
+	</div>
+	<footer>
+		<div class="family_site">
+			<ul>
+			<li><a href="" target="_blank" title="새창으로 연결">수원시</a></li>
+			<li><a href="" target="_blank" title="새창으로 연결">e-수원뉴스</a></li>
+			<li><a href="" target="_blank" title="새창으로 연결">포토뱅크</a></li>
+			<li><a href="" target="_blank" title="새창으로 연결">e-자료홍보관</a></li>
+			<li><a href="" target="_blank" title="새창으로 연결">시민정보화교육</a></li>
+			</ul>
+		</div>
+		<div id="footer">
+			<h1><img src="../include/images/main/f_logo.png" alt="withustech.com"/></h1>
+			<ul>
+			<li>
+				<ul>
+				<li>발행처:수원시청</li>
+				<li>발행인:수원시청</li>
+				<li>편집인:공보관</li>
+				<li><strong><a href="">개인정보처리방침</a></strong></li>
+				</ul>
+			</li>
+			<li>본 페이지에 게시된 이메일주소가 자동 수집되는 것을 거부하며, 위반시 정보통신망법에 의해 처벌됩니다.</li>
+			<li><address>(16490) 경기도 수원시 팔달구 효원로 241 (인계동) 전화 (031)228-3066, 3067</address></li>
+			<li>&copy; SUWON CITY, ALL RIGHTS RESERVED.</li>
+			</ul>
+			<span class="sns">
+				<a href="" target="_blank" title="새창으로 연결"><img src="../include/images/main/facebook.png" alt="페이스북"/></a>
+				<a href="" target="_blank" title="새창으로 연결"><img src="../include/images/main/twitter.png" alt="트위터"/></a>
+			</span>
+		</div>
+	</footer>
+	
+	
+</div>
+<!--#body-wrap-->
+
+</body>
+</html>

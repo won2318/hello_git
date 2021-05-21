@@ -1,0 +1,116 @@
+﻿/* Withustech Solution Development Team(http://www.withustech.com) CMY 131105 */
+
+
+/*------------------------------------------------header--------------------*/
+#header {position:relative;width: 100%; min-width: 1090px;margin:0 auto;background:url(../images/main/menu_top_bar.gif) repeat-x 0px 86px; }
+#head {position:relative;float: left; width: 100%; text-align: left; z-index: 12;}
+#head h1 {float: left;display: inline-block; padding: 14px 0px 11px 10px;}
+#head .gnb_area li { padding-top: 6px;display: block;float: left; padding-right: 30px; vertical-align: middle;}
+#head .gnb_area { position:relative;padding-top: 32px; display: inline-block; height: 28px;float: right;}
+#head .gnb_area a { vertical-align: middle; float: left;color:#6c6c6c; display: block;}
+#head .gnb_area a:hover { color:#fa3d03;}
+#head .gnb_area .sns{ padding-right: 0px; padding-top: 0;}
+#head .gnb_area .search{ padding-right: 6px; padding-top: 0;}
+#head .gnb_area .sns a img {padding:1px 2px;}
+#head .gnb_area img,#head .gnb_area input {vertical-align: middle;}
+#head .gnb_area input.img { margin-left: -5px;}
+#head .gnb_area input[type=text] {vertical-align: middle;padding: 2px 8px 0px 8px; *padding-top: 8px; width: 177px; height: 26px; *height: 20px;color:#808080; line-height: 100%;letter-spacing: -0.5px;font-family:Dotum, '고딕';border:1px solid #bbbbbb;}
+#top-nav { width: 1024px; margin:0 auto;}
+#lnb { position:relative;   margin:0 auto; background:#27272a;}
+.lnb_wrap { position:relative; width: 1022px; z-index: 15;margin:0 auto; background:#27272a; border-right:1px solid #333335; border-left:1px solid #333335;}
+
+
+/* 크롬,사파리 핵 */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  
+   #head .gnb_area input[type=text] { padding-top: 0px; height: 28px; }
+}
+/* ie8 핵 */
+@media \0screen {
+
+#head .gnb_area input[type=text] { padding-top: 8px; height: 20px; }
+
+}
+
+/* 1단계 메뉴  */
+.sMenu {width:100%; position:absolute; left: 0px;height:65px;overflow:hidden;z-index:13;}
+.sMenu.on { z-index:12; }
+.sMenu > ul{width:760px;margin:0 auto 0;padding-top:15px; padding-bottom:15px;position:relative;}
+.sMenu > ul:after{content:"";display:block; clear:both;}
+.sMenu > ul > li{float:left; height: 50px; font-family:'맑은고딕','Malgun Gothic','NanumGothic','나눔고딕','돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif;}
+.sMenu > ul > li:first-child{padding-left:0;}
+.sMenu > ul > li.s1 {width:92px; padding-left: 20px;}
+.sMenu > ul > li.s1.visible,
+.sMenu > ul > li.s2.visible,
+.sMenu > ul > li.s3.visible,
+.sMenu > ul > li.s4.visible,
+.sMenu > ul > li.s5.visible,
+.sMenu > ul > li.s6.visible,
+.sMenu > ul > li.s7.visible { height: 50px; background:url(../images/menu_on.gif) no-repeat center 39px;}
+.sMenu > ul > li.s5.visible a,
+.sMenu > ul > li.s6.visible a,
+.sMenu > ul > li.s7.visible a{color: #ef4a4a;}
+.sMenu > ul > li.visible a {color: #ef4a4a;}
+.sMenu > ul > li.visible ul li a {color:#ffffff;}
+.sMenu > ul > li.s5.visible ul li a,
+.sMenu > ul > li.s6.visible ul li a,
+.sMenu > ul > li.s7.visible ul li a {color:#ffffff;}
+.sMenu > ul > li.s1 > ul {left:0; width:92px;padding: 20px 0px 0px 20px;}
+.sMenu > ul > li.s2 {width:118px; padding-left: 20px;}
+.sMenu > ul > li.s2 > ul {left:112px; width:118px;padding: 20px 0px 0px 20px;}
+.sMenu > ul > li.s3 {width:90px; padding-left: 20px;}
+.sMenu > ul > li.s3 > ul {left:250px; width:90px;padding: 20px 0px 0px 20px;}
+.sMenu > ul > li.s4 {width:90px; padding-left: 20px;}
+.sMenu > ul > li.s4 > ul {left:360px; width:85px;padding: 20px 0px 0px 20px;}
+.sMenu > ul > li.s5 {width:65px; padding-top:3px; padding-right: 10px; padding-left: 5px;}
+.sMenu > ul > li.s5 > ul {left:465px;width:65px;padding: 20px 0px 0px 20px;}
+.sMenu > ul > li.s6 {width:62px; padding: 3px 15px 0px 13px;}
+.sMenu > ul > li.s6 > ul {left:550px;width:70px;padding: 20px 0px 0px 20px;}
+.sMenu > ul > li.s7 {width:94px; padding-top:3px; padding-left: 15px;}
+.sMenu > ul > li.s7 > ul {left:640px;width:92px;padding: 20px 0px 0px 20px;}
+.sMenu > ul > li > a{display: block;font-size:1.6em; color:#000000; font-weight:bold; *padding-top:2px; }
+.sMenu > ul > li > a:hover, .sMenu > ul > li > a.on{color:#ef4a4a;}
+.sMenu > ul > li.s5 > a,
+.sMenu > ul > li.s6 > a,
+.sMenu > ul > li.s7 > a {font-size:1.2em; color:#000000; font-weight:bold;}
+.sMenu > ul > li.s5 > a:hover, .sMenu > ul > li.s5 > a.on,
+.sMenu > ul > li.s6 > a:hover, .sMenu > ul > li.s6 > a.on,
+.sMenu > ul > li.s7 > a:hover, .sMenu > ul > li.s7 > a.on{color:#ef4a4a;}
+.sMenu > ul > li > ul {font-family:'돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif;margin-top:31px;position:absolute;top:34px;left:0; border-top:6px solid #ef4a4a; height: 130px; background: #6c6d73; z-index:21;}
+.sMenu > ul > li > ul > li {margin-bottom:5px; z-index:20;}
+.sMenu > ul > li > ul > li > a {font-size:1em;letter-spacing:-1px;font-weight:normal; color: #fff; z-index:20;}
+
+.sMenu > ul > li > ul > li > a.on,.sMenu > ul > li > ul > li > a:hover {text-decoration:underline; font-weight: bold;}
+.sMenu span.smallEng { text-align: left;display: block;clear: both; padding-top:3px;font-size: 0.8em; font-family: Tahoma, Verdana; color: #888888;}
+
+.sMenu > ul > li:hover { height: 50px; background:url(../images/menu_on.gif) no-repeat center bottom; border:1px solid red;}
+.sMenu > ul > li:hover > ul { background: #ef4a4a;}
+.sMenu > ul > li.s5:hover{ height: 47px;}
+.sMenu > ul > li.s6:hover{ height: 47px;}
+.sMenu > ul > li.s7:hover{ height: 47px;}
+
+.live_on {position:absolute; top:13px; right: 0px;}
+.nameCheck {position:absolute; top:13px; left: 0px; font-size: 0.9em; color: #888888;}
+
+
+/* menu */
+.gnb{height:45px;white-space:nowrap;width:854px;z-index: 15;}
+.gnb ul{list-style:none;margin:0;padding:0;zoom:1;width:854px;}
+.gnb ul:after{content:"";display:block;clear:both;}
+.gnb ul ul{display:none;position:absolute;left:-1px;top:45px;padding:0px 0 0px;width:auto;background:url(../images/gnb_bg.png);border:1px solid #2f2f2f;border-top:0;}
+.gnb li{float:left;list-style:none;padding-left:0;position:relative;white-space:nowrap;}
+.gnb li.first{padding:0;background:none}
+.gnb li li{float:none;background:none;padding:0;left:0;}
+.gnb li a{float:left;padding:0 0 0 0;height:45px;line-height:45px;color:#e8e8e8;text-align:center !important;width:122px;white-space:nowrap;text-decoration:none; 
+font-family:'NanumGothic','나눔고딕','맑은고딕','Malgun Gothic','돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif;font-size:14px;font-weight:600;}
+
+.gnb li a:hover, .gnb li a:active, .gnb li a:focus, .gnb li a.visible{color:#fff;background:#50ae1e;}
+.gnb li.active a{font-weight:bold;color:#fff;}
+.gnb li li a{float:none;display:block;text-align:left !important;line-height:25px;border-top:1px solid #2f2f2f;padding:3px 10px !important;width:121px;height:auto;font-weight:normal !important;font-size:11px;
+color:#b7b7b7;}
+.gnb li li a:hover, .gnb li li a:active, .gnb li li a:focus{color:#fff;font-weight: 600; }
+.gnb ul li:hover > a { color:#fff;background-color: rgba(80,174,30,0.85);}
+.gnb a span.new {position:relative; letter-spacing: -1px; font-size: 10px!important; font-weight: 600;display: inline-block; border:1px solid #f3663c; color:#f3663c; padding-right: 3px;margin-top: 8px;margin-left: 5px; border-radius: 2px; line-height: 100%;text-transform:uppercase;}
+.gnb a:hover span.new{border-color:#ffcc00; color:#ffcc00;}
+.gnb .new1 { position:relative; letter-spacing: -1px; font-size: 10px!important;line-height: 100%;  background:#f3663c; color:#ffffff;border-radius: 2px; margin-left: 5px;text-transform:uppercase; padding: 1px 3px 1px 2px; }
+.gnb a:hover .new1, .gnb li a.visible .new1{background-color:#ffcc00; color:#27272a;}

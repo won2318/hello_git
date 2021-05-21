@@ -1,0 +1,71 @@
+@charset "utf-8";
+/** CSS Document **/ 
+/* Withustech Solution Development Team(http://www.withustech.com) CMY 110629 */
+
+#groupPop { float: left; clear: both; width: 720px;padding: 0px 15px;}
+#groupPop h1 { float: left; clear: both;width: 100%; background:url(../images/group_bg.gif) 0 0px no-repeat; font-size: 1.4em; color: #1f72c9;}
+#groupPop h1 strong {float: left;padding-top:18px; _line-height: 19px; vertical-align: middle;}
+#groupPop h1 img {float: left;}
+#groupContainer { float: left; clear: both; width: 720px;}
+.groupColgroup { float: left; clear: both; width: 690px; padding: 14px;border:1px solid #d5d5d5;}
+.tab {float: left; clear: both;width: 100%; font-weight: bold; border-left: 1px solid #d5d5d5;}
+.tab li { float: left; width: 176px; border-right: 1px solid #d5d5d5; font-size: 1.2em;height: 27px; padding-top:10px; text-align: center;background:url('../images/group_tab_off.gif') 0 0px repeat-x;}
+.tab li.on { background:url(../images/group_tab_on.gif) 0 0px repeat-x; border-right: 0px;}
+.tab li a { padding: 10px 20px;}
+.tab li.on a { color: #ffffff; padding: 10px 20px;}
+
+.groupAside { float: left; clear: both;}
+.groupAside .line { float: left; clear: both; width: 664px;margin-top: 3px;padding: 10px; border:3px solid #e6e6e6;}
+.groupAside img { float: left; clear: both;}
+.groupAside h2 { clear: both; padding-bottom: 3px; font-size: 1.2em;}
+.groupAside span { color: #1f72c9;}
+.groupContent {float: left; clear: both; width: 100%; padding-bottom: 10px;}
+.groupContent .icon1 { float: left;background:url(../images/sub_arrow.gif) no-repeat left 10px; font-size:1.2em; color:#000000; padding:10px 25px;border:0px solid red;}
+.groupBtn {float: left; clear: both; margin-top: 7px; margin-bottom: 10px;}
+.groupBtn td { padding: 8px 25px 8px 10px; _padding-top: 9px;background:url(../images/group_btn_bg.gif) left top no-repeat; font-weight: bold; line-height: 16px;}
+.groupBtn td a { padding: 5px 0px;}
+
+.sectionL {position:relative; float: left; clear: both;width: 335px;}
+.sectionR{ float: right; width: 335px;}
+.sectionL .more { margin-top: 15px; left: 130px;}
+
+.apply_chart3{width:100%;border-collapse:collapse;border-top:2px solid #3d9bbf;border-left:1px solid #fff;border-right:1px solid #fff;border-bottom:1px solid #c9e4ef;}
+.apply_chart3 tbody th{background:#f2f7fa;color:#0368a0;padding:4px 0;border:1px solid #c9e4ef;}
+.apply_chart3 tbody td{border:1px solid #c9e4ef;padding:5px 10px 5px 10px;}
+.apply_chart3 tbody td.photo{background:#f2f7fa;}
+.apply_chart3 tbody td.cont{padding-left: 8px; padding-bottom: 30px;}
+.apply_chart3 thead th {background:#f2f7fa;color:#0368a0; padding: 5px 0; font-size: 1em;border:1px solid #c9e4ef;}
+
+.apply_chart3 .dot { padding-left: 7px;background:url(../images/dot_3.gif) no-repeat left 4px;}
+.tc { text-align:center;}
+
+
+.stab2_tab a:hover {background:#ff6600;border:1px solid #ff6600; color: #ffffff;}
+.top_mar_50 { position:relative; left:560px; top: -60px;}
+
+/* �˾��� */
+.popup_zone1 {position:absolute;width:216PX;height:146PX;margin:0 0 0 690PX;visibility:visible;}
+.img_list {margin-top:38px;}
+.num {float:right;}
+.num li {float:left;margin:10px 0px 0 4px;vertical-align:top;}
+
+.popup_zone1 {position:absolute;width:216px;height:146px;margin:0 0 0 690px;visibility:visible;}
+.popup_zone1 #inner {  position: absolute; float: left; top: 38px; z-index: 2; width:319px; height:125px;}
+.popup_zone1 #inner img { right:0px;width:216px; height:108px; vertical-align: top; position:relative;}
+.popup_zone1 #inner .banner{ position: absolute; float: left; clear: both; top: 0px; right:0px; width:319px; height:125px; z-index: 3;}
+.popup_zone1 #inner .banner p {position: absolute; overflow:hidden; float: left; text-align: left; top: 180px; left: 0px; width: 245px; height: 64px;}
+.popup_zone1 #inner .banner p { color: #FFFFFF!important; font-weight: bold;}
+.popup_zone1 ol { position: absolute; margin: 0 auto; right: 0px;overflow:hidden; height:15px; z-index: 4; top:10px;}
+.popup_zone1 ol li{float:left; padding-right:1px;}
+.popup_zone1 #popzone_inner ol li img{display:block;}
+.popup_zone1 #popzone_inner ul { position: absolute; margin: 0 auto; left: 11px;overflow:hidden; height:15px; z-index: 4; top:170px;}
+.popup_zone1 #popzone_inner ul li{float:left; padding-right:1px;}
+.popup_zone1 #popzone_inner ul li img{display:block;}
+
+/* ȸ��Ż�� */
+.find_idpw{overflow:hidden;width:70%;margin:100px 0 100px 140px;padding-bottom:25px;}
+.find_idpw fieldset{position:absolute;left:37px;top:40px;}
+.find_idpw .find_box label img{padding-top:5px; padding-right: 10px;}
+
+/* �����ϴܹ�� */
+.banner_zone img {float: left; padding:0 4px 0 5px;}

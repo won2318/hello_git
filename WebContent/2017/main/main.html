@@ -1,0 +1,389 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>수원인터넷방송</title>
+<link rel="stylesheet" type="text/css" href="../include/css/default.css">
+<link rel="stylesheet" type="text/css" href="../include/css/main.css">
+<link rel="stylesheet" type="text/css" href="../include/css/colorbox.css">
+<script type="text/javascript" charset="utf-8" src="../include/js/jquery.min.js"></script><!-- 기본 -->
+<script type="text/javascript" charset="utf-8" src="../include/js/jquery.flexslider-min.js"></script> <!-- 상단메뉴 -->
+<script type="text/javascript" charset="utf-8" src="../include/js/common.js"></script> <!-- 상단메뉴 -->
+<script type="text/javascript" charset="utf-8" src="../include/js/jquery.leanModal.min.js"></script> <!-- 메인메뉴모달 -->
+<script type="text/javascript" charset="utf-8" src="../include/js/jquery.colorbox.js"></script> <!-- 레이어팝업 -->
+<script type="text/javascript" charset="utf-8" src="../include/js/main.js"></script> <!-- 시정홍보배너존 -->
+<script type="text/javascript">
+	//<![CDATA[
+	$(document).ready(function(){
+		 $('.popup').PopupZone({
+			prevBtn : '#pzPrev', 
+			nextBtn : '#pzNext',
+			playBtn : '#pzPlay',
+			waitingTime : '5000'
+		});  //시정홍보배너컨트롤
+	}); 
+	//]]>
+	</script>
+<style>
+	
+</style>
+</head>
+<body>
+	<div id="wapper"> 
+		<header> 
+			<div class="head_inner">
+				<div id="accessibility">
+					<ul>
+					<li><a href="#lnb" accesskey="1">메인메뉴바로가기</a></li>
+					<li><a href="#body" accesskey="2">컨텐츠바로가기</a></li>
+					</ul>
+				</div> <!-- //accessibility::skip -->
+				<div class="top-nav"> 
+					<h1><a href="main.html"><img src="../include/images/logo.png" alt="SUWON TV"/></a></h1>
+					<div class="gnb_area">
+						<ul>
+						<li><a href="/">홈</a></li>
+						<li><a href="javascript:AddFavorite(this);">즐겨찾기</a></li>
+						<li><a href="/2013/info/search.jsp">전체프로그램</a></li>
+						<li><a href="/2013/info/search.jsp">로그아웃</a></li>
+						</ul>
+						<div class="gnb_search">
+							<form name="head_search" method="post" action="/2013/info/search.jsp">
+							<fieldset>
+								<legend>검색</legend>
+								<span class="gnb_search_in">
+									<input type="hidden" name="search_ccode" value="" />
+									<input type="hidden" name="searchField" value="title" />
+									<input type="text" title="검색어" name="searchString" id="head_searchstring" value="보고싶은 영상이 있다면?" class="input_text" onclick="javascript:document.getElementById('head_searchstring').value=''; "/> 
+								</span><input type="image" src="../include/images/icon_search_2.png" alt="검색" class="img"/>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+					<!--<div class="sns">
+						<a href="http://www.youtube.com/user/suwonloves" target="_blank" title="새창으로 연결"><img src="../include/images/sns_youtube.png" alt="유투브"/></a>
+						<a href="http://blog.naver.com/suwonitv/" target="_blank" title="새창으로 연결"><img src="../include/images/sns_blog.png" alt="네이버 블로그"/></a>
+						<a href="https://tv.kakao.com/channel/2711566/cliplink/303361751?metaObjectType=Channel" target="_blank" title="새창으로 연결"><img src="../include/images/sns_cacaotv.png" alt="카카오TV"/></a>
+						<a href="https://twitter.com/suwonitv" target="_blank" title="새창으로 연결"><img src="../include/images/sns_twitter.png" alt="트위터"/></a>
+						<a href="http://tv.naver.com/suwonitv" target="_blank" title="새창으로 연결"><img src="../include/images/sns_navertv.png" alt="네이버TV"/></a>
+					</div>-->
+				</div><!--//top-nav-->
+			</div><!--//head_inner-->
+		</header> <!--헤더:header-->               
+		<nav id="lnb">     
+			<!-- menu::로컬메뉴 -->
+			<div class="lnb_wrap">
+			<div class="gnb" id="">			
+				<ul>
+							<li class="s1 ">
+							<a href="/2017/video/video_list.jsp?ccode=001000000000" class="">수원은 지금!<span class='new'>new</span></a>
+								<ul>
+								<li><a href="/2017/video/video_list.jsp?ccode=001001000000">수원  iTV 뉴스<span class='new bubb1'>N</span></a></li>
+								<li><a href="/2017/video/video_list.jsp?ccode=001008000000">기획영상</a></li>
+								<li><a href="/2017/video/video_list.jsp?ccode=001009000000">수원시 홍보영상</a></li>
+								<li><a href="/2017/video/video_list.jsp?ccode=001003000000">종영프로그램</a></li>
+								
+								</ul>
+							</li>
+							<li class="s2 ">
+							<a href="/2017/video/video_list.jsp?ccode=002007000000" class="visible">방송스크랩</a>
+								<ul>
+ 								<li><a href="/2017/video/video_list.jsp?ccode=002007000000">방송영상</a></li>
+							    <li><a href="/2017/board/board_list.jsp?board_id=24">방송모음<span class='new bubb1'>N</span></a></li>
+								
+								</ul>
+							</li>
+							<li class="s3 ">
+							<a href="/2017/video/video_list.jsp?ccode=003000000000" class="">교양&#183;정보<span class='new'>new</span></a>
+								<ul>
+								<li><a href="/2017/video/video_list.jsp?ccode=003001000000">라이프<span class='new bubb1'>N</span></a></li>
+								<li><a href="/2017/video/video_list.jsp?ccode=003006000000">홍보영상</a></li>					
+								<li><a href="/2017/video/video_list.jsp?ccode=003007000000">타임머신</a></li>					
+								</ul>
+							</li>
+							<li class="s4 ">
+							<a href="/2017/video/video_list.jsp?ccode=004001000000" class="
+							">참여광장<span class='new'>new</span></a>
+								<ul>
+								<li><a href="/2017/video/video_list.jsp?ccode=004001000000">나도PD</a></li>				
+ 								<li><a href="/2017/board/board_list.jsp?board_id=10">공지사항</a></li>
+								<li><a href="/2017/board/board_list.jsp?board_id=17">휴먼스토리</a></li>
+ 								<li><a href="/2017/board/board_list.jsp?board_id=22">시민모니터단<span class='new bubb1'>N</span></a></li>
+								</ul>
+							</li>
+							<li class="s5 ">
+							<a href="/2017/video/video_list.jsp?ccode=005002000000" class="">수원시의회</a>
+								<ul>
+  								<li><a href="/2017/video/video_list.jsp?ccode=005002000000">수원시의회</a></li> 
+								<li><a href="/2017/board/board_list.jsp?board_id=25">방송모음</a></li>
+
+								</ul>
+							</li>
+							<li class="s6">
+							<a href="/2017/video/video_list.jsp?ccode=006001000000" class="">생방송 다시보기<span class="new onair">on-air</span>
+							
+							</a>
+								<ul>
+<!-- 								<li><a href="/2017/live/live_list.jsp">생방송 목록</a></li>  -->
+
+ 
+								</ul>
+							</li>	
+							<li class="s7 last">
+							<a href="/2017/video/video_list.jsp?ccode=009000000000" class="">About Suwon</a>
+								<ul>
+								<li><a href="/2017/video/video_list.jsp?ccode=009002000000">Promotional Video</a></li>
+								<li><a href="/2017/video/video_list.jsp?ccode=009001000000">Global Suwon (End program)</a></li>
+
+
+								</ul>
+							</li>
+										
+						</ul>
+
+			</div><!-- //menu::로컬메뉴 -->
+
+			<a href="#menuFull" class="flatbtn" id="modaltrigger"><img src="../include/images/icon_menu_yellow.png" alt="메뉴"/></a>
+			
+			</div><!--//lnb_wrap-->
+			
+		</nav> <!--네비게이션:nav-->                
+	
+		<section id="body">
+			<div class="container_out">
+				<div class="container_inner">
+					<div class="main_vod">
+						<div class="embed-container">
+							<div class="videoWrapper">
+								<div>
+									<!-- 영상사이즈 525X295 -->
+								  <iframe src="https://www.youtube.com/embed/qVsz-htpDB0" frameborder="0" allowfullscreen></iframe>
+									
+									<!--<video poster="../include/images/sample2.jpg" controls>
+									<source src="../include/images/test.mp4" type="video/mp4">
+									</video>-->
+									
+									<!--<iframe id="video" src="http://tv.suwon.go.kr/videoJs/jsPlayer_2017.jsp?ocode=20181220164918060&type=sub" width="525" height="295" frameborder="0" scrolling="no" marginwidth="0" framespacing="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>-->
+								</div>
+								
+							</div>
+						</div>
+						<div class="data">
+							<h3 class="entry-title clearfix"><a href="">VODCaster CMS는 인터넷 혹은 201662-5-48ODCaster CMS는 인터넷 혹은 201</a></h3>
+							<div class="info">
+								<dl>
+								<dt>등록일</dt>
+								<dd>2017-02-28</dd>
+								<dt>재생시간</dt>
+								<dd>00:00:00</dd>
+								</dl>
+								<i class="i_reply"><a href="">4</a></i>
+							</div>
+							<span class="subj clearfix">간단설명간단설명간단설명<br/>간단설명간단설명간단간단설명간단설명간단설명<br/>간단설명간단설명간단설명<br/>간단설명간단설명간단설명<br/>간단설명간단설명간단설명<br/>간단설명간단설명간단설명<br/>간단설명간단설명간단설명<br/>간단설명간단설명간단설명<br/>간단설명</span>
+						</div><!--//data-->
+					</div>
+				</div> <!--//container_inner-->
+				<div class="new_vod">
+					<ul>
+					<li>
+						<a href="">
+							<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+							<h3>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩하나씩하나씩하나씩하나씩하나씩하나씩</h3>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+							<h3>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h3>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+							<h3>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h3>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+							<h3>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h3>
+						</a>
+					</li>
+					</ul>
+				</div>
+				<aside class="pop_noti_out">
+					<div class="pop_noti_inner">
+						<div class="popup_si">
+							<div id="popupzone">
+								<h3>시정홍보</h3>
+								<div class="popup">
+								<span class="count">
+									<a href="#popupzone" id="pzPlay"><img src="../include/images/btn_stop.png" alt="정지" /></a>
+									<a href="#popupzone" id="pzPrev"><img src="../include/images/btn_back.png" alt="이전" /></a>
+									<span><strong class="currentCount">1</strong> / <strong class="currentCount2">3</strong></span>
+									<a href="#popupzone" id="pzNext"><img src="../include/images/btn_next.png" alt="다음" /></a>
+								</span>
+								<ul>
+									<li><a href=""><img src="../include/images/222.jpg" alt="이미지제목"/></a></li>
+									<li><a href=""><img src="../include/images/pop_1.png" alt="이미지제목"/></a></li>
+									<li><a href=""><img src="../include/images/pop_6.png" alt="이미지제목"/></a></li>
+								</ul>
+								</div>
+							</div><!-- //popupzone::베스트이미지 -->
+							
+						</div>
+						<div class="m_notice">
+							<h3>공지사항</h3>
+							<ul>
+								<li><a href=""><span class="title">공지내용공지내용공지내용공지내용공지내용공지내용공지내용공지내용공지내용</span><span class="day">2019-02-22</span><a></li>
+								<li><a href=""><span class="title">공지내용</span><span class="day">2019-02-22</span></a></li>
+								<li><a href=""><span class="title">공지내용</span><span class="day">2019-02-22</span></a></li>
+								<li><a href=""><span class="title">공지내용</span><span class="day">2019-02-22</span></a></li>
+								<li><a href=""><span class="title">공지내용</span><span class="day">2019-02-22</span></a></li>
+								<li><a href=""><span class="title">공지내용</span><span class="day">2019-02-22</span></a></li>
+							</ul>
+							<p class="more"><a href="">더보기<span>+</span></a></p>
+						</div>
+					</div><!--//pop_noti_inner-->
+				</aside> 
+			</div><!--//container_out-->
+		</section><!--콘텐츠부분:section-->    
+		
+		<footer>
+			<div class="family_site">
+				<ul>
+				<li><a href="" target="_blank" title="새창으로 연결">수원시</a></li>
+				<li><a href="" target="_blank" title="새창으로 연결">e-수원뉴스</a></li>
+				<li><a href="" target="_blank" title="새창으로 연결">포토뱅크</a></li>
+				<li><a href="" target="_blank" title="새창으로 연결">e-자료홍보관</a></li>
+				<li><a href="" target="_blank" title="새창으로 연결">시민정보화교육</a></li>
+				</ul>
+			</div>
+			<div id="footer">
+				<h1><img src="../include/images/f_logo.png" alt="수원인터넷방송"/></h1>
+				<ul>
+				<li>
+					<ul>
+					<li>발행처:수원시청</li>
+					<li>발행인:수원시청</li>
+					<li>편집인:공보관</li>
+					<li><strong><a href="Pop_info.html" class="modal_pop">개인정보처리방침</a></strong></li>
+					</ul>
+				</li>
+				<li>본 페이지에 게시된 이메일주소가 자동 수집되는 것을 거부하며, 위반시 정보통신망법에 의해 처벌됩니다.</li>
+				<li><address>(16490) 경기도 수원시 팔달구 효원로 241 (인계동) 전화 (031)228-3066, 3067</address></li>
+				<li>&copy; SUWON CITY, ALL RIGHTS RESERVED.</li>
+				</ul>
+				<span class="sns">
+					<a href="" target="_blank" title="새창으로 연결"><img src="../include/images/facebook.png" alt="페이스북"/></a>
+					<a href="" target="_blank" title="새창으로 연결"><img src="../include/images/twitter.png" alt="트위터"/></a>
+				</span>
+			</div>
+		</footer>  <!--푸터:footer-->     
+		<div id="menuFull" style="display:none;">
+		<a href="#" class="menuFull_close hidemodal"><img src="../include/images/btn_view_close2.gif" alt="닫기"/></a>
+			<div class="menuFull_in" >
+				<ul class="menuView">			
+					<li class="s1 ">
+						<a href="/2017/video/video_list.jsp?ccode=001000000000" class="">수원은 지금!</a>
+						<ul>
+							<li><a href="/2017/video/video_list.jsp?ccode=001001000000">수원 iTV 뉴스</a></li>						
+							<li><a href="/2017/video/video_list.jsp?ccode=001008000000">기획영상</a></li> 
+							<li><a href="/2017/video/video_list.jsp?ccode=001009000000">수원시 홍보영상</a></li>
+							<li><a href="/2017/video/video_list.jsp?ccode=001003000000">종영프로그램</a></li>
+						</ul>
+					</li>
+					<li class="s2 ">
+						<a href="/2017/video/video_list.jsp?ccode=002007000000" class="">방송스크랩</a>
+						<ul> 
+							<li><a href="/2017/video/video_list.jsp?ccode=002007000000">방송영상</a></li>
+							<li><a href="/2017/board/board_list.jsp?board_id=24">방송모음</a></li>
+						</ul>
+					</li>
+					<li class="s3 ">
+						<a href="/2017/video/video_list.jsp?ccode=003000000000" class="">교양&#183;정보</a>
+						<ul>
+							<li><a href="/2017/video/video_list.jsp?ccode=003001000000">라이프</a></li>
+							<li><a href="/2017/video/video_list.jsp?ccode=003006000000">홍보영상</a></li>
+							<li><a href="/2017/video/video_list.jsp?ccode=003007000000">타임머신</a></li>  
+						</ul>
+					</li>
+					<li class="s4 ">
+						<a href="/2017/video/video_list.jsp?ccode=004001000000" class="">참여광장</a>
+						<ul>
+							<li><a href="/2017/video/video_list.jsp?ccode=004001000000">나도PD</a></li>		
+							<!--<li><a href="/2017/board/board_list.jsp?board_id=16">제작현장</a></li>							-->
+							<li><a href="/2017/board/board_list.jsp?board_id=10">공지사항</a></li>
+<!-- 							<li><a href="/2017/board/board_list.jsp?board_id=23">이벤트참여</a></li> -->
+							<li><a href="/2017/board/board_list.jsp?board_id=17">휴먼스토리</a></li>
+							<li><a href="/2017/board/board_list.jsp?board_id=22">시민모니터단</a></li>
+						 
+						</ul>
+					</li>
+					<li class="s5 ">
+						<a href="/2017/video/video_list.jsp?ccode=005002000000" class="">수원시의회</a>
+						<ul>
+ 
+ 							<li><a href="/2017/video/video_list.jsp?ccode=005002000000">수원시의회</a></li> 
+							<li><a href="/2017/board/board_list.jsp?board_id=25">방송모음</a></li>
+						</ul>
+					</li>
+					<li class="s6 ">
+						<a href="/2017/video/video_list.jsp?ccode=006001000000" class="">생방송 다시보기</a>
+						<ul>
+<!-- 							<li><a href="/2017/live/live_list.jsp">생방송목록</a></li> -->
+<!-- 							<li><a href="/2017/video/video_list.jsp?ccode=006001000000">다시보기</a></li> -->
+							 
+						</ul>
+					</li>
+					<li class="s7 ">
+						<a href="/2017/video/video_list.jsp?ccode=009002000000" class="">About Suwon</a>
+						<ul>						
+							<li><a href="/2017/video/video_list.jsp?ccode=009002000000">Promotional Video</a></li>
+							<li><a href="/2017/video/video_list.jsp?ccode=009001000000">Global Suwon (End program)</a></li>
+						</ul>
+					</li>					
+				</ul>
+			</div>
+		</div><!--//menuFull-->
+
+		<!-- Start : layer-popup content 
+		<div id="layer" class="layer-wrap" style="z-index:99;display: block; width: 300px; height: 300px; margin:auto auto;"> 
+			<div class="pop-layer"> 
+				<div class="pop-container" style="width: 300px; height: auto;"> 
+					<div class="pop-conts"> 
+					
+					<img src="../include/images/00_00_25.png"/>
+						현재 생방송이 진행중입니다.현재 생방송이 진행중입니다.현재 생방송이 진행중입니다.현재 생방송이 진행중입니다.현재 생방송이 진행중입니다.현재 생방송이 진행중입니다.현재 생방송이 진행중입니다.현재 생방송이 진행중입니다.현재 생방송이 진행중입니다.현재 생방송이 진행중입니다.현재 생방송이 진행중입니다.현재 생방송이 진행중입니다.
+						<p class="btn_go"><a href="">생방송 보러가기</a></p>
+					</div> 
+				</div> 
+				<div class="btn"> 
+					<input type="checkbox" id="todayclose"/> 
+					<label for="todayclose">오늘하루 열지 않음</label>
+					<a href="#" class="btn-layerClose">CLOSE</a> 
+				</div> 
+			</div> 
+		</div> --> <!-- End : layer-popup content -->
+
+		<!--모달윈도우부분-->
+		<script type="text/javascript">
+		$(function(){
+		  $('#modaltrigger').leanModal({ top: 110, overlay: 0.6, closeButton: ".hidemodal" });
+		 
+		  $("a").click(function(a)
+		  {
+			a.preventDefault();
+			});
+		});
+		 $('.btn-layerClose').on('click', function() {
+			$('.layer-wrap').fadeOut();
+		 });
+		</script>
+		<!--//모달윈도우부분-->
+				
+	</div><!--//wapper-->
+</body>
+</html>

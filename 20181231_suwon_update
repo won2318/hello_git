@@ -1,0 +1,10 @@
+1. 관련 뉴스 DB 생성
+ media_news 테이블 생성 
+ seq, ocode, title, link, wdate
+
+2. 대표이미지 선택 좌표값 추가
+vod_media > thumbnail_xy
+
+3. 메인화면 선택영상 연속재생
+ jsplayer 신규생성(ie, 엣지, 크롬) 모두 재생
+ 

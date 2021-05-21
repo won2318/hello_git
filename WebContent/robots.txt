@@ -1,0 +1,4 @@
+User-agent : *
+Disallow : /vodman/
+Disallow : /upload/
+Disallow : /vodtemp/

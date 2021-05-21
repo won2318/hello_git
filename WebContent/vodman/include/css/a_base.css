@@ -1,0 +1,723 @@
+/*------------------------------------------------import--------------------*/
+@charset "utf-8";
+@import url(a_content.css);
+@import url(a_menu.css);
+
+/*------------------------------------------------base--------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	}
+body, input, select, button{
+	font-family: 돋움,굴림,Dotum;
+	line-height: 140%;
+	font-size: 12px;
+	}
+body, html{
+	width: 100%;
+	height: 100%;
+	}
+body {
+	text-align: center;
+	background-image: url(/vodman/include/images/a_bg01.gif);
+	}
+li {
+	list-style: none;
+	}
+img {
+	border: 0px;
+	margin: 0;
+	padding: 0;
+	vertical-align:middle;
+	}
+a:link, a:visited {
+	color: #292929;
+	text-decoration: none; 
+	}
+a:hover {
+	color: #494a4d;
+	text-decoration: underline; 
+	}
+a:active  {
+	color: #5c7199;
+	text-decoration: none; 
+	}
+h3 a:link, h3 a:visited {
+	color: #222222; 
+	}
+h1,h2,h3,h4,h5,h6	{
+	font: bold 12px 돋움;
+	line-height: 180%;
+	display: inline;
+	text-align:left;
+	color: #585858;
+	}
+/*------------------------------------------------wrap--------------------*/
+#wrap {
+	position: relative;
+	margin: 0 auto;
+	border: dotted 0px blue;
+	width: 1000px;
+	}
+#top {
+	height: 35px;
+	}
+#top li {
+	float: left;
+	}
+/*------------------------------------------------tab_menu--------------------*/
+#tab_menu {
+	background: url(/vodman/include/images/a_tabmenu_bg.gif) no-repeat;
+	height: 50px;
+	width: 1000px;
+	}
+.tab_menu_bg {
+	clear: both;
+	height: 42px;
+	padding-left: 9px;
+	}
+.tab_menu_bg li{
+	padding-top: 8px;
+	float: left;
+	height: 42px;
+	}
+ul.tab_menu_bg a {
+	background-image: url(/vodman/include/images/a_tabmenu.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0px;
+	text-indent: -9999px;	
+	width: 98px;
+	height: 42px;
+	overflow: hidden;
+	display: block; 
+	}
+/*---tab_menu01::사이트관리, tab_menu02::메인화면관리, tab_menu03::카테고리관리, tab_menu04::콘텐츠(영상)관리, tab_menu05::포토관리, tab_menu06::생방송관리, tab_menu07::회원관리, tab_menu08::게시판관리, tab_menu09::메뉴관리, tab_menu10::소속관리, tab_menu11::스케쥴관리 -------*/
+ul.tab_menu_bg .tab_menu01 a:hover {
+	background-position: 0 -42px;
+	}
+ul.tab_menu_bg .tab_menu01 a.visible {
+	background-position: 0 -84px;
+	}
+ul.tab_menu_bg .tab_menu02 a {
+	background-position: -98px 0px;
+	}
+ul.tab_menu_bg .tab_menu02 a:hover {
+	background-position: -98px -42px;
+	}
+ul.tab_menu_bg .tab_menu02 a.visible {
+	background-position: -98px -84px;
+	}
+ul.tab_menu_bg .tab_menu03 a {
+	background-position: -196px 0px;
+	}
+ul.tab_menu_bg .tab_menu03 a:hover {
+	background-position: -196px -42px;
+	}
+ul.tab_menu_bg .tab_menu03 a.visible {
+	background-position: -196px -84px;
+	}
+ul.tab_menu_bg .tab_menu04 a {
+	background-position: -294px 0px;
+	}
+ul.tab_menu_bg .tab_menu04 a:hover {
+	background-position: -294px -42px;
+	}
+ul.tab_menu_bg .tab_menu04 a.visible {
+	background-position: -294px -84px;
+	}
+ul.tab_menu_bg .tab_menu05 a {
+	background-position: -392px 0px;
+	}
+ul.tab_menu_bg .tab_menu05 a:hover {
+	background-position: -392px -42px;
+	}
+ul.tab_menu_bg .tab_menu05 a.visible {
+	background-position: -392px -84px;
+	}
+ul.tab_menu_bg .tab_menu06 a {
+	background-position: -490px 0px;
+	}
+ul.tab_menu_bg .tab_menu06 a:hover{
+	background-position: -490px -42px;
+	}
+ul.tab_menu_bg .tab_menu06 a.visible {
+	background-position: -490px -84px;
+	}
+ul.tab_menu_bg .tab_menu07 a {
+	background-position: -588px 0px;
+	}
+ul.tab_menu_bg .tab_menu07 a:hover{
+	background-position: -588px -42px;
+	}
+ul.tab_menu_bg .tab_menu07 a.visible {
+	background-position: -588px -84px;
+	}
+ul.tab_menu_bg .tab_menu08 a {
+	background-position: -686px 0px;
+	}
+ul.tab_menu_bg .tab_menu08 a:hover {
+	background-position: -686px -42px;
+	}
+ul.tab_menu_bg .tab_menu08 a.visible {
+	background-position: -686px -84px;
+	}
+ul.tab_menu_bg .tab_menu09 a {
+	background-position: -784px 0px;
+	}
+ul.tab_menu_bg .tab_menu09 a:hover {
+	background-position: -784px -42px;
+	}
+ul.tab_menu_bg .tab_menu09 a.visible {
+	background-position: -784px -84px;
+	}
+ul.tab_menu_bg .tab_menu10 a {
+	background-position: -882px 0px;
+	}
+ul.tab_menu_bg .tab_menu10 a:hover {
+	background-position: -882px -72px;
+	}
+ul.tab_menu_bg .tab_menu10 a.visible {
+	background-position: -882px -84px;
+	}
+ul.tab_menu_bg .tab_menu11 a {
+	background-position: -980px 0px;
+	}
+ul.tab_menu_bg .tab_menu11 a:hover {
+	background-position: -980px -42px;
+	}
+ul.tab_menu_bg .tab_menu11 a.visible {
+	background-position: -980px -84px;
+	}
+ul.tab_menu_bg .tab_menu12 a {
+	background-position: -1078px 0px;
+	}
+ul.tab_menu_bg .tab_menu12 a:hover {
+	background-position: -1078px -42px;
+	}
+ul.tab_menu_bg .tab_menu12 a.visible {
+	background-position: -1078px -84px;
+	}
+
+/*------------------------------------------------container--------------------*/
+#container {
+	background: url(/vodman/include/images/a_bg02.gif) repeat-y;
+	width: 1000px;
+	position:relative;
+	height: 100%;
+	padding-bottom: 20px;
+	float: left;
+	}
+/*------------------------------------------------menu01::사이트관리--------------------*/
+.menu01_bg {
+	background: url(/vodman/include/images/a_smenu_bg.gif) repeat-y 0px 0px;
+	width: 160px;
+	}
+ul.menu01_bg a {
+	padding-left: 10px;
+	background-image: url(/vodman/include/images/a_smenu01.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	text-indent: -9999px;	
+	width: 150px;
+	height: 30px;
+	overflow: hidden;
+	display: block; 
+	}
+ul.menu01_bg .menu01_01 a:hover,
+ul.menu01_bg .menu01_01 a.visible {
+	background-position: -140px 0px;
+	}
+ul.menu01_bg .menu01_02 a {
+	background-position: 10px -30px;
+	}
+ul.menu01_bg .menu01_02 a:hover,
+ul.menu01_bg .menu01_02 a.visible {
+	background-position: -140px -30px;
+	}
+ul.menu01_bg .menu01_03 a {
+	background-position: 10px -60px;
+	}
+ul.menu01_bg .menu01_03 a:hover,
+ul.menu01_bg .menu01_03 a.visible {
+	background-position: -140px -60px;
+	}
+ul.menu01_bg .menu01_04 a {
+	background-position: 10px -90px;
+	}
+ul.menu01_bg .menu01_04 a:hover,
+ul.menu01_bg .menu01_04 a.visible {
+	background-position: -140px -90px;
+	}
+ul.menu01_bg .menu01_05 a {
+	background-position: 10px -120px;
+	}
+ul.menu01_bg .menu01_05 a:hover,
+ul.menu01_bg .menu01_05 a.visible {
+	background-position: -140px -120px;
+	}
+ul.menu01_bg .menu01_06 a {
+	background-position: 10px -150px;
+	}
+ul.menu01_bg .menu01_06 a:hover,
+ul.menu01_bg .menu01_06 a.visible {
+	background-position: -140px -150px;
+	}
+ul.menu01_bg .menu01_07 a {
+	background-position: 10px -180px;
+	}
+ul.menu01_bg .menu01_07 a:hover,
+ul.menu01_bg .menu01_07 a.visible {
+	background-position: -140px -180px;
+	}
+ul.menu01_bg .menu01_08 a {
+	background-position: 10px -210px;
+	}
+ul.menu01_bg .menu01_08 a:hover,
+ul.menu01_bg .menu01_08 a.visible {
+	background-position: -140px -210px;
+	}
+ul.menu01_bg .menu01_09 a {
+	background-position: 10px -240px;
+	}
+ul.menu01_bg .menu01_09 a:hover,
+ul.menu01_bg .menu01_09 a.visible {
+	background-position: -140px -240px;
+	}
+/*------------------------------------------------menu02::메인화면관리--------------------*/
+.menu02_bg {
+	background: url(/vodman/include/images/a_smenu_bg.gif) repeat-y 0px 0px;
+	width: 160px;
+	}
+ul.menu02_bg a {
+	padding-left: 10px;
+	background-image: url(/vodman/include/images/a_smenu02.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	text-indent: -9999px;	
+	width: 150px;
+	height: 30px;
+	overflow: hidden;
+	display: block; 
+	}
+ul.menu02_bg .menu02_01 a:hover,
+ul.menu02_bg .menu02_01 a.visible {
+	background-position: -140px 0px;
+	}
+ul.menu02_bg .menu02_02 a {
+	background-position: 10px -30px;
+	}
+ul.menu02_bg .menu02_02 a:hover,
+ul.menu02_bg .menu02_02 a.visible {
+	background-position: -140px -30px;
+	}
+ul.menu02_bg .menu02_03 a {
+	background-position: 10px -60px;
+	}
+ul.menu02_bg .menu02_03 a:hover,
+ul.menu02_bg .menu02_03 a.visible {
+	background-position: -140px -60px;
+	}
+ul.menu02_bg .menu02_04 a {
+	background-position: 10px -90px;
+	}
+ul.menu02_bg .menu02_04 a:hover,
+ul.menu02_bg .menu02_04 a.visible {
+	background-position: -140px -90px;
+	}
+ul.menu02_bg .menu02_05 a {
+	background-position: 10px -120px;
+	}
+ul.menu02_bg .menu02_05 a:hover,
+ul.menu02_bg .menu02_05 a.visible {
+	background-position: -140px -120px;
+	}
+/*------------------------------------------------menu03::카테고리관리--------------------*/
+.menu03_bg {
+	background: url(/vodman/include/images/a_smenu_bg.gif) repeat-y 0px 0px;
+	width: 160px;
+	}
+ul.menu03_bg a {
+	padding-left: 10px;
+	background-image: url(/vodman/include/images/a_smenu03.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	text-indent: -9999px;	
+	width: 150px;
+	height: 30px;
+	overflow: hidden;
+	display: block; 
+	}
+ul.menu03_bg .menu03_01 a:hover,
+ul.menu03_bg .menu03_01 a.visible {
+	background-position: -140px 0px;
+	}
+ul.menu03_bg .menu03_02 a {
+	background-position: 10px -30px;
+	}
+ul.menu03_bg .menu03_02 a:hover,
+ul.menu03_bg .menu03_02 a.visible {
+	background-position: -140px -30px;
+	}
+/*------------------------------------------------menu04::콘텐츠(영상)관리--------------------*/
+.menu04_bg {
+	background: url(/vodman/include/images/a_smenu_bg.gif) repeat-y 0px 0px;
+	width: 160px;
+	}
+ul.menu04_bg a {
+	padding-left: 10px;
+	background-image: url(/vodman/include/images/a_smenu04.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	text-indent: -9999px;	
+	width: 150px;
+	height: 30px;
+	overflow: hidden;
+	display: block; 
+	}
+ul.menu04_bg .menu04_01 a:hover,
+ul.menu04_bg .menu04_01 a.visible {
+	background-position: -140px 0px;
+	}
+ul.menu04_bg .menu04_02 a {
+	background-position: 10px -30px;
+	}
+ul.menu04_bg .menu04_02 a:hover,
+ul.menu04_bg .menu04_02 a.visible {
+	background-position: -140px -30px;
+	}
+/*------------------------------------------------menu05::포토관리-------------------*/
+.menu05_bg {
+	background: url(/vodman/include/images/a_smenu_bg.gif) repeat-y 0px 0px;
+	width: 160px;
+	}
+ul.menu05_bg a {
+	padding-left: 10px;
+	background-image: url(/vodman/include/images/a_smenu05.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	text-indent: -9999px;	
+	width: 150px;
+	height: 30px;
+	overflow: hidden;
+	display: block; 
+	}
+ul.menu05_bg .menu05_01 a:hover,
+ul.menu05_bg .menu05_01 a.visible {
+	background-position: -140px 0px;
+	}
+ul.menu05_bg .menu05_02 a {
+	background-position: 10px -30px;
+	}
+ul.menu05_bg .menu05_02 a:hover,
+ul.menu05_bg .menu05_02 a.visible {
+	background-position: -140px -30px;
+	}
+/*------------------------------------------------menu06::생방송관리-------------------*/
+.menu06_bg {
+	background: url(/vodman/include/images/a_smenu_bg.gif) repeat-y 0px 0px;
+	width: 160px;
+	}
+ul.menu06_bg a {
+	padding-left: 10px;
+	background-image: url(/vodman/include/images/a_smenu06.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	text-indent: -9999px;	
+	width: 150px;
+	height: 30px;
+	overflow: hidden;
+	display: block; 
+	}
+ul.menu06_bg .menu06_01 a:hover,
+ul.menu06_bg .menu06_01 a.visible {
+	background-position: -140px 0px;
+	}
+ul.menu06_bg .menu06_02 a {
+	background-position: 10px -30px;
+	}
+ul.menu06_bg .menu06_02 a:hover,
+ul.menu06_bg .menu06_02 a.visible {
+	background-position: -140px -30px;
+	}
+/*------------------------------------------------menu07::회원관리-------------------*/
+.menu07_bg {
+	background: url(/vodman/include/images/a_smenu_bg.gif) repeat-y 0px 0px;
+	width: 160px;
+	}
+ul.menu07_bg a {
+	padding-left: 10px;
+	background-image: url(/vodman/include/images/a_smenu07.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	text-indent: -9999px;	
+	width: 150px;
+	height: 30px;
+	overflow: hidden;
+	display: block; 
+	}
+ul.menu07_bg .menu07_01 a:hover,
+ul.menu07_bg .menu07_01 a.visible {
+	background-position: -140px 0px;
+	}
+ul.menu07_bg .menu07_02 a {
+	background-position: 10px -30px;
+	}
+ul.menu07_bg .menu07_02 a:hover,
+ul.menu07_bg .menu07_02 a.visible {
+	background-position: -140px -30px;
+	}
+ul.menu07_bg .menu07_03 a {
+	background-position: 10px -60px;
+	}
+ul.menu07_bg .menu07_03 a:hover,
+ul.menu07_bg .menu07_03 a.visible {
+	background-position: -140px -60px;
+	}
+ul.menu07_bg .menu07_04 a {
+	background-position: 10px -90px;
+	}
+ul.menu07_bg .menu07_04 a:hover,
+ul.menu07_bg .menu07_04 a.visible {
+	background-position: -140px -90px;
+	}
+ul.menu07_bg .menu07_05 a {
+	background-position: 10px -120px;
+	}
+ul.menu07_bg .menu07_05 a:hover,
+ul.menu07_bg .menu07_05 a.visible {
+	background-position: -140px -120px;
+	}
+ul.menu07_bg .menu07_06 a {
+	background-position: 10px -150px;
+	}
+ul.menu07_bg .menu07_06 a:hover,
+ul.menu07_bg .menu07_06 a.visible {
+	background-position: -140px -150px;
+	}
+ul.menu07_bg .menu07_07 a {
+	background-position: 10px -180px;
+	}
+ul.menu07_bg .menu07_07 a:hover,
+ul.menu07_bg .menu07_07 a.visible {
+	background-position: -140px -180px;
+	}
+/*------------------------------------------------menu08::게시판관리-------------------*/
+
+/*------------------------------------------------게시판정보::텍스트일경우-------------------*/
+.menu08_01_bg {
+	padding-left: 10px;
+	position: relative; 
+	background-image: url(/vodman/include/images/a_smenu_bg.gif);
+	}
+/*------------------------------------------------게시판정보::텍스트일경우 끝-------------------*/
+/*------------------------------------------------게시판정보::이미지일경우-------------------*/
+.menu08_bg {
+	background: url(/vodman/include/images/a_smenu_bg.gif) repeat-y 0px 0px;
+	width: 160px;
+	}
+ul.menu08_bg a {
+	padding-left: 10px;
+	background-image: url(/vodman/include/images/a_smenu08.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	text-indent: -9999px;	
+	width: 150px;
+	height: 30px;
+	overflow: hidden;
+	display: block; 
+	}
+ul.menu08_bg .menu08_01 a:hover,
+ul.menu08_bg .menu08_01 a.visible {
+	background-position: -140px 0px;
+	}
+ul.menu08_bg .menu08_01_s01, .menu08_01_s02, .menu08_01_s03{
+	height: 20px;
+	}
+ul.menu08_bg .menu08_01_s01 a {
+	background-position: 10px -30px;
+	height: 20px;
+	}
+ul.menu08_bg .menu08_01_s01 a:hover,
+ul.menu08_bg .menu08_01_s01 a.visible {
+	background-position: -140px -30px;
+	}
+ul.menu08_bg .menu08_01_s02 a {
+	background-position: 10px -50px;
+	height: 20px;
+	}
+ul.menu08_bg .menu08_01_s02 a:hover,
+ul.menu08_bg .menu08_01_s02 a.visible {
+	background-position: -140px -50px;
+	}
+ul.menu08_bg .menu08_01_s03 a {
+	background-position: 10px -70px;
+	height: 20px;
+	}
+ul.menu08_bg .menu08_01_s03 a:hover,
+ul.menu08_bg .menu08_01_s03 a.visible {
+	background-position: -140px -70px;
+	}
+/*------------------------------------------------게시판정보::이미지일경우 끝-------------------*/
+ul.menu08_bg .menu08_02 a {
+	background-position: 10px -90px;
+	}
+ul.menu08_bg .menu08_02 a:hover,
+ul.menu08_bg .menu08_02 a.visible {
+	background-position: -140px -90px;
+	}
+/*------------------------------------------------menu09::메뉴관리-------------------*/
+.menu09_bg {
+	background: url(/vodman/include/images/a_smenu_bg.gif) repeat-y 0px 0px;
+	width: 160px;
+	}
+ul.menu09_bg a {
+	padding-left: 10px;
+	background-image: url(/vodman/include/images/a_smenu09.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	text-indent: -9999px;	
+	width: 150px;
+	height: 30px;
+	overflow: hidden;
+	display: block; 
+	}
+ul.menu09_bg .menu09_01 a:hover,
+ul.menu09_bg .menu09_01 a.visible {
+	background-position: -140px 0px;
+	}
+ul.menu09_bg .menu09_02 a {
+	background-position: 10px -30px;
+	}
+ul.menu09_bg .menu09_02 a:hover,
+ul.menu09_bg .menu09_02 a.visible {
+	background-position: -140px -30px;
+	}
+/*------------------------------------------------menu10::소속관리--------------------*/
+.menu10_bg {
+	background: url(/vodman/include/images/a_smenu_bg.gif) repeat-y 0px 0px;
+	width: 160px;
+	}
+ul.menu10_bg a {
+	padding-left: 10px;
+	background-image: url(/vodman/include/images/a_smenu10.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	text-indent: -9999px;	
+	width: 150px;
+	height: 30px;
+	overflow: hidden;
+	display: block; 
+	}
+ul.menu10_bg .menu10_01 a:hover,
+ul.menu10_bg .menu10_01 a.visible {
+	background-position: -140px 0px;
+	}
+ul.menu10_bg .menu10_02 a {
+	background-position: 10px -30px;
+	}
+ul.menu10_bg .menu10_02 a:hover,
+ul.menu10_bg .menu10_02 a.visible {
+	background-position: -140px -30px;
+	}
+ul.menu10_bg .menu10_03 a {
+	background-position: 10px -60px;
+	}
+ul.menu10_bg .menu10_03 a:hover,
+ul.menu10_bg .menu10_03 a.visible {
+	background-position: -140px -60px;
+	}
+ul.menu10_bg .menu10_04 a {
+	background-position: 10px -90px;
+	}
+ul.menu10_bg .menu10_04 a:hover,
+ul.menu10_bg .menu10_04 a.visible {
+	background-position: -140px -90px;
+	}
+/*------------------------------------------------contents--------------------*/
+#contents {
+	padding-left: 10px;
+	padding-top: 20px;
+	width: 795px;
+	position: relative;
+	float: left;
+	}
+#contents #content {
+	text-align: left;
+	clear: both;
+	width: 795px;
+	padding-top: 20px;
+	border-top:1px solid #ccc;
+	}
+#contents h3 {
+	float: left;
+	position: relative;
+	height: 22px;
+	font:bold 16px 돋움;
+	color: #666666;
+	letter-spacing: -1px;
+	background: url(/vodman/include/images/title_dot01.gif) no-repeat;
+	padding: 4px 0 0 25px;
+	}
+#contents h3 span {
+	color: #0380cf;
+	letter-spacing: -1px;
+	}
+#contents .location {
+	letter-spacing: -1px;
+	float: right;
+	font:normal 11px 돋움;
+	height: 16px;
+	padding-top: 10px;
+	color: #cbcbcb;
+	}
+#contents .location span{
+	color: #0380cf;
+	}
+/*------------------------------------------------contents_schedule--------------------*/
+#contents_schedule {
+	padding-left: 20px;
+	padding-top: 10px;
+	width: 960px;
+	position: relative;
+	float: left;
+	}
+#contents_schedule #content {
+	text-align: left;
+	clear: both;
+	width: 960px;
+	padding-top: 5px;
+	border-top:1px solid #ccc;
+	}
+#contents_schedule h3 {
+	float: left;
+	position: relative;
+	height: 22px;
+	font:bold 16px 돋움;
+	color: #666666;
+	letter-spacing: -1px;
+	background: url(/vodman/include/images/title_dot01.gif) no-repeat;
+	padding: 4px 0 0 25px;
+}
+#contents_schedule h3 span {
+	color: #0380cf;
+	letter-spacing: -1px;
+	}
+#contents_schedule .location {
+	float: right;
+	font:normal 11px 돋움;
+	height: 16px;
+	padding-top: 10px;
+	color: #cbcbcb;
+	}
+/*------------------------------------------------footer--------------------*/
+#footer {
+	background: url(/vodman/include/images/a_footer_bg.gif) no-repeat;
+	padding-top: 10px;
+	width: 1000px;
+	text-align: center;
+	height: 35px;
+	clear: both;
+	font:normal 11px 돋움;
+	color: #8c8c8c;
+}
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       

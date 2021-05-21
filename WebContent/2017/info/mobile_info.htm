@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko"> 
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR"/>
+		<meta name="description" content="수원시 인터넷 방송 모바일 안내" />
+		<meta name="keywords" content="수원시, 모바일, 뉴스" />
+		<title>수원뉴스앱 안내</title>
+		<style type="text/css">
+			* {margin: 0; padding: 0;}
+			li { list-style: none; }
+			body { }
+			img { border: 0px; margin: 0; padding: 0; vertical-align: top;}
+			#wrap { float: left;width: 640px; padding: 0px 30px 30px 30px;position: relative; background: #f9f9f9;border:1px solid #f2f2f2; }
+			.top { float: left; clear: both;padding-left: 265px; padding-top: 50px;padding-bottom: 40px;background:url(images/top1.gif) no-repeat left bottom #f9f9f9;}
+			.top p { padding-top: 20px;}
+			#container { position: relative; float: left; clear: both; width: 100%; text-align: center;}
+			h2 { float: left; clear: both; margin-top: 20px; width: 100%; height: 50px;text-align: center;padding-top: 15px; background:url(images/dot.gif) repeat-x left top;}
+			.info { width: 100%;float: left; clear: both; padding:0;}
+			.info li {float: left; width: 50%; padding-bottom: 25px;}
+			.info li.clear1 { clear: both; width: auto; padding-left: 7px;}
+			.info li.clear2 { width: auto; padding-top: 50px;}
+			.iphone { float: left; clear: both; padding: 30px 0px 100px 275px; text-align: left;background:url(images/iphone2.gif) no-repeat left bottom;}
+			.iphone li {padding-bottom: 15px;}
+			.andro { float: left;clear: both;  padding: 40px 0px 100px 275px; text-align: left;background:url(images/andro2.gif) no-repeat left bottom;}
+			.andro li {padding-bottom: 15px;}
+		</style>
+			<script type="text/javascript" src="../include/js/jquery.min.js"></script>
+ 
+	<script type="text/javascript" src="../include/js/tab.js"></script>
+	<script type="text/javascript" src="../include/js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="../include/js/jquery.colorbox.js"></script>
+	<script type="text/javascript" src="../include/js/jquery.masonry.min.js"></script>
+	<script type="text/javascript" src="../include/js/common.js"></script>  
+<!--[if lte IE 7]> 
+	<script type="text/javascript" src="../include/js/script2.js"></script>
+ <![endif]-->   
+<!--[if (gte IE 8)|!(IE)]><!-->  
+	<script type="text/javascript" src="../include/js/script.js"></script>
+<!--<![endif]-->	
+ 
+	</head>
+<body>
+<div id="wrap">
+	<div class="top">
+	<h1> <img src="images/top2.gif" alt="모바일 애플리케이션 수원뉴스앱 수원뉴스를 이젠 모바일에서도 만나보실 수 있습니다."/></h1>
+	<p> 
+		<a href="#iphone"><img src="images/btn_iphone.gif" alt="아이폰/아이팟용 설치안내"/></a>
+		<a href="#andro"><img src="images/btn_andro.gif" alt="안드로이드용 설치안내"/></a>
+	</p>
+	</div>
+	<div id="container">
+		<h2><img src="images/video1.gif" alt="동영상안내"/></h2>
+		<div id="EPlayer"> 
+		
+ 
+		<div id="SilverlightControlHost" class="silverlightHost" >
+
+		  <textarea id="player_" style="display:none;" rows="0" cols="0"/>
+        <object id="silver_player" data="data:application/x-silverlight-2," type="application/x-silverlight-2" width="579" height="370" style="z-index:0;">
+		  <param name="source" value="/WowzaPlayer.xap"/> 
+          <param name="initparams" value="Server=http://tv.suwon.go.kr,Post=20131109123625833,Auto_p=True"/>
+          
+		  <param name="onError" value="onSilverlightError" />
+		  <param name="onLoad" value="onSilverlightLoad" />
+		  <param name="background" value="white" />
+		  <param name="minRuntimeVersion" value="4.0.50826.0" />
+		  <param name="enablehtmlaccess" value="true"/>
+		  <param name="autoUpgrade" value="true" />
+		  <param name="windowless" value="true" />
+		 
+		  <a href="http://go.microsoft.com/fwlink/?LinkID=149156&v=4.0.50826.0" style="text-decoration:none">
+ 			  <img src="http://go.microsoft.com/fwlink/?LinkId=161376" alt="Get Microsoft Silverlight" style="border-style:none"/>
+		  </a>
+	    </object><iframe title="_sl_historyFrame" id="_sl_historyFrame" style="display:none;visibility:hidden;height:0px;width:0px;border:0px"></iframe>
+		 </textarea>
+		 <script type="text/javascript">
+		  mplayer('player_');  // embed 테두리 제거 ( textarea 로 감싼후 인클루드한 스크립터 파일에서 getElementById()를 한다.
+		 </script>
+
+		</div> 
+ 
+		<script type="text/javascript" language="javascript">
+			mplayer('mplayer');  // embed 테두리 제거 ( textarea 로 감싼후 인클루드한 스크립터 파일에서 getElementById()를 한다.
+		</script>
+		</div>
+		<h2><img src="images/info1.gif" alt="주요기능소개 및 이용방법"/></h2>
+		<ul class="info">
+		<li><img src="images/info2.gif" alt="수원뉴스의 모든 최신뉴스를 제공합니다."/></li>
+		<li><img src="images/info3.gif" alt="동영상 뉴스를 제공합니다."/></li>
+		<li><img src="images/info4.gif" alt="시민이 직접 작성한 뉴스 및 연재만화, 책, 연재소설 등을 보실 수 있습니다."/></li>
+		<li><img src="images/info5.gif" alt="최신 취업정보를 확인하실 수 있습니다."/></li>
+		<li class="clear1"><img src="images/info6.gif" alt="① 글씨 크기 확대 축소 기능 ② 이미지 크기 확대 축소기능 ③ 트위터 보내기 기능 ④ 메일보내기 기능 ⑤ 검색 기능"/></li>
+		<li class="clear2"><img src="images/info7.gif" alt="최신뉴스 및 동영상을 검색하실 수 있습니다."/></li>
+		</ul>
+		<h2><a name="iphone"><img src="images/iphone1.gif" alt="아이폰/아이팟용 설치안내"/></a></h2>
+		<ul class="info">
+		<li><img src="images/iphone2.gif" alt="1. 홈 화면에서 App Store 아이콘을 선택합니다."/></li>
+		<li><img src="images/iphone3.gif" alt="2. App Store 하단의 검색을 누른 후 검색창에 수원뉴스를 입력합니다. 검색된 수원뉴스 아이콘을 선택합니다."/></li>
+		<li><img src="images/iphone4.gif" alt="3. 애플리케이션 소개 화면에서 FREE 버튼을 누르면 INSTALL 버튼이 나타납니다. INSTALL 버튼을 누르면 설치가 진행됩니다. 설치 시 로그인은 필수입니다."/></li>
+		<li><img src="images/iphone5.gif" alt="4. 설치가 완료되면 홈 화면에 수원뉴스 아이콘이 생성됩니다."/></li>
+		</ul>
+		<h2 class="title"><a name="andro"><img src="images/andro1.gif" alt="안드로이드용 설치안내"/></a></h2>
+		<ul class="info">
+		<li><img src="images/andro2.gif" alt="1. 홈 화면에서 마켓 아이콘을 선택합니다."/></li>
+		<li><img src="images/andro3.gif" alt="2. 마켓 상단 검색 버튼을 누른 후 검색 창에 수원뉴스를 입력합니다. 검색된 수원뉴스 아이콘을 선택합니다."/></li>
+		<li><img src="images/andro4.gif" alt="3. 애플리케이션 소개 화면에서 무료 버튼을 누르면 확인 버튼이 나타납니다. 확인 버튼을 누르면 설치가 진행됩니다."/></li>
+		<li><img src="images/andro5.gif" alt="4. 설치가 완료되면 메인 메뉴에 수원뉴스 아이콘이 생성됩니다."/></li>
+		</ul>
+	</div>
+</div>
+
+</body>
+</html>

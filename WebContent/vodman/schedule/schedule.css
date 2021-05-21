@@ -1,0 +1,142 @@
+img {border:0px;}
+<!--  ´Þ·Â   -->
+.* {margin: 0; padding: 0;}
+.border_type { width: 185px; text-align: center;}
+.calendar_simple { margin:0 auto; border:0px;}
+.calendar_simple caption {margin:0 auto; padding:0 0 12px 0px; font:bold 12px ±¼¸²,gulim; text-align:center;}
+.calendar_simple caption strong {margin:0 10px; padding: 0 15px 0px 15px;}
+.calendar_simple caption img {vertical-align: middle;}
+*:first-child+html .calendar_simple caption strong {margin:0;}
+* html .calendar_simple caption strong {margin:0;}
+.calendar_simple tr {border:none;}
+.calendar_simple th {width:24px; height:19px; border:none; font:normal 11px µ¸¿ò,dotum;}
+.calendar_simple td {width:24px; height:19px; border:none; font:11px tahoma; text-align:center;}
+.calendar_simple td a {color:#999999;}
+.calendar_simple td a em {color:#000000; font-style:normal;}
+.calendar_simple td a:hover {color:red; font-style:normal;}
+.calendar_simple td a strong {color:#FFFFFF; font-weight:bold; background-color: #3a96e5;}
+
+.border_type2 { width: 233px; text-align: center;}
+.calendar_simple2 { margin:0 auto; border:0px; width:225px;vertical-align: middle;}
+.calendar_simple2 caption {margin:0 auto; padding:0 0 12px 0px; font:bold 12px ±¼¸²,gulim; text-align:center;}
+.calendar_simple2 caption strong {margin:0 10px; padding: 0 15px 0px 15px;}
+.calendar_simple2 caption img {vertical-align: middle;}
+*:first-child+html .calendar_simple2 caption strong {margin:0;}
+* html .calendar_simple2 caption strong {margin:0;}
+.calendar_simple2 tr {border:none;}
+.calendar_simple2 th {width:25px; height:25px; border:none; font:normal 11px µ¸¿ò,dotum;}
+.calendar_simple2 td {width:25px; height:25px; border:none; font:12px tahoma; text-align:center;}
+.calendar_simple2 td a {color:#999999;}
+.calendar_simple2 td a em {color:#000000; font-style:normal;}
+.calendar_simple2 td a:hover {color:red; font-style:normal;}
+.calendar_simple2 td a strong {color:#FFFFFF; font-weight:bold; background-color: #3a96e5; padding: 0px 5px 2px 5px;}
+
+.sch_view { background: url(images/sch_player_bg.gif) no-repeat 0px 0; width: 183px; height: 155px; padding: 26px 3px 3px 3px;}
+
+/*------------------------------------------------½ºÄÉÁÙ¸ñ·Ï--------------------*/
+.live_calender {
+	width: 310px;
+	float: left;
+	text-align: left;
+	}
+.live_calender caption {
+	display:none;
+	}
+.live_calender img {
+	vertical-align: middle;
+	}
+.live_calender td  a { 
+	font: bold 11px µ¸¿ò;
+	color: #7b7b7b;
+	}
+.play_view {
+	position: absolute;
+	width: 67px;
+	text-align:center;
+	padding-top: 15px;
+	}
+.s_ex_scroll {	
+	overflow-y: scroll; 
+	float: left;
+	width: 333px; 
+	height:	450px;
+	font: normal 12px µ¸¿ò;
+	color: #6a6a6a;
+	border: 2px solid #dbe2ed;
+	}
+.sch_time { 
+	font: bold 11px µ¸¿ò;
+	color: #3a96e5;
+	}
+.sch_time2 { 
+	font: normal 11px µ¸¿ò;
+	color: #7b7b7b;
+	padding-top:2px;
+	height: 15px;
+	}
+.sch_time3 { 
+	font: normal 11px µ¸¿ò;
+	color: #7b7b7b;
+	padding-top: 5px;
+	}
+.sch_time3 img { 
+	vertical-align: middle;
+	}
+.detail_tab {
+	width: 333px;
+	height: 39px;
+	padding-left: 3px;
+	float: left;
+	}
+.tab1 { float: left; width: 47px;	text-align: center; font-family:µ¸¿ò; font-size: 12px; padding-top: 7px;}
+.tab2 { float: left; width: 47px;	text-align: center; font-family:µ¸¿ò; font-size: 12px; padding-top: 7px;}
+.tab3 { float: left; width: 47px;	text-align: center; font-family:µ¸¿ò; font-size: 12px; padding-top: 7px;}
+.tab4 { float: left; width: 47px;	text-align: center; font-family:µ¸¿ò; font-size: 12px; padding-top: 7px;}
+.tab5 { float: left; width: 47px;	text-align: center; font-family:µ¸¿ò; font-size: 12px; padding-top: 7px;}
+.tab6 { float: left; width: 47px;	text-align: center; font-family:µ¸¿ò; font-size: 12px; padding-top: 7px;}
+.tab7 { float: left; width: 47px;	text-align: center; font-family:µ¸¿ò; font-size: 12px; padding-top: 7px;}
+
+.tab_ttl_on {
+	float:left;
+	display:inline;
+	width: 47px;
+	height: 39px;
+	font: bold 12px µ¸¿ò;
+	color: #4f4f4f;
+	background: url(images/sch_tab_on.gif) no-repeat; 
+	text-align: center;
+	cursor: hand;
+	}
+.tab_ttl_off {
+	float:left;
+	display:inline;
+	width: 47px;
+	height: 39px;
+	background: url(images/sch_tab_off.gif) no-repeat; 
+	text-align: center;
+	cursor: hand;
+	color: #8e8e8e;
+	}
+/*------------------------------------------------to_page--------------------*/
+.to_page {
+	font: normal 11px µ¸¿ò;
+	color: #7b7b7b;
+	float: left;
+	text-align: center;
+	width: 230px;
+	}
+.to_page b {
+	padding: 0 20px 0px 10px;
+	color: #969696;
+	}
+.img_style01 {
+	border: 2px solid #d0d2d3;
+	height: 46px;
+	width: 62px;
+	}
+.but01 {
+	padding-top: 10px;
+	text-align: center;
+	width: 100%;
+	clear: both;
+	}

@@ -1,0 +1,96 @@
+﻿/*------------------------------------------------import--------------------*/
+/* Withustech Solution Development Team(http://www.withustech.com) CMY 131105 */
+@import url(main.css);       /*--메인--*/
+@import url(header.css);     /*--상단메뉴--*/
+@import url(content.css);    /*--서브화면--*/
+@import url(colorbox.css);    /*--레이어팝업--*/
+
+/*------------------------------------------------base--------------------*/
+* {	margin: 0;	padding: 0;	}
+body, input, button, textarea {font-family: Dotum, Gulim, "Lucida Grande", Tahoma, Verdana, AppleGothic, UnDotum, sans-serif; font-size: 0.75em;}
+body {	background-color: #FFFFFF;	}
+li {list-style: none;}
+img { margin: 0; padding: 0;	vertical-align: top;border: 0px; }
+fieldset{ border:none;}
+button { vertical-align: top;border: 0px;	margin: 0;padding: 0;background:transparent; cursor:pointer;}
+a, a:visited {
+	cursor: pointer;
+	color: #403f3f;
+	text-decoration: none; 
+	}
+a:hover { 
+	color: #494a4d;
+	text-decoration: underline; 
+	}
+a:active  {
+	color: #5c7199;
+	text-decoration: none; 
+	}
+.accessibility {
+	position:absolute;
+	width:0;
+	height:0;
+	font-size:0;
+	line-height:0;
+	overflow:hidden;
+	visibility:hidden;
+	}
+a {cursor: pointer;}
+/* wrap */
+#wrap {
+	position: relative;
+	width: 990px;
+	clear: both;
+	margin: 0 auto;
+	text-align: left; 
+	font-size: 1em;
+	line-height: 140%;
+	}
+/* content */
+#content { float: left;}
+/* container */
+#container {	position: relative; width: 100%; clear: both; display: block; padding-top:28px;}
+#containerS { float: left;position: relative; width: 100%; clear: both; display: block; margin-top:5px; background:url(../images/sbg.gif) repeat-y right top; }
+
+/* footer */
+#footer { position:relative; float: left; display: block; clear: both;width: 990px; padding-bottom: 10px; *letter-spacing: -1px; background:url(../images/footer_bg.gif) left top;}
+#footer  .footer h2 { float: left; width: 180px; text-align: center; padding: 10px 0px; background:url(../images/dot4.gif) repeat-y right top;}
+#footer  .footer {float: left;display: block; padding: 15px 10px 10px 10px}
+
+#footer .load {position:relative;float: left; display: block; width: 930px; clear: both;padding: 15px 30px 5px 30px;}
+#footer .load a { float: left;}
+#footer .menuFull { position:relative; float: left;display: block; width: 990px;clear: both; z-index: 15; }
+
+#menuFull { position:absolute; display: block; bottom:25px; right: 2px; width: 712px; padding:5px 5px 19px 5px; background:url(../images/menufull_bg.gif) no-repeat right bottom #d2d2d2; z-index: 15; }
+#menuFull h3 {padding: 20px 40px;font-size: 1.4em; }
+#menuFull ul {display: block; float: left; width: 100%;clear: both;background:url(../images/dot6.gif) repeat-x left bottom #ffffff;}
+#menuFull li {position:relative;float: left; display:block; width: 130px; padding: 35px 0px 35px 40px; font-size:1.2em;} 
+#menuFull li.menu1 {background:url(../images/icon_m1.gif) no-repeat 40px 37px;}
+#menuFull li.menu2 {background:url(../images/icon_m2.gif) no-repeat 40px 37px;}
+#menuFull li.menu3 {background:url(../images/icon_m3.gif) no-repeat 40px 37px;}
+#menuFull li.menu4 {background:url(../images/icon_m4.gif) no-repeat 40px 37px;}
+#menuFull li.menu5 {background:url(../images/icon_m5.gif) no-repeat 40px 37px;}
+#menuFull li.menu6 {background:url(../images/icon_m6.gif) no-repeat 40px 37px;}
+#menuFull li.menu7 {background:url(../images/icon_m7.gif) no-repeat 40px 37px;}
+#menuFull li.menu8 {background:url(../images/icon_m8.gif) no-repeat 40px 37px;}
+#menuFull li a { font-weight: bold; display: block; padding: 5px 0px 5px 30px;color: #252525;}
+#menuFull li li a { font-weight:normal; color: #888888; padding: 3px 15px;background: url(../images/dot3.gif) no-repeat 8px 9px;}
+#menuFull li ul {display: block; clear: both; padding-top:2px; background: none;}
+#menuFull li li { clear: both; width: 80%;padding:0px 0px 0px 20px; background: none;font-size:0.8em;} 
+.menu_view {position:absolute; width: 90px; height: 20px; right: 6px; top: -27px; z-index: 4; }
+.menu_close {position:absolute; width: 57px; height: 58px;right: 5px; top: 3px; z-index:16;}
+
+
+#footer span.add {float: left; display: block; width: 710px;padding-left: 25px;color: #8a8a8a;}
+#footer span.add img {float:left;clear: both; padding-bottom: 2px;}
+#footer .warning {display: block;width: 710px; padding-top: 5px; padding-bottom: 3px;}
+
+/* 관련사이트 */
+.family {position:relative; float: left; width: 990px; display: block;clear: both; background:#e6e6e6; height: 32px; padding-top:5px; padding-bottom:5px;}
+.family a { padding: 0px 25px;}
+
+
+.f_icon {position:absolute; top: 55px;right: 10px;}
+
+
+

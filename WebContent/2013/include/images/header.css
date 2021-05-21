@@ -1,0 +1,76 @@
+﻿/* Withustech Solution Development Team(http://www.withustech.com) CMY 131105 */
+
+#header {  float: left;position:relative; clear: both; width: 990px; display: block; z-index:22;}
+h1 { float: left; text-align: left; padding-top: 30px; height: 117px;}
+h1 img { text-align: center; }
+
+#header .gnb_area { position: absolute; z-index: 3; top: 32px; right: 0; }
+#header .gnb_area li {float: left; padding-left: 22px; margin-left: 16px; padding-top: 4px;*padding-top:3px;}
+#header .gnb_area .fav {background: url(../images/icon_star.gif) no-repeat top left;}
+#header .gnb_area .live {background: url(../images/icon_music.gif) no-repeat top left;}
+#header .gnb_area .full {background: url(../images/icon_program.gif) no-repeat top left;}
+
+.gnb_search {position:absolute; width:330px; top: 32px; left: 33%;display: inline-block; padding: 0px 5px 8px 7px;background:url(../images/top_search_bg.gif) no-repeat 0px 0px;}
+.gnb_search  .input_text {vertical-align: top; width: 270px; height: 18px; border:0px; margin-top: 4px; background:transparent;padding: 8px 10px; vertical-align: top; font-size: 1em;  color:#808080;}
+.gnb_search input.img { padding-top: 2px;vertical-align: top;}
+.gnb_search legend {display: none;}
+
+#header #menu {position:relative; top: 0px;float: right; width: 750px; z-index:22; height: 65px; margin-top: 82px;background:url(../images/menu_bg.gif) no-repeat 0 10px;z-index:8;}
+
+
+.line { float: left; clear: both;display: block; width: 100%; height: 0px;border-bottom: 6px solid #ef4a4a;}
+
+/* 1단계 메뉴  */
+.sMenu {width:100%; position:absolute; left: 0px;height:65px;overflow:hidden;z-index:20;}
+.sMenu.on { z-index:12; }
+.sMenu > ul{width:750px;margin:0 auto 0;padding-top:15px; padding-bottom:15px;position:relative;}
+.sMenu > ul:after{content:"";display:block; clear:both;}
+.sMenu > ul > li{float:left; height: 50px; font-family:'맑은고딕','Malgun Gothic','돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif;}
+.sMenu > ul > li:first-child{padding-left:0;}
+.sMenu > ul > li.s1 {width:92px; padding-left: 20px;}
+.sMenu > ul > li.s1.visible,
+.sMenu > ul > li.s2.visible,
+.sMenu > ul > li.s3.visible,
+.sMenu > ul > li.s4.visible,
+.sMenu > ul > li.s5.visible,
+.sMenu > ul > li.s6.visible,
+.sMenu > ul > li.s7.visible { height: 50px; background:url(../images/menu_on.gif) no-repeat center 39px;}
+.sMenu > ul > li.visible a {color: #ef4a4a;}
+.sMenu > ul > li.visible  ul li a {color:#ffffff;}
+.sMenu > ul > li.s1 > ul {left:0; width:92px;padding: 20px 0px 0px 20px;}
+.sMenu > ul > li.s2 {width:118px; padding-left: 20px;}
+.sMenu > ul > li.s2 > ul {left:112px; width:118px;padding: 20px 0px 0px 20px;}
+.sMenu > ul > li.s3 {width:90px; padding-left: 20px;}
+.sMenu > ul > li.s3 > ul {left:250px; width:90px;padding: 20px 0px 0px 20px;}
+.sMenu > ul > li.s4 {width:90px; padding-left: 20px;}
+.sMenu > ul > li.s4 > ul {left:360px; width:85px;padding: 20px 0px 0px 20px;}
+.sMenu > ul > li.s5 {width:65px; padding-top:3px; padding-right: 10px; padding-left: 5px;}
+.sMenu > ul > li.s5 > ul {left:465px;width:65px;padding: 20px 0px 0px 20px;}
+.sMenu > ul > li.s6 {width:62px; padding: 3px 15px 0px 13px;}
+.sMenu > ul > li.s6 > ul {left:550px;width:70px;padding: 20px 0px 0px 20px;}
+.sMenu > ul > li.s7 {width:94px; padding-top:3px; padding-left: 15px;}
+.sMenu > ul > li.s7 > ul {left:640px;width:92px;padding: 20px 0px 0px 20px;}
+.sMenu > ul > li > a{display: block;font-size:1.6em; color:#000000; font-weight:bold; *padding-top:2px; }
+.sMenu > ul > li > a:hover, .sMenu > ul > li > a.on{color:#ef4a4a;}
+.sMenu > ul > li.s5 > a,
+.sMenu > ul > li.s6 > a,
+.sMenu > ul > li.s7 > a {font-size:1.2em; color:#000000; font-weight:bold;}
+.sMenu > ul > li.s5 > a:hover, .sMenu > ul > li.s5 > a.on,
+.sMenu > ul > li.s6 > a:hover, .sMenu > ul > li.s6 > a.on,
+.sMenu > ul > li.s7 > a:hover, .sMenu > ul > li.s7 > a.on{color:#ef4a4a;}
+.sMenu > ul > li > ul {font-family:'돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif;margin-top:31px;position:absolute;top:34px;left:0; border-top:6px solid #ef4a4a; height: 130px; background: #6c6d73; z-index:21;}
+.sMenu > ul > li > ul > li {margin-bottom:5px; z-index:20;}
+.sMenu > ul > li > ul > li > a {font-size:1em;letter-spacing:-1px;font-weight:normal; color: #fff; z-index:20;}
+
+.sMenu > ul > li > ul > li > a.on,.sMenu > ul > li > ul > li > a:hover {text-decoration:underline; font-weight: bold;}
+.sMenu span.smallEng { text-align: left;display: block;clear: both; padding-top:3px;font-size: 0.8em; font-family: Tahoma, Verdana; color: #888888;}
+
+.sMenu > ul > li:hover { height: 50px; background:url(../images/menu_on.gif) no-repeat center bottom;}
+.sMenu > ul > li:hover > ul { background: #ef4a4a;}
+.sMenu > ul > li.s5:hover{ height: 47px;}
+.sMenu > ul > li.s6:hover{ height: 47px;}
+.sMenu > ul > li.s7:hover{ height: 47px;}
+
+.live_on {position:absolute; top:13px; right: 0px;}
+
+.nameCheck {position:absolute; top:13px; left: 0px; font-size: 0.9em; color: #888888;}

@@ -1,0 +1,14 @@
+iis 에서 서블릿 설정 못읽어옴 8080에서만 실행될때 80에서 실행되게
+
+ <servlet-mapping>
+  	<servlet-name>upload</servlet-name>
+  	<url-pattern>/html/master</url-pattern>
+ </servlet-mapping>
+  
+  
+/tomcat/conf/uriworkermap.properties 파일에 추가
+ 
+/html/*=wlb  /* servlet url-pattern */
+
+
+

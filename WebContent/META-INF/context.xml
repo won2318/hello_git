@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+<Resource
+factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory"
+driverClassName="com.mysql.jdbc.Driver"
+maxActive="20"
+maxIdle="4"
+maxWait="5000"
+name="jdbc/vodcaster_suwon"
+username="root"
+password="java"
+type="javax.sql.DataSource"
+url="jdbc:mysql://127.0.0.1:3306/vodcaster_suwon_old?characterEncoding=euckr" />
+
+<Resource
+factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory"
+driverClassName="com.mysql.jdbc.Driver"
+maxActive="20"
+maxIdle="4"
+maxWait="5000"
+name="jdbc/vodcaster_suwonnews" 
+username="root"
+password="kjhkjh"
+type="javax.sql.DataSource"
+url="jdbc:mysql://127.0.0.1:3306/vodcaster_suwonnews" />
+
+
+</Context>

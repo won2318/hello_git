@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>수원인터넷방송</title>
+	<link rel="stylesheet" type="text/css" href="../include/css/default.css">
+	<link rel="stylesheet" type="text/css" href="../include/css/content.css">
+	<link rel="stylesheet" type="text/css" href="../include/css/colorbox.css">
+</head>
+<body>
+
+<div id="pWrapMiddle">
+	<!-- container::메인컨텐츠 -->
+	<div id="pLogoSmall">
+		<span class="close"><a href="/"><img src="../include/images/btn_view_close.gif" alt="닫기"/></a></span>
+	</div>
+	<div id="pContainerMiddle">
+		<div id="pContentSmall">
+			<h3 class="pTitle">설문조사</h3>
+			<div class="pSubject">
+				<span class="con">설문내용</span>
+				<span class="infoUser">
+					<span class="personalInfoTitle">개인정보입력</span>
+					<div class="personalInfo">
+					<dl>
+						<dt><label for="name">작성자</label></dt>
+						<dd><input type="text" name="name" value="" id="name" size="70" title="작성자" class="inputType"/></dd>
+					</dl>
+					<dl>
+						<dt><label for="tel1">연락처</label></dt>
+						<dd>
+							<input type="text" name="tel1" value="" id="tel1" size="4" maxlength="4" title="연락처 첫 번호" class="inputType"/> - 
+							<input type="text" name="tel2" value="" id="tel2" size="4" maxlength="4" title="연락처 가운데 번호" class="inputType"/> - 
+							<input type="text" name="tel3" value="" id="tel3" size="4" maxlength="4" title="연락처 마지막 번호" class="inputType"/>
+						</dd>
+					</dl>
+					<!--<dl>
+						<dt><label for="zip">주소</label></dt>
+						<dd>
+							<input type="text" name="zip" value="" id="zip" size="7" maxlength="7" title="우편번호 " class="inputType"/> 
+							<a style='cursor:hand' onClick="javascript:find_zip();">주소찾기</a><br/>
+							<input type="text" name="address1" value="" id="address1" size="70" title="절대주소" class="inputType"/><br/>
+							<input type="text" name="address2" value="" id="address2" size="70" title="상세주소" class="inputType"/>
+						</dd>
+					</dl>-->
+					<dl>
+						<dt><label for="email">이메일</label></dt>
+						<dd><input type="text" name="email" value="" id="email" size="70" title="이메일" class="inputType"/></dd>
+					</dl>
+					<dl>
+						<dt><label for="sex">성별</label></dt>
+						<dd>
+							<input type="checkbox" name="1" id="male" value="1" title="1"/> <label for="male">남</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="checkbox" name="1" id="female" value="1" title="1"/> <label for="female">여</label>
+						</dd>
+					</dl>
+					</div>
+				</span>
+				<ul class="researchList">
+				<li class="normal"><h3><span class="question_q">Q</span>1. 귀하의 연령은 어디에 속하십니까?</h3>
+					<ul>
+					<li><input type="checkbox" name="1" id="11" value="1" title="1"/> <label for="11">ASDadsa</label></li>
+					<li><input type="checkbox" name="1" id="12" value="1" title="1"/> <label for="12">1</label></li>
+					<li><input type="checkbox" name="1" id="13" value="1" title="1"/> <label for="13">1</label></li>
+					</ul>
+				</li>
+				<li class="normal"><h3><span class="question_q">Q</span>2. 귀하의 연령은 어디에 속하십니까?</h3>
+					<ul>
+					<li><input type="radio" name="1" id="21" value="1" title="1"/> <label for="21">기타</label><span class="inputType"><input type="text" name="11" value="" id="11" size="50" title="내용입력" class="inputType"/></span></li>
+					<li><input type="checkbox" name="1" id="22" value="1" title="1"/> <label for="22">1</label></li>
+					<li><input type="checkbox" name="1" id="23" value="1" title="1"/> <label for="23">1</label><span class="inputType"><input type="text" name="11" value="" id="11" size="50" title="내용입력" class="inputType"/></span></li>
+					</ul>
+				</li>
+				<li class="suject"><h3><span class="question_q">Q</span>2. 귀하의 연령은 어디에 속하십니까?</h3>
+					<span>내용</span>
+					<textarea name="subject" cols="88" rows="10" style="width:553px;" id="subject" title="내용"></textarea> 
+				</li>
+				<li class="table"><h3><span class="question_q">Q</span>2. 이 사이트의 무엇이 맘에 듭니까?</h3>
+					<div class="tableItem">
+					<table class="tableList" cellspacing="0" summary="이 사이트의 무엇이 맘에 듭니까?">
+						<caption>항목</caption>
+						<colgroup>
+							<col width="*"/>
+							<col width="12%"/>
+							<col width="12%"/>
+							<col width="12%"/>
+							<col width="12%"/>
+							<col width="12%"/>
+						</colgroup>
+						<thead>
+						<tr>
+							<th scope="col" abbr="질문">질문</th>
+							<th scope="col" abbr="매우맘에듬">매우맘에듬</th>
+							<th scope="col" abbr="맘에듬">맘에듬</th>
+							<th scope="col" abbr="보통임">보통임</th>
+							<th scope="col" abbr="별루임">별루임</th>
+							<th scope="col" abbr="완전별루임">완전별루임</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td class="list">디자인</td>
+							<td><input type="checkbox" name="1" id="31" value="1" title="1"/></td>
+							<td><input type="checkbox" name="1" id="32" value="1" title="1"/></td>
+							<td><input type="checkbox" name="1" id="33" value="1" title="1"/></td>
+							<td><input type="checkbox" name="1" id="34" value="1" title="1"/></td>
+							<td><input type="checkbox" name="1" id="35" value="1" title="1"/></td>
+						</tr>
+						<tr>
+							<td class="list">프로그래밍</td>
+							<td><input type="checkbox" name="1" id="41" value="1" title="1"/></td>
+							<td><input type="checkbox" name="1" id="42" value="1" title="1"/></td>
+							<td><input type="checkbox" name="1" id="43" value="1" title="1"/></td>
+							<td><input type="checkbox" name="1" id="44" value="1" title="1"/></td>
+							<td><input type="checkbox" name="1" id="45" value="1" title="1"/></td>
+						</tr>
+						</tbody>	
+					</table>
+					</div>
+				</li>
+				<li class="vod"><h3><span class="question_q">Q</span>2. 귀하의 연령은 어디에 속하십니까?</h3>
+					<ul>
+					<li>
+						<span class="img">1.<input type="checkbox" name="1" id="51" value="1" title="1"/> <a href=""><img src="../include/images/img.gif" alt="이미지"/></a></span>
+						<span class="sub">
+							<a href="#">
+								<span class="title">제목</span>
+								<span class="subject">여러분 안녕하십니까, 8월 3일 금요일여러분 안녕하십니까, 8월 3일 금요일여러분 안녕하십니까, 8월 3일 금요일여러분 안녕하십니까, 8월 3일 금요일여러분 안녕하십니까, 8월 3일 금요일여러분 안녕하십니까...</span>
+							</a>
+						</span>
+					</li>
+					<li>
+						<span class="img">2.<input type="checkbox" name="1" id="52" value="1" title="1"/> <a href=""><img src="../include/images/img2.gif" alt="이미지"/></a></span>
+						<span class="sub">
+							<span class="title"><a href="#">홍보영상</a></span>
+							<span class="subject"><a href="#">여러분 안녕하십니까, 8월 3일 금요일여러분 안녕하십니까, 8월 3일 금요일여러분 안녕하십니까, 8월 3일 금요일여러분 안녕하십니까, 8월 3일 금요일여러분 안녕하십니까, 8월 3일 금요일여러분 안녕하십니까...</a></span>
+						</span>
+					</li>
+					<li>
+						<span class="img">3.<input type="checkbox" name="1" id="53" value="1" title="1"/> <a href=""><img src="../include/images/img.gif" alt="이미지"/></a></span>
+						<span class="sub">
+							<span class="title"><a href="#">홍보영상</a></span>
+							<span class="subject"><a href="#">여러분 안녕하십니까, 8월 3일 금요일여러분 안녕하십니까, 8월 3일 금요일여러분 안녕하십니까, 8월 3일 금요일여러분 안녕하십니까, 8월 3일 금요일여러분 안녕하십니까, 8월 3일 금요일여러분 안녕하십니까...</a></span>
+						</span>
+					</li>
+					</ul>
+				</li>
+				</ul>
+				<div class="btn1">
+					<a href="Sub006002.htm">저장</a>
+					<a href="Sub006002.htm">취소</a>
+				</div>
+				<p class="moongu">끝까지 설문에 응해주셔서 감사합니다. <br/>귀하의 소중한 의견을 반영하여 보다 나은 수원시 인터넷방송 만들기 위해 최선을 다하겠습니다.</p>
+						
+			</div>
+		</div>
+	</div>
+	
+	
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,591 @@
+/*------------------------------------------------menu01::사이트관리--------------------*/
+.menu01_bg {
+	background: url(/vodman/include/images/a_smenu_bg.gif) repeat-y 0px 0px;
+	width: 160px;
+	}
+ul.menu01_bg a {
+	padding-left: 10px;
+	background-image: url(/vodman/include/images/a_smenu01.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	text-indent: -9999px;	
+	width: 150px;
+	height: 30px;
+	overflow: hidden;
+	display: block; 
+	}
+ul.menu01_bg .menu01_01 a:hover,
+ul.menu01_bg .menu01_01 a.visible {
+	background-position: -140px 0px;
+	}
+ul.menu01_bg .menu01_02 a {
+	background-position: 10px -30px;
+	}
+ul.menu01_bg .menu01_02 a:hover,
+ul.menu01_bg .menu01_02 a.visible {
+	background-position: -140px -30px;
+	}
+ul.menu01_bg .menu01_03 a {
+	background-position: 10px -60px;
+	}
+ul.menu01_bg .menu01_03 a:hover,
+ul.menu01_bg .menu01_03 a.visible {
+	background-position: -140px -60px;
+	}
+ul.menu01_bg .menu01_04 a {
+	background-position: 10px -90px;
+	}
+ul.menu01_bg .menu01_04 a:hover,
+ul.menu01_bg .menu01_04 a.visible {
+	background-position: -140px -90px;
+	}
+ul.menu01_bg .menu01_05 a {
+	background-position: 10px -120px;
+	}
+ul.menu01_bg .menu01_05 a:hover,
+ul.menu01_bg .menu01_05 a.visible {
+	background-position: -140px -120px;
+	}
+ul.menu01_bg .menu01_06 a {
+	background-position: 10px -150px;
+	}
+ul.menu01_bg .menu01_06 a:hover,
+ul.menu01_bg .menu01_06 a.visible {
+	background-position: -140px -150px;
+	}
+ul.menu01_bg .menu01_07 a {
+	background-position: 10px -180px;
+	}
+ul.menu01_bg .menu01_07 a:hover,
+ul.menu01_bg .menu01_07 a.visible {
+	background-position: -140px -180px;
+	}
+ul.menu01_bg .menu01_08 a {
+	background-position: 10px -210px;
+	}
+ul.menu01_bg .menu01_08 a:hover,
+ul.menu01_bg .menu01_08 a.visible {
+	background-position: -140px -210px;
+	}
+ul.menu01_bg .menu01_09 a {
+	background-position: 10px -240px;
+	}
+ul.menu01_bg .menu01_09 a:hover,
+ul.menu01_bg .menu01_09 a.visible {
+	background-position: -140px -240px;
+	}
+/*------------------------------------------------menu02::메인화면관리--------------------*/
+.menu02_bg {
+	background: url(/vodman/include/images/a_smenu_bg.gif) repeat-y 0px 0px;
+	width: 160px;
+	}
+ul.menu02_bg a {
+	padding-left: 10px;
+	background-image: url(/vodman/include/images/a_smenu02.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	text-indent: -9999px;	
+	width: 150px;
+	height: 30px;
+	overflow: hidden;
+	display: block; 
+	}
+ul.menu02_bg .menu02_01 a:hover,
+ul.menu02_bg .menu02_01 a.visible {
+	background-position: -140px 0px;
+	}
+ul.menu02_bg .menu02_02 a {
+	background-position: 10px -30px;
+	}
+ul.menu02_bg .menu02_02 a:hover,
+ul.menu02_bg .menu02_02 a.visible {
+	background-position: -140px -30px;
+	}
+ul.menu02_bg .menu02_03 a {
+	background-position: 10px -60px;
+	}
+ul.menu02_bg .menu02_03 a:hover,
+ul.menu02_bg .menu02_03 a.visible {
+	background-position: -140px -60px;
+	}
+ul.menu02_bg .menu02_04 a {
+	background-position: 10px -90px;
+	}
+ul.menu02_bg .menu02_04 a:hover,
+ul.menu02_bg .menu02_04 a.visible {
+	background-position: -140px -90px;
+	}
+ul.menu02_bg .menu02_05 a {
+	background-position: 10px -120px;
+	}
+ul.menu02_bg .menu02_05 a:hover,
+ul.menu02_bg .menu02_05 a.visible {
+	background-position: -140px -120px;
+	}
+/*------------------------------------------------menu03::카테고리관리--------------------*/
+.menu03_bg {
+	background: url(/vodman/include/images/a_smenu_bg.gif) repeat-y 0px 0px;
+	width: 160px;
+	}
+ul.menu03_bg a {
+	padding-left: 10px;
+	background-image: url(/vodman/include/images/a_smenu03.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	text-indent: -9999px;	
+	width: 150px;
+	height: 30px;
+	overflow: hidden;
+	display: block; 
+	}
+ul.menu03_bg .menu03_01 a:hover,
+ul.menu03_bg .menu03_01 a.visible {
+	background-position: -140px 0px;
+	}
+ul.menu03_bg .menu03_02 a {
+	background-position: 10px -30px;
+	}
+ul.menu03_bg .menu03_02 a:hover,
+ul.menu03_bg .menu03_02 a.visible {
+	background-position: -140px -30px;
+	}
+/*------------------------------------------------menu04::콘텐츠(영상)관리--------------------*/
+.menu04_bg {
+	background: url(/vodman/include/images/a_smenu_bg.gif) repeat-y 0px 0px;
+	width: 160px;
+	}
+ul.menu04_bg a {
+	padding-left: 10px;
+	background-image: url(/vodman/include/images/a_smenu04.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	text-indent: -9999px;	
+	width: 150px;
+	height: 30px;
+	overflow: hidden;
+	display: block; 
+	}
+ul.menu04_bg .menu04_01 a:hover,
+ul.menu04_bg .menu04_01 a.visible {
+	background-position: -140px 0px;
+	}
+ul.menu04_bg .menu04_02 a {
+	background-position: 10px -30px;
+	}
+ul.menu04_bg .menu04_02 a:hover,
+ul.menu04_bg .menu04_02 a.visible {
+	background-position: -140px -30px;
+	}
+/*------------------------------------------------menu05::포토관리-------------------*/
+.menu05_bg {
+	background: url(/vodman/include/images/a_smenu_bg.gif) repeat-y 0px 0px;
+	width: 160px;
+	}
+ul.menu05_bg a {
+	padding-left: 10px;
+	background-image: url(/vodman/include/images/a_smenu05.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	text-indent: -9999px;	
+	width: 150px;
+	height: 30px;
+	overflow: hidden;
+	display: block; 
+	}
+ul.menu05_bg .menu05_01 a:hover,
+ul.menu05_bg .menu05_01 a.visible {
+	background-position: -140px 0px;
+	}
+ul.menu05_bg .menu05_02 a {
+	background-position: 10px -30px;
+	}
+ul.menu05_bg .menu05_02 a:hover,
+ul.menu05_bg .menu05_02 a.visible {
+	background-position: -140px -30px;
+	}
+/*------------------------------------------------menu06::생방송관리-------------------*/
+.menu06_bg {
+	background: url(/vodman/include/images/a_smenu_bg.gif) repeat-y 0px 0px;
+	width: 160px;
+	}
+ul.menu06_bg a {
+	padding-left: 10px;
+	background-image: url(/vodman/include/images/a_smenu06.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	text-indent: -9999px;	
+	width: 150px;
+	height: 30px;
+	overflow: hidden;
+	display: block; 
+	}
+ul.menu06_bg .menu06_01 a:hover,
+ul.menu06_bg .menu06_01 a.visible {
+	background-position: -140px 0px;
+	}
+ul.menu06_bg .menu06_02 a {
+	background-position: 10px -30px;
+	}
+ul.menu06_bg .menu06_02 a:hover,
+ul.menu06_bg .menu06_02 a.visible {
+	background-position: -140px -30px;
+	}
+/*------------------------------------------------menu07::회원관리-------------------*/
+.menu07_bg {
+	background: url(/vodman/include/images/a_smenu_bg.gif) repeat-y 0px 0px;
+	width: 160px;
+	}
+ul.menu07_bg a {
+	padding-left: 10px;
+	background-image: url(/vodman/include/images/a_smenu07.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	text-indent: -9999px;	
+	width: 150px;
+	height: 30px;
+	overflow: hidden;
+	display: block; 
+	}
+ul.menu07_bg .menu07_01 a:hover,
+ul.menu07_bg .menu07_01 a.visible {
+	background-position: -140px 0px;
+	}
+ul.menu07_bg .menu07_02 a {
+	background-position: 10px -30px;
+	}
+ul.menu07_bg .menu07_02 a:hover,
+ul.menu07_bg .menu07_02 a.visible {
+	background-position: -140px -30px;
+	}
+ul.menu07_bg .menu07_03 a {
+	background-position: 10px -60px;
+	}
+ul.menu07_bg .menu07_03 a:hover,
+ul.menu07_bg .menu07_03 a.visible {
+	background-position: -140px -60px;
+	}
+ul.menu07_bg .menu07_04 a {
+	background-position: 10px -90px;
+	}
+ul.menu07_bg .menu07_04 a:hover,
+ul.menu07_bg .menu07_04 a.visible {
+	background-position: -140px -90px;
+	}
+ul.menu07_bg .menu07_05 a {
+	background-position: 10px -120px;
+	}
+ul.menu07_bg .menu07_05 a:hover,
+ul.menu07_bg .menu07_05 a.visible {
+	background-position: -140px -120px;
+	}
+ul.menu07_bg .menu07_06 a {
+	background-position: 10px -150px;
+	}
+ul.menu07_bg .menu07_06 a:hover,
+ul.menu07_bg .menu07_06 a.visible {
+	background-position: -140px -150px;
+	}
+ul.menu07_bg .menu07_07 a {
+	background-position: 10px -180px;
+	}
+ul.menu07_bg .menu07_07 a:hover,
+ul.menu07_bg .menu07_07 a.visible {
+	background-position: -140px -180px;
+	}
+/*------------------------------------------------menu08::게시판관리-------------------*/
+
+/*------------------------------------------------게시판정보::텍스트일경우-------------------*/
+.menu08_01_bg {
+	padding-left: 10px;
+	position: relative; 
+	background-image: url(/vodman/include/images/a_smenu_bg.gif);
+	}
+/*------------------------------------------------게시판정보::텍스트일경우 끝-------------------*/
+/*------------------------------------------------게시판정보::이미지일경우-------------------*/
+.menu08_bg {
+	background: url(/vodman/include/images/a_smenu_bg.gif) repeat-y 0px 0px;
+	width: 160px;
+	}
+ul.menu08_bg a {
+	padding-left: 10px;
+	background-image: url(/vodman/include/images/a_smenu08.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	text-indent: -9999px;	
+	width: 150px;
+	height: 30px;
+	overflow: hidden;
+	display: block; 
+	}
+ul.menu08_bg .menu08_01 a:hover,
+ul.menu08_bg .menu08_01 a.visible {
+	background-position: -140px 0px;
+	}
+ul.menu08_bg .menu08_01_s01, .menu08_01_s02, .menu08_01_s03{
+	height: 20px;
+	}
+ul.menu08_bg .menu08_01_s01 a {
+	background-position: 10px -30px;
+	height: 20px;
+	}
+ul.menu08_bg .menu08_01_s01 a:hover,
+ul.menu08_bg .menu08_01_s01 a.visible {
+	background-position: -140px -30px;
+	}
+ul.menu08_bg .menu08_01_s02 a {
+	background-position: 10px -50px;
+	height: 20px;
+	}
+ul.menu08_bg .menu08_01_s02 a:hover,
+ul.menu08_bg .menu08_01_s02 a.visible {
+	background-position: -140px -50px;
+	}
+ul.menu08_bg .menu08_01_s03 a {
+	background-position: 10px -70px;
+	height: 20px;
+	}
+ul.menu08_bg .menu08_01_s03 a:hover,
+ul.menu08_bg .menu08_01_s03 a.visible {
+	background-position: -140px -70px;
+	}
+/*------------------------------------------------게시판정보::이미지일경우 끝-------------------*/
+ul.menu08_bg .menu08_02 a {
+	background-position: 10px -90px;
+	}
+ul.menu08_bg .menu08_02 a:hover,
+ul.menu08_bg .menu08_02 a.visible {
+	background-position: -140px -90px;
+	}
+/*------------------------------------------------menu09::메뉴관리-------------------*/
+.menu09_bg {
+	background: url(/vodman/include/images/a_smenu_bg.gif) repeat-y 0px 0px;
+	width: 160px;
+	}
+ul.menu09_bg a {
+	padding-left: 10px;
+	background-image: url(/vodman/include/images/a_smenu09.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	text-indent: -9999px;	
+	width: 150px;
+	height: 30px;
+	overflow: hidden;
+	display: block; 
+	}
+ul.menu09_bg .menu09_01 a:hover,
+ul.menu09_bg .menu09_01 a.visible {
+	background-position: -140px 0px;
+	}
+ul.menu09_bg .menu09_02 a {
+	background-position: 10px -30px;
+	}
+ul.menu09_bg .menu09_02 a:hover,
+ul.menu09_bg .menu09_02 a.visible {
+	background-position: -140px -30px;
+	}
+/*------------------------------------------------menu10::소속관리--------------------*/
+.menu10_bg {
+	background: url(/vodman/include/images/a_smenu_bg.gif) repeat-y 0px 0px;
+	width: 160px;
+	}
+ul.menu10_bg a {
+	padding-left: 10px;
+	background-image: url(/vodman/include/images/a_smenu10.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	text-indent: -9999px;	
+	width: 150px;
+	height: 30px;
+	overflow: hidden;
+	display: block; 
+	}
+ul.menu10_bg .menu10_01 a:hover,
+ul.menu10_bg .menu10_01 a.visible {
+	background-position: -140px 0px;
+	}
+ul.menu10_bg .menu10_02 a {
+	background-position: 10px -30px;
+	}
+ul.menu10_bg .menu10_02 a:hover,
+ul.menu10_bg .menu10_02 a.visible {
+	background-position: -140px -30px;
+	}
+ul.menu10_bg .menu10_03 a {
+	background-position: 10px -60px;
+	}
+ul.menu10_bg .menu10_03 a:hover,
+ul.menu10_bg .menu10_03 a.visible {
+	background-position: -140px -60px;
+	}
+ul.menu10_bg .menu10_04 a {
+	background-position: 10px -90px;
+	}
+ul.menu10_bg .menu10_04 a:hover,
+ul.menu10_bg .menu10_04 a.visible {
+	background-position: -140px -90px;
+	}
+	
+	
+	
+/*------------------------------------------------tab_menu--------------------*/
+#tab_menu {
+	background: url(/vodman/include/images/a_tabmenu_bg.gif) no-repeat;
+	height: 50px;
+	}
+.tab_menu_bg {
+	clear: both;
+	height: 42px;
+	padding-left: 9px;
+	}
+.tab_menu_bg li{
+	padding-top: 8px;
+	float: left;
+	height: 42px;
+	}
+ul.tab_menu_bg a {
+	background-image: url(/vodman/include/images/a_tabmenu.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0px;
+	text-indent: -9999px;	
+	width: 98px;
+	height: 42px;
+	overflow: hidden;
+	display: block; 
+	}
+	
+/*------------------------------------------------s_tab01--------------------*/	
+#s_tab01 {
+	position:relative; 
+	width: 100%;
+	border-bottom: 1px solid #256fb5;
+	height: 25px;
+	}
+.s_tab01_bg li {
+	float: left;
+	padding-right:1px;
+	color: #8c8c8c;
+	height: 25px;
+	}
+ul.s_tab01_bg li a{
+	padding-top: 6px;
+	text-align: center;
+	background-image: url(/vodman/include/images/tab_off.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0px;
+	width: 102px;
+	height: 19px;
+	overflow: hidden;
+	display: block; 
+	font: normal 11px Tahoma,돋움;
+	color: #8c8c8c;
+	letter-spacing: -0.2pt;
+	}
+ul.s_tab01_bg a:hover, 
+ul.s_tab01_bg a.visible {
+	background-image: url(/vodman/include/images/tab_on.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0px;
+	width: 102px;
+	height: 19px;
+	overflow: hidden;
+	display: block; 
+	font: bold 11px Tahoma,돋움;
+	color: #ffffff;
+	letter-spacing: -0.2pt;
+	}
+/*------------------------------------------------s_tab02--------------------*/	
+#s_tab01 {
+	width: 100%;
+	border-bottom: 1px solid #256fb5;
+	height: 25px;
+	}
+.s_tab01_bg {width: 100%;
+	border-bottom: 1px solid #256fb5;
+	height: 25px;}
+.s_tab02_bg li {
+	float: left;
+	padding-right:1px;
+	color: #6b6b6b;
+	height: 27px;
+	}
+ul.s_tab02_bg li a{
+	padding-top: 6px;
+	text-align: center;
+	background-image: url(/vodman/include/images/tab2_off.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0px;
+	width: 102px;
+	height: 21px;
+	overflow: hidden;
+	display: block; 
+	font: normal 11px Tahoma,돋움;
+	color: #6b6b6b;
+	letter-spacing: -0.2pt;
+	}
+ul.s_tab02_bg a:hover, 
+ul.s_tab02_bg a.visible {
+	background-image: url(/vodman/include/images/tab2_on.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0px;
+	width: 102px;
+	height: 21px;
+	overflow: hidden;
+	display: block; 
+	font: bold 11px Tahoma,돋움;
+	color: #ffffff;
+	letter-spacing: -0.2pt;
+	}
+	
+/*------------------------------------------------menu--------------------*/
+#menu {
+	width: 160px;
+	padding-top: 10px;
+	padding-left: 15px;
+	text-align: left;
+	float: left;
+	position: relative;
+	padding-bottom: 10px;
+	}
+.menu_bottom {
+	background: url(/vodman/include/images/a_menu_bottom.gif) no-repeat;
+	height: 15px;
+	}
+.s_menu_bg li{
+	background: url(/vodman/include/images/a_smenu_bg.gif) repeat-y 0px 0px;
+	width: 160px;
+	}
+.s_menu_bg2 {
+	float: left;
+	background: url(/vodman/include/images/a_smenu_bg.gif) repeat-y 0px 0px;
+	padding: 0px 15px 0px 15px; 
+	}
+.s_menu_bg2 li {
+	width: 125px;
+	height: 100%;
+	display: table;
+	padding: 3px 0px;
+	}
+ul.s_menu_bg li a{
+	padding-top: 9px;
+	padding-left: 20px;
+	width: 130px;
+	height: 21px;
+	overflow: hidden;
+	display: block; 
+	font: normal 12px 돋움;
+	color: #8c8c8c;
+	letter-spacing: -1px;
+	}
+ul.s_menu_bg li a:hover, 
+ul.s_menu_bg li a.visible {
+	background-image: url(/vodman/include/images/smenu_on.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	width: 140px;
+	height: 21px;
+	overflow: hidden;
+	display: block; 
+	font: bold 12px 돋움;
+	color: #ffffff;
+	letter-spacing: -1px;
+	}

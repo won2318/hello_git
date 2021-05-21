@@ -1,0 +1,194 @@
+<%@ page contentType="text/html; charset=euc-kr"%>
+<%@ page import="java.io.*, java.sql.*, java.util.*, com.hrlee.sqlbean.*, com.yundara.util.*, com.vodcaster.sqlbean.*,
+                 java.text.DecimalFormat"%>
+<%@ page import="org.apache.commons.lang.StringUtils" %>
+<%@ include file = "/vodman/include/auth.jsp"%>
+
+<%
+if(!chk_auth(vod_id, vod_level, "p_list")) {
+    out.println("<script language='javascript'>\n" +
+                "alert('회원레벨에 제한이 있습니다. 이전페이지로 이동합니다.');\n" +
+                "history.go(-1);\n" +
+                "</script>");
+    return;
+}
+%>
+<%
+	request.setCharacterEncoding("euc-kr");
+ %>
+ <script language="JavaScript" type="text/JavaScript">
+<!--
+  
+var calendar=null;
+
+/*날짜 hidden Type 요소*/
+var dateField;
+
+/*날짜 text Type 요소*/
+var dateField2;
+	
+function openCalendarWindow(elem){
+	dateField = elem;
+	dateField2 = elem;
+
+	if (!calendar) {
+		calendar = window.open('/vodman/subject/calendar/calendar.html','cal','WIDTH=200,HEIGHT=250,scrollbars=no,resizable=no');
+	} else if (!calendar.closed) {
+		calendar.focus();
+	} else {
+		calendar = window.open('/vodman/subject/calendar/calendar.html','cal','WIDTH=200,HEIGHT=250,scrollbars=no,resizable=no');
+	}
+}
+
+function sub_question(){
+		var f = document.subject;
+		if(f.sub_title.value == ""){
+			alert("제목을 입력 하세요!");
+			f.sub_title.focus();
+			return;
+		}
+		
+		
+		if(f.sub_start.value == ""){
+			alert("시작일을 입력 하세요!");
+			f.sub_start.focus();
+			return;
+		}
+		if(f.sub_end.value == ""){
+			alert("종료일을 입력 하세요!");
+			f.sub_end.focus();
+			return;
+		}
+
+		f.action="proc_subjectUpdate.jsp?sub_idx=<%=sub_idx%>";
+		f.submit();
+
+	}
+  
+
+//-->
+</script> 
+
+<%
+ String sub_idx = request.getParameter("sub_idx"); 
+	if(sub_idx == null){
+		out.println("<script lanauage='javascript'>alert('미디어 코드가 없습니다. 다시 선택해주세요.'); history.go(-1); </script>");
+	}
+	String sub_flag = "S"; // S - 설문 ,  E - 이벤트
+	if(request.getParameter("sub_flag") != null && request.getParameter("sub_flag").length()>0){
+		sub_flag = request.getParameter("sub_flag");
+	}
+
+    SubjectManager mgr = SubjectManager.getInstance();
+
+	 Vector Vt = mgr.getSubject(sub_idx);
+
+
+//	String sub_idx = "";
+	String sub_title = "";
+	String sub_start = "";
+	String sub_end = "";
+	String sub_person = "";
+	String sub_name = "";
+	String sub_mf = "";
+	String sub_tel = "";
+	String sub_email = "";
+	String sub_etc = "";
+//	String sub_flag = "S";
+
+	if (Vt != null && Vt.size() > 0 ) {
+		 sub_idx = String.valueOf(Vt.elementAt(0));
+		 sub_title =  String.valueOf(Vt.elementAt(1));
+		 sub_start = String.valueOf(Vt.elementAt(2));
+		 sub_end = String.valueOf(Vt.elementAt(3));
+		 sub_person = String.valueOf(Vt.elementAt(4));
+		 sub_name = String.valueOf(Vt.elementAt(5));
+		 sub_mf = String.valueOf(Vt.elementAt(6));
+		 sub_tel = String.valueOf(Vt.elementAt(7));
+		 sub_email = String.valueOf(Vt.elementAt(8));
+		 sub_etc = String.valueOf(Vt.elementAt(9));
+		 sub_flag = String.valueOf(Vt.elementAt(10));
+
+	}
+
+%>
+ 
+<%@ include file="/vodman/include/top.jsp"%>
+ 
+ 
+<%
+ mcode="0801" ;
+%>
+<%@ include file="/vodman/event/event_left.jsp"%> 
+
+		<!-- 컨텐츠 -->
+		<div id="contents">
+			<h3><span>UCC</span> 목록</h3>
+			<p class="location">관리자페이지 &gt; 설문 관리 &gt; <span>설문 등록</span></p>
+			<div id="content">
+ 
+				<br/>
+				<p class="to_page">Total<b>총 <%if(vt != null && vt.size()>0){out.println(pageBean.getTotalRecord());}else{out.println("0");}%>건</b>Page<b><%=pg %>/<%=iTotalPage%></b></p>
+				<form name="subject" method="post">
+					<input type='hidden' name='sub_idx' value='<%=sub_idx%>'>
+					<table width="100%" border=0 cellpadding=3 cellspacing=0>
+						<tr>
+							<td class="tdB">제목</td>
+							<td class="tdB">
+								<input name="sub_title" type="text" size="50" maxlength="50" class="inputG" value="<%=sub_title%>">
+							</td>
+						</tr>
+						<tr>
+							<td class="tdB">구분</td>
+							<td class="tdB">
+								<input name="sub_flag" type="radio" size="10" value='S' <% if (sub_flag.equals("S")) { out.println("checked") ; } %>> 일반설문조사
+								&nbsp;&nbsp;&nbsp;
+								<input name="sub_flag" type="radio" size="10" value='E' <% if (sub_flag.equals("E")) { out.println("checked") ; } %>> 강사설문조사
+							</td>
+						</tr>
+						<tr>
+							<td class="tdB">시작일</td>
+							<td class="tdB" align="left" >
+								<input name="sub_start" type="text" size="18" class="inputG" value="<%=sub_start%>" readonly="readonly">
+								<a href="javascript:openCalendarWindow(document.subject.sub_start)">
+									<img src="../images/bu_browser.gif" border="0" align="absmiddle"></a>~&nbsp;종료일
+								<input name="sub_end" type="text" size="18" class="inputG" value="<%=sub_end%>" readonly="readonly">
+								<a href="javascript:openCalendarWindow(document.subject.sub_end)">
+									<img src="../images/bu_browser.gif" border="0" align="absmiddle">
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="tdB">사용자 설정</td>
+							<td class="tdB">
+								<input type='checkbox' name='sub_name' value='Y' <% if (sub_name.equals("Y")) { out.println("checked"); } %>> 사용자 이름&nbsp;&nbsp;
+								<input type='checkbox' name='sub_mf' value='Y' <% if (sub_mf.equals("Y")) { out.println("checked"); } %>> 성별&nbsp;&nbsp;
+								<input type='checkbox' name='sub_tel' value='Y' <% if (sub_tel.equals("Y")) { out.println("checked"); } %>> 연락처&nbsp;&nbsp;
+								<input type='checkbox' name='sub_email' value='Y' <% if (sub_email.equals("Y")) { out.println("checked"); } %>> 이메일&nbsp;&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td class="tdB">설문 내용</td>
+							<td class="tdB"><textarea name="sub_etc" cols="60" rows="6"><%=sub_etc%></textarea>
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan=2 align=center>
+                                <table border="0" cellspacing="0" cellpadding="5">
+                                	<tr>
+										<td><a href="javascript:sub_question();"><img src="../images/bu_confirm.gif" width="45" height="18" border="0"></a></td>
+										<td><a href="javascript:subject.reset();"><img src="../images/bu_cancel.gif" width="45" height="18" border="0"></a></td>
+									</tr>
+								</table>
+							<td>
+						</tr>
+					</table>
+					</form>
+				</div>
+				
+				<br/><br/>
+			</div>
+		 
+		
+<%@ include file="/vodman/include/footer.jsp"%>

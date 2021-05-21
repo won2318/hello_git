@@ -1,0 +1,418 @@
+<HTML>
+<HEAD>
+  <TITLE>³¯Â¥¼±ÅÃ</TITLE>
+
+  <style type="text/css">
+  <!--
+  .t { font-family:±¼¸²; font-size:10pt; }
+  A:link {font-size:10pt; text-decoration:none;}
+  A:visited {font-size:10pt; text-decoration:none;}
+  A:active {font-size:10pt; text-decoration:none;}
+  A:hover {color:red; font-size:10pt; text-decoration:none;}
+  .style1 {  font-family: ±¼¸²,±¼¸²Ã¼; font-size: 14pt; font-style: normal; line-height: 20px; font-weight: bold;}
+  .style2 {  font-family: ±¼¸²,±¼¸²Ã¼; font-size: 12pt; font-style: normal; line-height: 14px;}
+  .style3 {  font-family: ±¼¸²,±¼¸²Ã¼; font-size: 10pt; font-style: normal; line-height: 14px;}
+  .style4 {  font-family: ±¼¸²,±¼¸²Ã¼; font-size: 10pt; font-style: normal;}
+  .style5 {  font-family: ±¼¸²,±¼¸²Ã¼; font-size: 9pt; font-style: normal;}
+  .style6 {  font-family: ±¼¸²,±¼¸²Ã¼; font-size: 10pt; font-style: normal; font-weight: bold;}
+  .style7 {  margin-left:236; margin-top:30;}
+  .style8 {  font-family: ±¼¸²,±¼¸²Ã¼; font-size: 12pt; font-style: normal; font-weight: bold;}
+  .style9 {  font-family: ±¼¸²,±¼¸²Ã¼; font-size: 9pt; font-style: normal; font-weight: bold;}
+  -->
+  </style>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+var selectday
+
+function setDate() {
+    this.dateField   = opener.dateField;
+    this.dateField2  = opener.dateField2;
+    this.inDate      = dateField.value;
+
+    // SET DAY MONTH AND YEAR TO TODAY'S DATE
+    var now   = new Date();
+    var day   = now.getDate();
+    var month = now.getMonth();
+    var year  = now.getYear();
+
+	// If browser is Netscape, correct year 
+	//var browserName = navigator.appName;
+	if (navigator.appName == "Netscape") {
+		year += 1900;
+	}
+
+    // IF A DATE WAS PASSED IN THEN PARSE THAT DATE
+    if (inDate.indexOf('-')) {
+        var inYear = inDate.substring(0,inDate.indexOf("-"));
+            if (inYear.substring(0,3) == "0" && inYear.length > 1)
+                inYear = inYear.substring(1,inYear.length);
+            inYear = parseInt(inYear);
+        var inMonth  = inDate.substring(inDate.indexOf("-") + 1, inDate.lastIndexOf("-"));
+            if (inMonth.substring(0,1) == "0" && inMonth.length > 1)
+                inMonth = inMonth.substring(1,inMonth.length);
+            inMonth = parseInt(inMonth);
+        var inDay = parseInt(inDate.substring(inDate.lastIndexOf("-") + 1, inDate.length));
+
+        if (inDay) {
+            day = inDay;
+        }
+        if (inMonth) {
+            month = inMonth-1;
+        }
+        if (inYear) {
+            year = inYear;
+        }
+    }
+    displayCalendar(day, month, year);
+    this.focusDay                           = day;
+    document.calControl.month.selectedIndex = month;
+    document.calControl.year.value          = year;
+}
+
+
+function setToday() {
+    // SET DAY MONTH AND YEAR TO TODAY'S DATE
+    var now   = new Date();
+    var day   = now.getDate();
+    var month = now.getMonth()+1;
+    var year  = now.getYear();
+
+	// If browser is Netscape, correct year 
+	//var browserName = navigator.appName;
+	if (navigator.appName == "Netscape") {
+		year += 1900;
+	}
+
+	/*
+	if (year < 100) {
+        year += 1900;
+    }
+    else {
+        year += 2000;
+    }
+	*/
+
+    if ((""+month).length == 1)
+    {
+        month="0"+month;
+    }
+    if ((""+day).length == 1)
+    {
+        day="0"+day;
+    }
+    if (day != "   ") {
+        dateField.value = year + "-" + month + "-" + day;
+        location.reload()
+    }
+}
+
+
+function isFourDigitYear(year) {
+    if (year.length != 4) {
+        alert ("Sorry, the year must be four-digits in length.");
+        document.calControl.year.select();
+        document.calControl.year.focus();
+    }
+    else {
+        return true;
+    }
+}
+
+
+function selectDate() {
+    var year  = document.calControl.year.value;
+    if (isFourDigitYear(year)) {
+        var day   = 0;
+        var month = document.calControl.month.selectedIndex+1;
+
+       if ((""+month).length == 1)
+       {
+           month="0"+month;
+       }
+       if ((""+day).length == 1)
+       {
+           day="0"+day;
+       }
+       if (day != "   ") {
+           dateField.value = year + "-" + month + "-" + selectday
+           location.reload()
+       }
+    }
+}
+
+
+function setPreviousYear() {
+    var year  = document.calControl.year.value;
+    if (isFourDigitYear(year)) {
+        var day   = 0;
+        var month = document.calControl.month.selectedIndex+1;
+        year--;
+       if ((""+month).length == 1)
+       {
+           month="0"+month;
+       }
+       if ((""+day).length == 1)
+       {
+           day="0"+day;
+       }
+       if (day != "   ") {
+           dateField.value = year + "-" + month + "-" + selectday
+           location.reload()
+       }
+    }
+}
+
+
+function setPreviousMonth() {
+    var year  = document.calControl.year.value;
+    if (isFourDigitYear(year)) {
+        var day   = 0;
+        var month = document.calControl.month.selectedIndex;
+        if (month == 0) {
+            month = 11;
+            if (year > 1000) {
+                year--;
+                document.calControl.year.value = year;
+            }
+        }
+        else {
+            month--;
+        }
+       month++;
+       if ((""+month).length == 1)
+       {
+           month="0"+month;
+       }
+       if ((""+day).length == 1)
+       {
+           day="0"+day;
+       }
+       if (day != "   ") {
+           dateField.value = year + "-" + month + "-" + selectday
+           location.reload()
+       }
+    }
+}
+
+
+function setNextMonth() {
+    var year  = document.calControl.year.value;
+    if (isFourDigitYear(year)) {
+        var day   = 0;
+        var month = document.calControl.month.selectedIndex;
+        if (month == 11) {
+            month = 0;
+            year++;
+            document.calControl.year.value = year;
+        }
+        else {
+            month++;
+        }
+       month++;
+       if ((""+month).length == 1)
+       {
+           month="0"+month;
+       }
+       if ((""+day).length == 1)
+       {
+           day="0"+day;
+       }
+       if (day != "   ") {
+           dateField.value = year + "-" + month + "-" + selectday
+           location.reload()
+       }
+    }
+}
+
+
+function setNextYear() {
+    var year  = document.calControl.year.value;
+    if (isFourDigitYear(year)) {
+        var day   = 0;
+        var month = document.calControl.month.selectedIndex+1;
+        year++;
+       if ((""+month).length == 1)
+       {
+           month="0"+month;
+       }
+       if ((""+day).length == 1)
+       {
+           day="0"+day;
+       }
+       if (day != "   ") {
+           dateField.value = year + "-" + month + "-" + selectday
+           location.reload()
+       }
+    }
+}
+
+
+function displayCalendar(day, month, year) {       
+
+    day     = parseInt(day);
+    month   = parseInt(month);
+    year    = parseInt(year);
+    var i   = 0;
+    var now = new Date();
+    var strsp = '&nbsp;'
+
+    if (day == 0) {
+        var nowDay = now.getDate();
+    }
+    else {
+        var nowDay = day;
+    }
+    var days         = getDaysInMonth(month+1,year);
+    var firstOfMonth = new Date (year, month, 1);
+    var startingPos  = firstOfMonth.getDay();
+    days += startingPos;
+
+    document.open("text/html","replace") 
+    document.writeln("<CENTER>")
+    document.writeln("<FORM NAME='calControl' onSubmit='return false;'>")
+    document.writeln("<TABLE CELLPADDING=0 CELLSPACING=0 BORDER=0 width=90%>")
+    document.writeln("<TR align=center><TD COLSPAN=5>")
+    document.writeln("<INPUT NAME='year' TYPE=TEXT SIZE=4 MAXLENGTH=4 onChange='selectDate()'>")
+    document.writeln("<SELECT NAME='month' onChange='selectDate()'>")
+    document.writeln("<OPTION>1¿ù</OPTION>")
+    document.writeln("<OPTION>2¿ù</OPTION>")
+    document.writeln("<OPTION>3¿ù</OPTION>")
+    document.writeln("<OPTION>4¿ù</OPTION>")
+    document.writeln("<OPTION>5¿ù</OPTION>")
+    document.writeln("<OPTION>6¿ù</OPTION>")
+    document.writeln("<OPTION>7¿ù</OPTION>")
+    document.writeln("<OPTION>8¿ù</OPTION>")
+    document.writeln("<OPTION>9¿ù</OPTION>")
+    document.writeln("<OPTION>10¿ù</OPTION>")
+    document.writeln("<OPTION>11¿ù</OPTION>")
+    document.writeln("<OPTION>12¿ù</OPTION>")
+    document.writeln("</SELECT>")
+    document.writeln("</TD>")
+    document.writeln("</TR>")
+    document.writeln("<TR align=center>")
+    document.writeln("<TD width=10%><INPUT TYPE=BUTTON NAME='previousYear' VALUE='<<'    onClick='setPreviousYear()'></TD>")
+    document.writeln("<TD width=10%><INPUT TYPE=BUTTON NAME='previousYear' VALUE=' < '   onClick='setPreviousMonth()'></TD>")
+    document.writeln("<TD width=20%><INPUT TYPE=BUTTON NAME='previousYear' VALUE='¿À´Ã'  onClick='setToday()'></TD>")
+    document.writeln("<TD width=10%><INPUT TYPE=BUTTON NAME='previousYear' VALUE=' > '   onClick='setNextMonth()'></TD>")
+    document.writeln("<TD width=10%><INPUT TYPE=BUTTON NAME='previousYear' VALUE='>>'    onClick='setNextYear()'></TD>")
+    document.writeln("</TD>")
+    document.writeln("</TR>")
+    document.writeln("</table>")
+    document.writeln("</FORM>")
+    document.calControl.month.selectedIndex = month;
+    document.calControl.year.value          = year;
+    document.writeln("<FORM NAME='calButtons'>")
+    document.writeln("<TABLE CELLPADDING=0 CELLSPACING=0 BORDER=0 width=90% bgcolor=#999999><tr><td>")
+    document.writeln("<TABLE CELLPADDING=3 CELLSPACING=1 BORDER=0 width=100%>")
+    document.writeln("<TR align=center bgcolor=#bbbbbb><Th width=14% class=style6><font color=red>ÀÏ</font></Th>")
+    document.writeln("<Th width=14% class=style6>¿ù</Th>")
+    document.writeln("<Th width=14% class=style6>È­</Th>")
+    document.writeln("<Th width=14% class=style6>¼ö</Th>")
+    document.writeln("<Th width=14% class=style6>¸ñ</Th>")
+    document.writeln("<Th width=14% class=style6>±Ý</Th>")
+    document.writeln("<Th width=14% class=style6><font color=blue>Åä</font></Th></TR>")
+
+    document.writeln("<TR>")
+    // MAKE BEGINNING NON-DATE BUTTONS BLANK
+    for (i = 0; i < startingPos; i++) {
+        document.writeln("<TD bgcolor=#eeeeee>&nbsp</TD>")
+    }
+    if (day > (days-startingPos)) day = days-startingPos
+    // SET VALUES FOR DAYS OF THE MONTH
+    for (i = startingPos; i < days; i++)  
+    {
+        if ((i % 7) == 0 && i != 0) document.writeln("<TR>")
+        strsp = '&nbsp;'
+        if (i.length == 1) strsp = strsp+(i-startingPos+1)+strsp
+        else               strsp = i-startingPos+1
+        if ((i-startingPos+1) == day) {
+           selectday = day
+           document.writeln("<TD align=center bgcolor=#000000><a href=JavaScript:returnDate("+(i-startingPos+1)+")><font color=white>"+strsp+"</font></a></TD>")
+        } else if ((i % 7) == 0) {
+           document.writeln("<TD align=center bgcolor=#eeeeee><a href=JavaScript:returnDate("+(i-startingPos+1)+")><font color=red>"+strsp+"</font></a></TD>")
+        } else if (((i+1) % 7) == 0) {
+           document.writeln("<TD align=center bgcolor=#eeeeee><a href=JavaScript:returnDate("+(i-startingPos+1)+")><font color=blue>"+strsp+"</font></a></TD>")
+        } else {
+           document.writeln("<TD align=center bgcolor=#eeeeee><a href=JavaScript:returnDate("+(i-startingPos+1)+")><font color=black>"+strsp+"</font></a></TD>")
+        }
+    }
+	 if ( (days % 7) != 0) {
+        for (i = days % 7; i < 7; i++) {
+            document.writeln("<TD bgcolor=#eeeeee>&nbsp;</TD>")
+        }
+    }
+    document.writeln("</TR></TABLE>")
+    document.writeln("</td></TR></TABLE>")
+    document.writeln("</form>")
+    document.writeln("</center>")
+    document.close()
+
+}
+
+
+// GET NUMBER OF DAYS IN MONTH
+function getDaysInMonth(month,year)  {
+    var days;
+    if (month==1 || month==3 || month==5 || month==7 || month==8 ||
+        month==10 || month==12)  days=31;
+    else if (month==4 || month==6 || month==9 || month==11) days=30;
+    else if (month==2)  {
+        if (isLeapYear(year)) {
+            days=29;
+        }
+        else {
+            days=28;
+        }
+    }
+    return (days);
+}
+
+
+// CHECK TO SEE IF YEAR IS A LEAP YEAR
+function isLeapYear (Year) {
+    if (((Year % 4)==0) && ((Year % 100)!=0) || ((Year % 400)==0)) {
+        return (true);
+    }
+    else {
+        return (false);
+    }
+}
+
+function CloseWin()
+{
+   this.close()
+}
+
+// SET FORM FIELD VALUE TO THE DATE SELECTED
+function returnDate(inDay)
+{
+    var day   = inDay;
+    var month = (document.calControl.month.selectedIndex)+1;
+    var year  = document.calControl.year.value;
+
+    if ((""+month).length == 1)
+    {
+        month="0"+month;
+    }
+    if ((""+day).length == 1)
+    {
+        day="0"+day;
+    }
+    if (day != "   ") {
+        dateField2.value = year + "-" + month + "-" + day;
+        dateField.value = year + "-" + month + "-" + day;
+        window.close()
+    }
+}
+
+ setDate()
+
+// -->
+</SCRIPT>
+</HEAD>
+<Body>
+</Body>
+
+</HTML>

@@ -1,0 +1,671 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>수원인터넷방송</title>
+<link rel="stylesheet" type="text/css" href="../include/css/default.css">
+<link rel="stylesheet" type="text/css" href="../include/css/content.css">
+<link rel="stylesheet" type="text/css" href="../include/css/colorbox.css">
+<script type="text/javascript" charset="utf-8" src="../include/js/jquery.min.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="../include/js/jquery.flexslider-min.js"></script> <!-- 상단메뉴 -->
+<script type="text/javascript" charset="utf-8" src="../include/js/common.js"></script> <!-- 상단메뉴 -->
+<script type="text/javascript" charset="utf-8" src="../include/js/tab.js"></script> <!-- 서브탭버튼 -->
+<script type="text/javascript" charset="utf-8" src="../include/js/jquery.leanModal.min.js"></script> <!-- 메인메뉴모달 -->
+<script type="text/javascript" charset="utf-8" src="../include/js/jquery.colorbox.js"></script> <!-- 서브탭버튼 -->
+
+<script type="text/javascript" charset="utf-8" src="../include/js/script.js"></script> <!-- 서브탭버튼 -->
+</head>
+<body>
+	<div id="wapper"> 
+		<header> 
+			<div class="head_inner">
+			<div id="accessibility">
+				<ul>
+				<li><a href="#lnb" accesskey="1">메인메뉴바로가기</a></li>
+				<li><a href="#body" accesskey="2">컨텐츠바로가기</a></li>
+				</ul>
+			</div> <!-- //accessibility::skip -->
+			<div class="top-nav"> 
+				<h1><a href="main.html"><img src="../include/images/logo.png" alt="SUWON TV"/></a></h1>
+				<div class="gnb_area">
+					<ul>
+					<li><a href="/">홈</a></li>
+					<li><a href="javascript:AddFavorite(this);">즐겨찾기</a></li>
+					<li><a href="/2013/info/search.jsp">전체프로그램</a></li>
+					</ul>
+					<div class="gnb_search">
+						<form name="head_search" method="post" action="/2013/info/search.jsp">
+						<fieldset>
+							<legend>검색</legend>
+							<span class="gnb_search_in">
+								<input type="hidden" name="search_ccode" value="" />
+								<input type="hidden" name="searchField" value="title" />
+								<input type="text" title="검색어" name="searchString" id="head_searchstring" value="보고싶은 영상이 있다면?" class="input_text" onclick="javascript:document.getElementById('head_searchstring').value=''; "/> 
+							</span><input type="image" src="../include/images/icon_search.png" alt="검색" class="img"/>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+				<div class="sns">
+					<a href="" target="_blank" title="새창으로 연결"><img src="../include/images/sns_youtube.png" alt="유투브"/></a>
+					<a href="" target="_blank" title="새창으로 연결"><img src="../include/images/sns_blog.png" alt="네이버 블로그"/></a>
+					<a href="" target="_blank" title="새창으로 연결"><img src="../include/images/sns_twitter.png" alt="트위터"/></a>
+					<a href="" target="_blank" title="새창으로 연결"><img src="../include/images/sns_navertv.png" alt="네이버TV"/></a>
+				</div>
+			</div>
+			</div>
+		</header> <!--헤더:header-->               
+		<nav id="lnb">     
+			<!-- menu::로컬메뉴 -->
+			<div class="lnb_wrap">
+			<div class="gnb" id="">			
+				<ul>
+				<li class="s1">
+				<a href="/2013/video/video_list.jsp?ccode=001000000000" class="visible">Hot 이슈</a>
+					<ul>
+					<li><a href="/2013/video/video_list.jsp?ccode=001001000000">NEWS</a></li>
+					 
+					<li><a href="/2013/video/video_list.jsp?ccode=001003000000">시민공감 Best5</a></li>
+					<!--<li><a href="/2013/video/video_list.jsp?ccode=001006000000">글로벌뉴스</a></li> -->
+					<li><a href="/2013/video/video_list.jsp?ccode=001005000000">언론속수원</a></li>
+					<!--<li><a href="/2013/video/video_list.jsp?ccode=001007000000">메르스관련영상</a></li>-->
+					<li><a href="/2013/video/video_list.jsp?ccode=001008000000">팝콘영상</a></li>
+					</ul>
+				</li>
+				<li class="s2 ">
+				<a href="/2013/video/video_list.jsp?ccode=002000000000" class="">버라이어티<span class="new">NEW</span></a>
+					<ul>
+					
+					<li><a href="/2013/video/video_list.jsp?ccode=002006000000">기획프로그램</a></li>
+					<li><a href="/2013/video/video_list.jsp?ccode=002002000000">반가운 사람</a></li>
+					<li><a href="/2013/video/video_list.jsp?ccode=002003000000">타임머신<span class="new bubb1">N</span></a></li>
+					<li><a href="/2013/video/video_list.jsp?ccode=002005000000">스포츠</a></li>
+					</ul>
+				</li>
+				<li class="s3 ">
+				<a href="/2013/video/video_list.jsp?ccode=003000000000" class="">라이프</a>
+					<ul>
+					<li><a href="/2013/video/video_list.jsp?ccode=003001000000">역사&#183;지식</a></li>
+					<li><a href="/2013/video/video_list.jsp?ccode=003002000000">생활&#183;경제</a></li>
+					<li><a href="/2013/video/video_list.jsp?ccode=003003000000">웰빙&#183;건강</a></li>
+					<li><a href="/2013/video/video_list.jsp?ccode=003004000000">여행&#183;문화</a></li>
+					<li><a href="/2013/video/video_list.jsp?ccode=003005000000">쏙쏙강의</a></li>					
+					</ul>
+				</li>
+				<li class="s4 ">
+				<a href="/2013/video/video_list.jsp?ccode=004001000000" class="">참여광장</a>
+					<ul>
+					<li><a href="/2013/video/video_list.jsp?ccode=004001000000">나도PD</a></li>				
+					<li><a href="/2013/board/board_list.jsp?board_id=16">제작현장</a></li>						
+					 
+					<li><a href="/2013/board/board_list.jsp?board_id=10">공지사항</a></li>
+					<li><a href="/2013/board/board_list.jsp?board_id=23">이벤트 참여</a></li>
+					<li><a href="/2013/board/board_list.jsp?board_id=17">휴먼스토리</a></li>
+					<!--<li><a href="/2013/video/video_list.jsp?ccode=004003000000">메르스 희망영상메시지</a></li>
+					<li><a href="/2013/board/board_list.jsp?board_id=21">웹드라마 아이디어 공모전</a></li>-->
+					<li><a href="/2013/board/board_list.jsp?board_id=22">시민모니터단</a></li>
+					</ul>
+				</li>
+				<li class="s5 ">
+				<a href="/2013/video/video_list.jsp?ccode=005000000000" class="">홍보영상</a>
+					<ul>
+					<li><a href="/2013/video/video_list.jsp?ccode=005001000000">홍보영상</a></li>
+					<li><a href="/2013/video/video_list.jsp?ccode=005002000000">수원시의회</a></li>
+
+					</ul>
+				</li>
+				<li class="s6">
+				<a href="/2013/video/video_list.jsp?ccode=006001000000" class="">생방송 다시보기<span class="new onair">ON-AIR</span></a>
+					<ul>
+					<li><a href="/2013/live/live_list.jsp">생방송 목록</a></li>
+					<li><a href="/2013/video/video_list.jsp?ccode=006001000000">생방송</a></li>
+<!-- 								<li><a href="/2013/info/search.jsp">전체프로그램</a></li> -->
+					</ul>
+				</li>	
+				<li class="s7">
+				<a href="/2013/video/video_list.jsp?ccode=009000000000" class="">About Suwon</a>
+					<ul>
+					<li><a href="/2013/video/video_list.jsp?ccode=009001000000">I´m in Suwon</a></li>
+					<li><a href="/2013/video/video_list.jsp?ccode=009002000000">Promotional Video</a></li>
+
+					</ul>
+				</li>
+							
+				</ul>
+
+			</div><!-- //menu::로컬메뉴 -->
+			<a href="#menuFull" class="flatbtn" id="modaltrigger"><img src="../include/images/icon_menu_yellow.png" alt="메뉴"/></a>
+			
+			</div><!--//lnb_wrap-->
+			<div id="snb">
+				<div class="topmenu">
+					<div class="major">
+						<span class="m1"><a href="#" class="visible">전체</a>
+							<div class="sub">서브메뉴문구1<br/>서브메뉴문구1<br/></div>
+						</span>
+						<span class="m2"><a href="#">주요뉴스<span class="new bubb2">N</span></a></a>
+							<div class="sub">서브메뉴문구2</div>
+						</span>
+						<span class="m3"><a href="#">위클리뉴스</a>
+							<div class="sub">서브메뉴문구3</div>
+						</span>
+						<span class="m4"><a href="#">이달의HOT7</a>
+							<div class="sub">서브메뉴문구4</div>
+						</span>
+						<span class="m5"><a href="#">수원시의회</a>
+							<div class="sub">서브메뉴문구5</div>
+						</span>
+						<span class="m6"><a href="#">언론속수원</a>
+							<div class="sub">서브메뉴문구6</div>
+						</span>
+					</div>
+				</div>
+				<div class="subTitle"><!-- 두줄까지만 보여줌//-->서브메뉴문구1</div>
+			</div>
+		</nav> <!--네비게이션:nav-->          
+	
+		<section id="body">
+			<div id="container_out">
+				<div id="container_inner">
+					<div class="vodView boardView">
+						<div class="data">
+							<h4 class="entry-title clearfix">VODCaster CMS는 인터넷 혹은 201662-5-48ODCaster CMS는 인터넷 혹은 201</h4>
+							<div class="info">
+								<dl>
+								<dt>등록일</dt>
+								<dd>2017-02-28</dd>
+								<dt>작성자</dt>
+								<dd>수원iTV</dd>
+								</dl>
+								<i class="i_reply"><a href="#comment_inner">4</a></i>
+							</div>
+						</div>
+						<div class="data2">
+							<dl>
+								<dt>첨부파일</dt>
+								<dd><a href="#">다ㅓㅎㅁㄷㅎㄷ.hwp</a></dd>
+							</dl>
+							<dl>
+								<dt>Link</dt>
+								<dd>무엇무언ㅁ다허다?, dasfe, ertetr</dd>
+							</dl>
+							<span class="subj clearfix">
+							
+								글내용 
+								이미지가 있을시
+								<img src="../include/images/5.png" alt="이미지이름"/>
+								이미지가 있을시
+							</span>
+							
+						</div>
+						<!--//data-->
+						<div class="btn1">
+							<a href="">목록</a>
+							<a href="">수정</a>
+							<a href="">삭제</a>
+						</div>
+						<div id="comment_inner">
+							<div id="commentFrame">
+								<h5>댓글 <strong>0</strong><span>비방, 욕설, 광고 등은 사전협의 없이 삭제됩니다.</span></h5>
+								<div class="input_wrap">
+									<dl>
+									<dt><label for="wnick_name">닉네임</label></dt>
+									<dd><input type="text" name="wnick_name" value="" id="wnick_name" title="닉네임"/></dd>
+									</dl>
+									<dl>
+									<dt><label for="pwd">비밀번호</label></dt>
+									<dd><input type="password" name="pwd" value=""  id="pwd" title="비밀번호"/></dd>
+									</dl>
+									<dl>
+									<dt><label for="chk_word">확인문자열</label></dt>
+									<dd><input type="text" name="chk_word" value="" id="chk_word" size="10" title="확인 문자열"  />
+										<span class="chk1">10244</span> * 좌측 숫자를 입력하십시오.
+									</dd>
+									</dl>
+									<textarea id="comment" name="comment" wrap="hard"  required="required" ></textarea>
+									<input type="submit" alt="확인" class="img" value="확인"/>
+								</div>
+								<div class="commentList">
+									<dl>
+										<dt class="name">이름 <span class="day">2010-08-12 </span></dt>
+										<dd class="subject">
+											<span class="content">가나다라마바사아자차가나다라마바사아자차가나다라마바</span>
+											<span class="del">
+												<a href="#del2">Del</a>
+											</span>
+										</dd>
+									</dl>
+									<dl>
+										<dt class="name">이름 <span class="day">2010-08-12 </span></dt>
+										<dd class="subject">
+											<span class="content">가나다라마바사아자차가나다라마바사아자차가나다라마바</span>
+											<span class="del">
+												<a href="#del2">Del</a>
+											</span>
+										</dd>
+									</dl>
+									<span class="noComment"> 첫 의견을 남겨주세요. </span>
+									<div class="paginate">
+										<a href="#" class="back1"><img src="../include/images/icon_back2.gif" alt="첫페이지"></a>
+										<a href="#" class="back2"><img src="../include/images/icon_back1.gif" alt="이전페이지"></a>
+										<a href="#">1</a>
+										<strong>2</strong>
+										<a href="#">3</a>
+										<a href="#">4</a>
+										<a href="#">5</a>
+										<a href="#" class="next1"><img src="../include/images/icon_next1.gif" alt="다음페이지"></a>
+										<a href="#" class="next2"><img src="../include/images/icon_next2.gif" alt="마지막페이지"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--//vodView-->
+					
+				</div><!--//container_inner-->
+				<aside class="container_right">
+					<div class="NewTab list5 list3">
+						<ul>
+							<li class="active"><a href="#"><span>카테고리영상</span></a>
+								<div class="vodList">
+								<h3>주요뉴스</h3>
+								<span class="pageSort"><span>Total<strong> 0 </strong>&nbsp;&nbsp;&nbsp;&nbsp;Page <strong>1/1</strong></span></span>
+								<ul>
+									<li class="num">
+										<a href="">
+											<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+											<span class="total">
+												<h4>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h4>
+												<i class="i_play">111</i><i class="i_like">111</i>
+											</span>	
+										</a>
+									</li>
+									<li class="num">
+										<a href="">
+											<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+											<span class="total">
+												<h4>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h4>
+												<i class="i_play">111</i><i class="i_like">111</i>
+											</span>	
+										</a>
+									</li>
+									<li class="num">
+										<a href="">
+											<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+											<span class="total">
+												<h4>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h4>
+												<i class="i_play">111</i><i class="i_like">111</i>
+											</span>	
+										</a>
+									</li>
+									<li class="num">
+										<a href="">
+											<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+											<span class="total">
+												<h4>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h4>
+												<i class="i_play">111</i><i class="i_like">111</i>
+											</span>	
+										</a>
+									</li>
+									<li class="num">
+										<a href="">
+											<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+											<span class="total">
+												<h4>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h4>
+												<i class="i_play">111</i><i class="i_like">111</i>
+											</span>	
+										</a>
+									</li>
+								</ul>
+								<span class="paginate">
+									<a href="#" class="back1"><img src="../include/images/icon_back2.gif" alt="첫페이지"></a>
+									<a href="#" class="back2"><img src="../include/images/icon_back1.gif" alt="이전페이지"></a>
+									<a href="#">1</a>
+									<strong>2</strong>
+									<a href="#">3</a>
+									<a href="#">4</a>
+									<a href="#">5</a>
+									<a href="#" class="next1"><img src="../include/images/icon_next1.gif" alt="다음페이지"></a>
+									<a href="#" class="next2"><img src="../include/images/icon_next2.gif" alt="마지막페이지"></a>
+								</span>
+								</div>
+							</li>
+							<li><a href="#"><span>최신영상</span></a>
+								<div>
+								<ul>
+									<li class="num">
+										<a href="">
+											<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+											<span class="total">
+												<h4>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h4>
+												<i class="i_play">111</i><i class="i_like">111</i>
+											</span>	
+										</a>
+									</li>
+									<li class="num">
+										<a href="">
+											<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+											<span class="total">
+												<h4>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h4>
+												<i class="i_play">111</i><i class="i_like">111</i>
+											</span>	
+										</a>
+									</li>
+									<li class="num">
+										<a href="">
+											<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+											<span class="total">
+												<h4>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h4>
+												<i class="i_play">111</i><i class="i_like">111</i>
+											</span>	
+										</a>
+									</li>
+									<li class="num">
+										<a href="">
+											<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+											<span class="total">
+												<h4>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h4>
+												<i class="i_play">111</i><i class="i_like">111</i>
+											</span>	
+										</a>
+									</li>
+									<li class="num">
+										<a href="">
+											<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+											<span class="total">
+												<h4>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h4>
+												<i class="i_play">111</i><i class="i_like">111</i>
+											</span>	
+										</a>
+									</li>
+									<li class="num">
+										<a href="">
+											<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+											<span class="total">
+												<h4>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h4>
+												<i class="i_play">111</i><i class="i_like">111</i>
+											</span>	
+										</a>
+									</li>
+								</ul>
+								</div>
+							</li>
+						</ul>
+					</div><!--//NewTab list3-->
+					<div class="NewTab list5">
+						<ul>
+							<li class="active"><a href="#"><span>주간 Best</span></a>
+								<div>
+									<ul>
+									<li class="numS">
+										<a href="">
+											<span class="number">1</span>
+											<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+											<h4>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h4>
+										</a>
+									</li>
+									<li class="num">
+										<a href="">
+											<span class="number">2</span>
+											<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+											<span class="total">
+												<h4>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h4>
+												<i class="i_play">111</i><i class="i_like">111</i>
+											</span>	
+										</a>
+									</li>
+									<li class="num">
+										<a href="">
+											<span class="number">3</span>
+											<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+											<span class="total">
+												<h4>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h4>
+												<i class="i_play">111</i><i class="i_like">111</i>
+											</span>	
+										</a>
+									</li>
+									<li class="num">
+										<a href="">
+											<span class="number">4</span>
+											<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+											<span class="total">
+												<h4>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h4>
+												<i class="i_play">111</i><i class="i_like">111</i>
+											</span>	
+										</a>
+									</li>
+									<li class="num">
+										<a href="">
+											<span class="number">5</span>
+											<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+											<span class="total">
+												<h4>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h4>
+												<i class="i_play">111</i><i class="i_like">111</i>
+											</span>	
+										</a>
+									</li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="#"><span>월간 Best</span></a>
+								<div>
+									<ul>
+									<li class="numS">
+										<a href="">
+											<span class="number">1</span>
+											<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+											<h4>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h4>
+										</a>
+									</li>
+									<li class="num">
+										<a href="">
+											<span class="number">2</span>
+											<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+											<span class="total">
+												<h4>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h4>
+												<i class="i_play">111</i><i class="i_like">111</i>
+											</span>	
+										</a>
+									</li>
+									<li class="num">
+										<a href="">
+											<span class="number">3</span>
+											<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+											<span class="total">
+												<h4>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h4>
+												<i class="i_play">111</i><i class="i_like">111</i>
+											</span>	
+										</a>
+									</li>
+									<li class="num">
+										<a href="">
+											<span class="number">4</span>
+											<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+											<span class="total">
+												<h4>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h4>
+												<i class="i_play">111</i><i class="i_like">111</i>
+											</span>	
+										</a>
+									</li>
+									<li class="num">
+										<a href="">
+											<span class="number">5</span>
+											<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+											<span class="total">
+												<h4>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h4>
+												<i class="i_play">111</i><i class="i_like">111</i>
+											</span>	
+										</a>
+									</li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="#"><span>연간 Best</span></a>
+								<div>
+									<ul>
+									<li class="numS">
+										<a href="">
+											<span class="number">1</span>
+											<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+											<h4>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h4>
+										</a>
+									</li>
+									<li class="num">
+										<a href="">
+											<span class="number">2</span>
+											<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+											<span class="total">
+												<h4>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h4>
+												<i class="i_play">111</i><i class="i_like">111</i>
+											</span>	
+										</a>
+									</li>
+									<li class="num">
+										<a href="">
+											<span class="number">3</span>
+											<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+											<span class="total">
+												<h4>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h4>
+												<i class="i_play">111</i><i class="i_like">111</i>
+											</span>	
+										</a>
+									</li>
+									<li class="num">
+										<a href="">
+											<span class="number">4</span>
+											<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+											<span class="total">
+												<h4>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h4>
+												<i class="i_play">111</i><i class="i_like">111</i>
+											</span>	
+										</a>
+									</li>
+									<li class="num">
+										<a href="">
+											<span class="number">5</span>
+											<span class="img"><img src="../include/images/5.png" alt="이미지명"/></span>
+											<span class="total">
+												<h4>작은 것부터 하나씩하나씩하나씩하나씩하나씩하나씩</h4>
+												<i class="i_play">111</i><i class="i_like">111</i>
+											</span>	
+										</a>
+									</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div><!--//NewTab list5-->
+
+				</aside><!--//container_right-->
+			</div><!--//container_out-->
+		</section><!--콘텐츠부분:section-->    
+		
+		<footer>
+			<div class="family_site">
+				<ul>
+				<li><a href="" target="_blank" title="새창으로 연결">수원시</a></li>
+				<li><a href="" target="_blank" title="새창으로 연결">e-수원뉴스</a></li>
+				<li><a href="" target="_blank" title="새창으로 연결">포토뱅크</a></li>
+				<li><a href="" target="_blank" title="새창으로 연결">e-자료홍보관</a></li>
+				<li><a href="" target="_blank" title="새창으로 연결">시민정보화교육</a></li>
+				</ul>
+			</div>
+			<div id="footer">
+				<h1><img src="../include/images/f_logo.png" alt="수원인터넷방송"/></h1>
+				<ul>
+				<li>
+					<ul>
+					<li>발행처:수원시청</li>
+					<li>발행인:수원시청</li>
+					<li>편집인:공보관</li>
+					<li><strong><a href="">개인정보처리방침</a></strong></li>
+					</ul>
+				</li>
+				<li>본 페이지에 게시된 이메일주소가 자동 수집되는 것을 거부하며, 위반시 정보통신망법에 의해 처벌됩니다.</li>
+				<li><address>(16490) 경기도 수원시 팔달구 효원로 241 (인계동) 전화 (031)228-3066, 3067</address></li>
+				<li>&copy; SUWON CITY, ALL RIGHTS RESERVED.</li>
+				</ul>
+				<span class="sns">
+					<a href="" target="_blank" title="새창으로 연결"><img src="../include/images/facebook.png" alt="페이스북"/></a>
+					<a href="" target="_blank" title="새창으로 연결"><img src="../include/images/twitter.png" alt="트위터"/></a>
+				</span>
+			</div>
+		</footer>  <!--푸터:footer-->     
+		<div id="menuFull" style="display:none;">
+			<div class="menuFull_in" >
+				<ul class="menuView">			
+					<li class="s1 ">
+						<a href="/2013/video/video_list.jsp?ccode=001000000000" class="">Hot 이슈</a>
+						<ul>
+							<li><a href="/2013/video/video_list.jsp?ccode=001001000000">NEWS</a></li>
+							<li><a href="/2013/video/video_list.jsp?ccode=001002000000">인포수원</a></li>
+							<li><a href="/2013/video/video_list.jsp?ccode=001003000000">공감Best5</a></li>
+							<li><a href="/2013/video/video_list.jsp?ccode=001006000000">글로벌뉴스</a></li>
+							<li><a href="/2013/video/video_list.jsp?ccode=001005000000">언론속수원</a></li>
+							
+						</ul>
+					</li>
+					<li class="s2 ">
+						<a href="/2013/video/video_list.jsp?ccode=002000000000" class="">버라이어티</a>
+						<ul>
+							<li><a href="/2013/video/video_list.jsp?ccode=002001000000">달리는 카메라</a></li>
+							<li><a href="/2013/video/video_list.jsp?ccode=002006000000">기획프로그램</a></li>
+							<li><a href="/2013/video/video_list.jsp?ccode=002002000000">반가운 사람</a></li>
+							<li><a href="/2013/video/video_list.jsp?ccode=002003000000">타임머신</a></li>
+							<li><a href="/2013/video/video_list.jsp?ccode=002005000000">스포츠</a></li>
+						</ul>
+					</li>
+					<li class="s3 ">
+						<a href="/2013/video/video_list.jsp?ccode=003000000000" class="">라이프</a>
+						<ul>
+							<li><a href="/2013/video/video_list.jsp?ccode=003001000000">역사&#183;지식</a></li>
+							<li><a href="/2013/video/video_list.jsp?ccode=003002000000">생활&#183;경제</a></li>
+							<li><a href="/2013/video/video_list.jsp?ccode=003003000000">웰빙&#183;건강</a></li>
+							<li><a href="/2013/video/video_list.jsp?ccode=003004000000">여행&#183;문화</a></li>
+							<li><a href="/2013/video/video_list.jsp?ccode=003005000000">쏙쏙강의</a></li>					
+						</ul>
+					</li>
+					<li class="s4 ">
+						<a href="/2013/video/video_list.jsp?ccode=004001000000" class="">참여광장</a>
+						<ul>
+							<li><a href="/2013/video/video_list.jsp?ccode=004001000000">나도PD</a></li>		
+							<li><a href="/2013/board/board_list.jsp?board_id=16">제작현장</a></li>							
+							<li><a href="/2013/board/board_list.jsp?board_id=12">제보게시판</a></li>
+							<li><a href="/2013/board/board_list.jsp?board_id=10">공지사항</a></li>
+							<li><a href="/2013/live/live_list.jsp">생방송 목록</a></li>
+							<li><a href="/2013/board/board_list.jsp?board_id=17">휴먼스토리</a></li>
+							<li><a href="/2013/board/board_list.jsp?board_id=18">날아라~책나비 UCC 공모</a></li>
+							
+						</ul>
+					</li>
+					<li class="s5 ">
+						<a href="/2013/video/video_list.jsp?ccode=005000000000" class="">홍보영상</a>
+						<ul>
+							<li><a href="/2013/video/video_list.jsp?ccode=005001000000">홍보영상</a></li>
+							<li><a href="/2013/video/video_list.jsp?ccode=001004000000">수원시의회</a></li>
+						</ul>
+					</li>
+					<li class="s6 ">
+						<a href="/2013/video/video_list.jsp?ccode=006001000000" class="">생방송 다시보기</a>
+						<ul>
+							<li><a href="/2013/video/video_list.jsp?ccode=006001000000">다시보기</a></li>
+							<li><a href="/2013/info/search.jsp">전체프로그램</a></li>
+						</ul>
+					</li>				
+				</ul>
+			</div>
+		</div><!--//menuFull-->
+		<!--모달윈도우부분-->
+		<script type="text/javascript">
+		$(function(){
+		  $('#modaltrigger').leanModal({ top: 110, overlay: 0.6, closeButton: ".hidemodal" });
+		});
+		</script>
+		<!--//모달윈도우부분-->
+	</div><!--//wapper-->
+	
+	
+</body>
+</html>

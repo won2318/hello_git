@@ -1,0 +1,109 @@
+.clsCalendarTitle
+{
+    FONT-SIZE: 9pt;
+    MARGIN-BOTTOM: 3px;
+    COLOR: white;
+    FONT-FAMILY: ±¼¸²;
+    BACKGROUND-COLOR: #aab8d3
+}
+.clsCalendarTitleButton
+{
+		CURSOR: hand;
+		COLOR: white
+}
+.clsCalendarTitleSat
+{
+    COLOR: blue
+}
+.clsCalendarTitleSun
+{
+    COLOR: red
+}
+.clsCalendarDay
+{
+    CURSOR: hand
+}
+.clsCalendarDaySat
+{
+		CURSOR: hand;
+    COLOR: blue
+}
+.clsCalendarDaySun
+{
+		CURSOR: hand;
+    COLOR: red
+}
+.clsCalendarDaySelected
+{
+    CURSOR: hand;
+    BACKGROUND-COLOR: Yellow
+}
+.clsCalendarDaySelectedSat
+{
+    CURSOR: hand;
+    COLOR: Blue;
+    BACKGROUND-COLOR: Yellow
+}
+.clsCalendarDaySelectedSun
+{
+    CURSOR: hand;
+    COLOR: Red;
+    BACKGROUND-COLOR: Yellow
+}
+.clsCalendarDayTailing
+{
+    CURSOR: hand;
+    COLOR: lightgrey
+}
+.clsCalendarWeekSelected
+{
+		CURSOR: hand;
+    BACKGROUND-COLOR: lightgrey
+}
+.clsCalendarWeekSelectedSun
+{
+		COLOR: red;
+		CURSOR: hand;
+    BACKGROUND-COLOR: lightgrey
+}
+.clsCalendarWeekTailing
+{
+    CURSOR: hand;
+    COLOR: White;
+    BACKGROUND-COLOR: lightgrey
+}
+.clsCalendarWeekSelectedSat
+{
+		COLOR: blue;
+		CURSOR: hand;
+    BACKGROUND-COLOR: lightgrey
+}
+.clsCalendar
+{
+    BORDER-RIGHT: #24384d 2px solid;
+    BORDER-TOP: #24384d 2px solid;
+    Z-INDEX: 100;
+    FLOAT: none;
+    VISIBILITY: hidden;
+    BORDER-LEFT: #24384d 2px solid;
+    WIDTH: 150px;
+    BORDER-BOTTOM: #24384d 2px solid;
+    POSITION: absolute;
+    BACKGROUND-COLOR: white
+}
+.clsCalendarTextBox
+{
+    FONT-SIZE: 9pt;
+    WIDTH: 100px;
+    FONT-FAMILY: ±¼¸²
+}
+.clsCalendarWithButton
+{
+    POSITION: absolute;
+    BACKGROUND-COLOR: white
+}
+.clsCalendarWithTextButton
+{
+    POSITION: absolute;
+    BACKGROUND-COLOR: white
+}

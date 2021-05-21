@@ -1,0 +1,55 @@
+BODY {color:#3D3D3D; font-size:12px;}
+P,blockquote,td,br {font-size:12px}
+body {background-color:white}
+td {font-family: "±¼¸²", "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 12px;}
+ 
+.txt { background-color:white;height=18;font-size:9pt;border:gray 1px solid }
+.txt2 { font-family:Tahoma;font-size:9pt;color:0099cc;font-weight:bold;height=18;border:gray 1px solid }
+.txt3 { font-family:Tahoma;font-size:7pt;color:0099cc;font-weight:bold;height=15;border:gray 1px solid }
+.txt4 { font-family:Tahoma;font-size:9pt;color:000000;height=18;border:gray 1px solid }
+.txt8 { font-family:Tahoma;font-size:8pt;color:000000;font-weight:bold;height=17;border:gray 1px solid }
+.txtFill { font-family:Tahoma;font-size:9pt;color:000000;height=18;border:gray 1px solid;background-color:#F9EEFF;ime-mode:active}
+.txtHAN { font-family:Tahoma;font-size:9pt;color:000000;height=20;border:#666666 1px solid;background-color:#CDDFFC;ime-mode:active}
+.txtENG { font-family:Tahoma;font-size:9pt;color:000000;height=20;border:#666666 1px solid;background-color:#CDDFFC}
+.txtHANCOM { font-family:Tahoma;font-size:9pt;color:000000;height=18;border:#666666 1px solid;background-color:#FFFFFF;ime-mode:active}
+.txtENGCOM { font-family:Tahoma;font-size:9pt;color:000000;height=18;border:#666666 1px solid;background-color:#FFFFFF}
+.scrollENG { font-family:Tahoma;background-color:#CDDFFC;font-size:9pt;border:#666666 1px solid}
+.scrollHAN { font-family:Tahoma;background-color:#CDDFFC;font-size:9pt;border:#666666 1px solid;ime-mode:active}
+.scrollENGCOM { font-family:Tahoma;background-color:#FFFFFF;font-size:9pt;border:#666666 1px solid}
+.scrollHANCOM { font-family:Tahoma;background-color:#FFFFFF;font-size:9pt;border:#666666 1px solid;ime-mode:active}
+.btn { background-color:#F7F7F7;height=17;font-size:9pt;border:gray 1px solid }
+.scroll { background-color:white;font-size:9pt;border:gray 1px solid}
+.scroll2 { background-color:white;font-size:9pt;color:0099cc;font-weight:bold;border:gray 1px solid}
+.scrollFill { background-color:#F9EEFF;font-size:9pt;border:gray 1px solid}
+.content130 {font-family:±¼¸²;font-size:9pt;color:000000;line-height:130%}
+.content150 {font-family:±¼¸²;font-size:9pt;color:000000;line-height:150%}
+
+A:link    {color:#000000;text-decoration:none;}
+A:visited {color:#000000;text-decoration:none;}
+A:active  {color:#000000;text-decoration:none;}
+A:hover  {color:#000000;text-decoration:none;}
+
+.head {border:solid 1 black;font-family:±¼¸²;font-size:9pt;color:black;background-color:white;height:19px}
+.textarea {border:solid 1 silver; font-family:±¼¸²;font-size:9pt;color:black;background-color:white}
+.input{border:solid 1 silver;font-family:±¼¸²;font-size:9pt;color:black;background-color:white;height:19px;cursor:hand;}
+.submit {border:solid 1;font-family:±¼¸²;font-size:9pt;color:#383838;background-color:#E0E0E0;height:20px}
+.light {font-family:Tahoma;font-size:8pt;color:gray;}
+.light2 {font-family:Tahoma;font-size:7pt;color:gray;}
+.dark {font-family:Tahoma;font-size:8pt;color:333333;}
+.dark2 {font-family:Tahoma;font-size:7pt;color:000000;}
+.lifesay {font-family:Tahoma;font-size:7pt;color:0099cc;}
+.lifesay2 {font-family:Tahoma;font-size:8pt;color:0099cc;font-weight:bold;}
+.lifesay3 {font-family:Tahoma;font-size:7pt;color:ffffff;font-weight:bold;}
+.lifesay4 {font-family:Tahoma;font-size:8pt;color:000000;font-weight:bold;}
+.lifesay5 {font-family:Tahoma;font-size:8pt;color:0099cc;}
+.lifesay6 {font-family:Tahoma;font-size:8pt;color:000000;}
+.com {font-family:Arial;font-size:7pt;color:gray;font-weight:bold;}
+
+.inputG2{border:groove 1;font-size:12px;color:#333333;background-color:#ECEFE2}
+.inputB{border:groove 1;font-size:12px;color:#333333;background-color:#D6DDE1}
+.small{font-family:"±¼¸²", "verdana";font-size:11px;color: #5D5D5D; text-decoration:none; line-height:15px}
+
+.tdB{border-width:1px; border-color:rgb(219,226,237); border-style:solid;}
+.inputG{border:groove 1;font-size:12px;color:#333333;background-color:#f0ffff}
+
+.title {font-size:9pt;color:#000;font-weight:bold; }

@@ -1,0 +1,94 @@
+﻿@charset "utf-8";
+/*------------------------------------------------import--------------------*/
+/* Withustech Solution Development Team(http://www.withustech.com) CMY 190222 */
+section { position: relative;}
+
+.container_inner {position: relative;width: 100%; min-width: 1060px;height: 335px; background-color:#000; margin:auto auto;}
+/* 영상정보 */
+.main_vod {position: relative; padding: 20px 0;width: 1060px; margin:0 auto;}
+.main_vod .data { height: border:1px solid rgba(255,255,255,0.5); background-color: rgba(255,255,255,0.7);position:relative;float: right;display: block; width: 507px; height: 295px;padding: 20px 23px;border-bottom:1px solid #e5e5e5;}
+.main_vod .data .entry-title {text-overflow:ellipsis; white-space: nowrap; overflow: hidden; width: 100%; letter-spacing: -1px;font-weight: 600;font-size: 19px; margin-bottom: 10px;display: block;color: #000;}
+.main_vod .data .subj { letter-spacing: -0.5px; font-size: 1.1em;margin-top: 20px; overflow: auto; word-wrap : break-word; height: 160px; display: block;}
+.main_vod .info { letter-spacing: -0.5px; position: relative;  border-bottom:1px solid #d9d9d9;display: block; padding-bottom: 13px;font-size: 0.95em; color: #999999;}
+.main_vod .info dl dt, .main_vod .info dl dd, .main_vod .info dl {font-weight: 600;display: inline-block;}
+.main_vod .info dl dt { color:#4a4a4a;padding-right: 8px; }
+.main_vod .info dl dd { color:#4c4c4c;padding-right: 25px;}
+.main_vod .info i{ background:#fff;font-weight: bold; vertical-align: middle;display: inline-block;font-style:normal; font-size: 12px; letter-spacing:0; line-height: 100%;}
+.main_vod .info i a {border:1px solid #aaaaaa;display: block;}
+.main_vod .info:after {left:0; bottom:0; content:''; position:absolute; height:1px; width: 100%; background:#a8a8a8;}
+.main_vod .info i.i_reply a { padding: 3px 8px 5px 25px; background:url(../images/icon_reply.png) no-repeat 7px 4px #fff;}
+.main_vod .info i.i_play {border:1px solid #aaaaaa;color:#333333;padding: 3px 8px 5px 22px; background:url(../images/icon_play.png) no-repeat 8px center #fff;}
+.main_vod .info i.i_reply a { padding: 3px 8px 5px 25px; background:url(../images/icon_reply.png) no-repeat 7px 4px;}
+.main_vod .info i.i_like a { color:#f3663c;padding: 3px 8px 5px 25px; background:url(../images/icon_like_purple_small.png) no-repeat 7px center;}
+.main_vod .info i a:hover { color:#f3663c;border:1px solid #f3663c; background-color: #f6f6f6; }
+/* 영상사이즈 */
+.embed-container {float: left; width:525px;}
+.videoWrapper iframe,
+.videoWrapper div, 
+.videoWrapper embed,
+.videoWrapper object {
+  z-index: 0;
+  position: absolute;
+  width: 525px;
+  height: 295px;
+}
+/*background-color: rgba(0,0,0,0.6);
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9),  rgba(0, 0, 0, 0)); */
+/* 신규인기영상 */
+.new_vod {padding: 20px 0; height: 245px;width: 1060px; margin:0 auto;}
+.new_vod li {width: 253px;margin-right: 16px; display: block; float: left;}
+.new_vod li:last-of-type{ margin-right:0;}
+.new_vod a h3{ color:#000;padding-top: 10px; font-weight: 400;font-size: 1.1em;display: block; height: 75px; overflow: hidden;}
+.new_vod a h3:hover {font-weight:600;text-decoration:underline; color:#208fd0; } 
+.new_vod a img {  width: 253px; height: 143px;}
+.new_vod a span{ width: 253px; height: 143px; overflow: hidden; display: block;}
+.new_vod a img:hover { transform: scale(1.1);  transition: all 300ms ease 0s;}
+.pop_noti_out { padding: 30px 0 0px 0;width: 100%;height: 370px;clear: both;background:url(../images/menu_bottom_bg2.gif) repeat center 5px;}
+.pop_noti_inner { margin:0 auto; display: block;width: 1060px;}
+/* 시정홍보배너 */
+#popupzone {position:relative; float: left; width: 525px; height: 267px; border:1px solid #eaeaea; border-top:0px; border-left:0;}
+#popupzone h3{ display: none;}
+#popupzone .popup{width:525px;height:300px; float:left;position:relative;}
+#popupzone .popup ul { width: 525px; height: 267px; overflow: hidden; display: block;}
+#popupzone .popup dl{position:relative;margin-right:42px;float:left;z-index: 4;}
+#popupzone .popup dt{position:absolute;top:-100%;left:-100%;visibility:hidden;}
+#popupzone .popup dd{position:absolute;top:0px;left:0;}
+#popupzone .popup li img {width:525px; height:267px; padding:1px;}
+#popupzone .popup .count{ text-align: center; font-size: 16px;position:absolute; left:0; right:0;bottom:0px;}
+#popupzone .popup .count img { display: inline-block;padding:3px; vertical-align: middle;}
+#popupzone .popup .count a {vertical-align: middle; padding: 2px;}
+#popupzone .popup .count span { vertical-align: middle;}
+#popupzone .popup .count strong:first-of-type { color:#0080cb; }
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  #popupzone .popup .count strong {position:relative;top:1px;}
+} 
+/* 공지사항 */
+.m_notice { position:relative;float: right; width: 495px; height: 100%;}
+.m_notice h3 { font-weight: 700; letter-spacing: -1px;padding: 15px 0 15px 3px;font-size: 19px; text-align: left;}
+.m_notice a { clear: both;font-size: 1.1em; color:#1a1a1a; display: block;}
+.m_notice li a span:first-of-type {padding-right: 20px;text-align: left; width: 403px;text-overflow:ellipsis; white-space: nowrap; overflow: hidden; }
+.m_notice li a span:first-of-type:hover {font-weight: 600;text-decoration:underline; color:#208fd0; }
+.m_notice li { padding: 6px 0px 6px 10px;background:url(../images/dot1.png) no-repeat left center; background-size: 3px 3px;}
+.m_notice li span {vertical-align: middle;display: inline-block; text-align: right;}
+.m_notice li span.day { color:#5d5d5d; text-align: right; }
+.m_notice p {text-align: right;position: absolute; right: 0; top: 25px;}
+.m_notice p a{ text-decoration:none;color:#2e2e2e; font-size:12px;} 
+.m_notice p a span { font-size: 1.2em;font-weight: 600; padding-left: 5px;}
+.m_notice p a:hover { font-weight: 800;color:#208fd0; }
+/* Withustech Solution Development Team(http://www.withustech.com) CMY 180905 */
+.layer-wrap { position:fixed; left: 0; right: 0; top: 0; bottom: 0; text-align: center;} 
+.layer-wrap:before {position:absolute; content: ""; display: inline-block; height: 100%; vertical-align: middle; margin-right: -.25em; } 
+.pop-layer { display: inline-block; vertical-align: middle; height: auto; background-color: #282828; z-index: 99; border-radius: 10px;} 
+.pop-layer .pop-container { border-radius: 9px; border-bottom-left-radius: 0; border-bottom-right-radius: 0;font-size: 1.15em; font-weight: 500; background:
+ url(../images/popup_bg.gif) repeat left top;padding: 25px 25px; border: 9px solid #adc42b; } 
+.pop-layer .pop-container img { width: 100%; height: auto;}
+.pop-layer .btn {position:relative; width: 100%; clear: both;padding:10px;height: 35px;vertical-align: top;font-size: 0.9em; color: #ffffff;line-height: 130%; text-align: left;}
+.pop-layer .btn_go { clear: both;padding-top: 30px; padding-bottom:10px; text-align: center;}
+.pop-layer .btn_go a {box-shadow:2px 2px 1px rgba(0,0,0,0.15); color:#586608; border:1px solid #839909; padding: 10px 20px 10px 20px; border-radius: 20px; background:#fff; font-weight:bold; font-size: 16px; line-height: 100%;}
+.pop-layer .btn_go a:after { content: "→"; padding-left: 5px;}
+.pop-layer .btn_go a:hover { background-color:#839909; color:#fff; }
+.pop-layer .btn_go img { display: inline-block;}
+.pop-layer .btn input {vertical-align: middle; margin-top:-1px; margin-left: 3px; font-size: 1em;}
+.pop-layer .btn label {vertical-align: top; }
+a.btn-layerClose{ border-bottom-right-radius: 9px;position:absolute; right:0; top:0; padding-top: 9px; width: 55px; text-align:center;display: block; height: 35px; color: #ffffff;background: #131313;}
+a.btn-layerClose:hover { background:#839909;}
